@@ -1,20 +1,15 @@
 :root {
-	--container-width: 1200px;
-	--container-padding: 15px;
+	--container-width: 1272px;
+	--container-padding: 20px;
 
-	--font-main: 'Poppins', sans-serif;
-	--font-accent: 'Playfair Display', serif;
+	--font-main: 'Montserrat', sans-serif;
+	--font-accent: 'TradeGothic LT Extended', sans-serif;
 
-	--page-bg: #fff;
-	--text-color: #000;
-	--accent: #ac182c;
+	--page-bg: #fafbfc;
+	--text-color: #112211;
+	--accent: #8dd3bb;
 
   --laptop-size: 1199px;
 	--tablet-size: 959px;
 	--mobile-size: 599px;
-}
-
-.dark {
-  --page-bg: #252526;
-  --text-color: #fff;
 }

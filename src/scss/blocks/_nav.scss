@@ -1,0 +1,46 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav__list {
+  display: flex;
+  gap: 32px;
+}
+
+.nav__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__item:hover .nav__link,
+.nav__item:hover .nav__icon {
+  color: #8DD3BB;
+}
+
+.nav__icon {
+  color: #ffffff;
+  cursor: pointer;
+  
+  transition: color 0.2s ease-in;
+}
+
+.nav__link {
+  padding-left: 4px;
+
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: color 0.2s ease-in;
+}
+
+.nav__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}

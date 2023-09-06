@@ -1,0 +1,14 @@
+.booking-flight-form {
+  display: grid;
+  grid-template-columns: 324px 140px 324px 324px;
+  grid-template-rows: 48px 48px;
+  gap: 32px 24px;
+}
+
+.booking-flight-form__label {
+
+}
+
+.booking-flight-form__buttons {
+  grid-column: 4/5;
+}

@@ -6,9 +6,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Стартовый шаблон</title>
 		<link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		@@include('blocks/header.html')
+    <main>
+      @@include('blocks/hero.html')
+    </main>
 		@@include('blocks/footer.html')
 		<script src="./js/index.bundle.js"></script>
 	</body>
