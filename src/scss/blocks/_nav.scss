@@ -18,11 +18,11 @@
 
 .nav__item:hover .nav__link,
 .nav__item:hover .nav__icon {
-  color: #8DD3BB;
+  color: var(--accent);
 }
 
 .nav__icon {
-  color: #ffffff;
+  color: var(--white);
   cursor: pointer;
   
   transition: color 0.2s ease-in;
@@ -31,7 +31,7 @@
 .nav__link {
   padding-left: 4px;
 
-  color: #ffffff;
+  color: var(--white);
   font-size: 14px;
   font-weight: 600;
 

@@ -6,7 +6,7 @@
   height: 48px;
   padding: 10px 24px;
 
-  background: var(--Neutrals, #FFF);
+  background: var(--white);
   border: 1px solid transparent;
   border-radius: 8px;
   
@@ -18,11 +18,11 @@
 }
 
 .button-signup:hover {
-  background-color: #9BE0C8;
+  background-color: var(--accent-hover);
 }
 
 .button-signup:focus {
-  background-color: #A5EBD3;
-  border: 1px solid var(--Mint-Green, #8DD3BB);
+  background-color: var(--accent-focus);
+  border: 1px solid var(--accent);
 }
 

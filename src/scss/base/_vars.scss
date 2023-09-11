@@ -1,14 +1,29 @@
 :root {
+
+  /* Container */
 	--container-width: 1272px;
 	--container-padding: 20px;
 
+  /* Fonts */
 	--font-main: 'Montserrat', sans-serif;
 	--font-accent: 'TradeGothic LT Extended', sans-serif;
 
+  /* Colors */
 	--page-bg: #fafbfc;
 	--text-color: #112211;
-	--accent: #8dd3bb;
+  /* --text-muted:; */
+  --input-border: #79747e;
 
+	--accent: #8dd3bb;
+  --accent-hover: #9be0c8;
+  --accent-focus: #a5ebd3;
+  --important: #ff8682;
+  --white: #ffffff;
+  --gray: #4c4850;
+  --dark: #112211;
+
+
+  /*  */
   --laptop-size: 1199px;
 	--tablet-size: 959px;
 	--mobile-size: 599px;

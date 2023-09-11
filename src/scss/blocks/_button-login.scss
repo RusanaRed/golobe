@@ -1,7 +1,7 @@
 .button-login {
   padding: 15px 0;
 
-  color: #ffffff;
+  color: var(--white);
   
   font-size: 14px;
   font-weight: 600;
@@ -10,10 +10,10 @@
 }
 
 .button-login:hover {
-  color: #9BE0C8;
+  color: var(--accent-hover);
 }
 
 .button-login:focus {
-  color: #ffffff;
+  color: var(--white);
 }
 
