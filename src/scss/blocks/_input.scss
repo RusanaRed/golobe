@@ -1,0 +1,53 @@
+/* 
+input
+--label-up
+--with-sup-text
+
+--textarea
+--select
+
+--icon-before
+--icon-after
+--just-icon
+
+
+:hover
+:focus-visible
+:active
+:disabled
+*/
+
+/* .input {
+  width: 100%;
+  margin: 0;
+  padding: 16px;
+  background-color: variables.$background-color-input;
+  border: none;
+
+  color: variables.$title-color-primery;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  &--with-icon {
+    padding-right: 74px;
+  }
+
+  &::placeholder {
+    color: rgb(0, 0, 0, 0.3);
+    opacity: 1;
+  }
+
+  &:hover {
+    background-color: variables.$background-color-input-hover;
+  }
+
+  &:active {
+    background-color: variables.$background-color-primery;
+    box-shadow: inset 0 0 0 4px variables.$background-color-input-hover;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+} */
