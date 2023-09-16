@@ -2,7 +2,7 @@
   position: relative;
   width: 1380px;
   height: 600px;
-  margin: 0 auto;
+  margin: 0 auto 183px;
 
   background: linear-gradient(
     180deg, 
@@ -46,14 +46,16 @@
 
 .hero__form {
   position: absolute;
-  bottom: -96px;
+  bottom: -183px;
   left: 50%;
   transform: translateX(-50%);
 
+  width: calc(var(--container-width) - (var(--container-padding) * 2));
   padding: 16px 24px 32px;
 
   background-color: var(--white);
   border-radius: 16px;
+  box-shadow: 0px 4px 16px 0px rgba(141, 211, 187, 0.15);
 }
 
 .hero__form-tabs {

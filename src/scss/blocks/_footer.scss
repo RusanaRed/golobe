@@ -1,14 +1,130 @@
 .footer {
-	background-color: rgb(62, 62, 62);
-	padding: 60px 0;
-	font-size: 32px;
-  color: #fff;
-  
-	h1 {
-		font-size: 32px;
-	}
+  position: relative;
+  margin-top: 151px;
+  padding: 218px 104px 64px;
 
-	@media (max-width: 1200px) {
-		font-size: 26px;
-	}
+	background-color: var(--accent);
+}
+
+.footer-form {
+  position: absolute;
+  top: -151px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: calc(var(--container-width) - (var(--container-padding) * 2));
+  min-height: 305px;
+  padding: 24px;
+
+  background-color: #cdeae1;
+  background-image: url(./../../img/icons/mailbox-with-lowered-flag.svg);
+  background-repeat: no-repeat;
+  background-size: 400px 305px;
+  background-position: center right 24px;
+  border-radius: 20px;
+}
+
+.footer-form__inner {
+  max-width: 595px;
+}
+
+.footer-form__title {
+  max-width: 364px;
+  margin-bottom: 24px;
+
+  font-family: var(--font-accent);
+  font-size: 44px;
+  line-height: 54px;
+  font-weight: 700;
+}
+
+.footer-form__inner-title {
+  margin-bottom: 8px;
+
+  font-family: var(--font-accent);
+  font-size: 20px;
+  font-weight: 700;
+
+  opacity: 0.8;
+}
+
+.footer-form__inner-text {
+  margin-bottom: 16px;
+
+  font-family: var(--font-main);
+  font-size: 16px;
+  font-weight: 500;
+
+  opacity: 0.7;
+}
+
+.footer-form__inner-text p:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.footer__content {
+  display: flex;
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer__social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer__social-link {
+  color: var(--text-color);
+
+  transition: color 0.2s ease-in;
+}
+
+.footer__social-link:hover {
+  color: var(--white);
+}
+
+.footer__menu {
+  display: flex;
+  gap: 24px;
+  margin-left: 140px;
+}
+
+.footer__menu-item {
+  width: 175px;
+}
+
+.footer__menu-title {
+  margin-bottom: 16px;
+
+  font-family: var(--font-accent);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__menu-link {
+  color: var(--text-color);
+  font-family: var(--font-main);
+  font-size: 14px;
+  font-weight: 500;
+
+  opacity: 0.7;
+
+  transition: color 0.2s linear;
+}
+
+.footer__menu-link:hover {
+  color: var(--white);
 }

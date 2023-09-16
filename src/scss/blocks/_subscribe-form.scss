@@ -1,0 +1,24 @@
+.subscribe-form {
+  display: grid;
+  grid-template-columns: 473px 104px;
+  grid-template-rows: 56px;
+  gap: 16px;
+}
+
+.subscribe-form__input {
+
+}
+
+.subscribe-form__button {
+  background-color: var(--dark);
+  border: none;
+
+  color: var(--white);
+  font-weight: 600;
+}
+
+.subscribe-form__button:hover {
+  background-color: var(--white);
+  
+  color: var(--text-color);
+}
