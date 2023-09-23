@@ -1,23 +1,9 @@
-/* 
-button
---primary
---secondary
-
---small
---large
-
-
-:hover
-:focus-visible
-:active
-:disabled
-*/
-
 .button {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 4px;
+  height: 40px;
   padding: 8px 16px;
 
   background-color: transparent;
@@ -48,6 +34,14 @@ button
   &:disabled {
     border-color: #d2d1d3;
     color: #8f8c91;
+  }
+
+  &--small {
+    height: 32px;
+  }
+
+  &--large {
+    height: 48px;
   }
 
   &--primary {
