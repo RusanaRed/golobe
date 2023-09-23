@@ -1,0 +1,25 @@
+.section {
+  padding: 80px 0;
+}
+
+.section__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.section__title {
+  margin-bottom: 16px;
+
+  color: var(--black);
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.section__description {
+  color: var(--text-color);
+  font-size: 16px;
+  
+  opacity: 0.75;
+}
