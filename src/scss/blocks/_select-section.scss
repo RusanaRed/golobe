@@ -1,0 +1,66 @@
+.select-section__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.select-section__item {
+  width: 603px;
+  height: 559px;
+
+  background-color: var(--accent);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+
+  &--flights {
+    background-image: url("./../img/flights.jpg");
+  }
+
+  &--hotels {
+    background-image: url("./../img/hotels.jpg");
+  }
+}
+
+.select-section__link {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+}
+
+.select-section__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  max-width: 389px;
+  margin-top: auto;
+  padding: 24px 0;
+
+  color: var(--white);
+  text-align: center;
+}
+
+.select-section__title {
+  margin-bottom: 8px;
+
+  font-family: var(--font-accent);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.select-section__text {
+  margin-bottom: 16px;
+
+  font-size: 16px;
+}
+
+.select-section__button {
+  display: inline;
+}
