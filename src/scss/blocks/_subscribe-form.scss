@@ -6,7 +6,11 @@
 }
 
 .subscribe-form__input {
+  border: none;
+}
 
+.subscribe-form__input::placeholder {
+  opacity: 1;
 }
 
 .subscribe-form__button {

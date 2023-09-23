@@ -1,22 +1,36 @@
-<form class="booking-flight-form" action="">
-  <label class="booking-flight-form__label" for="">
-    From - To
-    <input type="text" class="booking-flight-form__input">
-  </label>
-  <label class="booking-flight-form__label" for="">
-    Trip
-    <input type="text" class="booking-flight-form__input">
-  </label>
-  <label class="booking-flight-form__label" for="">
-    Depart- Return
-    <input type="text" class="booking-flight-form__input">
-  </label>
-  <label class="booking-flight-form__label" for="">
-    Passenger - Class
-    <input type="text" class="booking-flight-form__input">
-  </label>
+<form class="booking-flight-form form" action="">
+  <div class="form-control">
+    <input class="input input--icon-after icon icon--right icon--back-forward-arrows" type="text" placeholder="Lahore - Karachi">
+    <label class="form-control__title" for="">From - To</label>
+  </div>
+
+  <div class="form-control">
+    <input class="input icon icon--right icon--arrow-down" type="text" placeholder="Return">
+    <label class="form-control__title" for="">Trip</label>
+  </div>
+
+  <div class="form-control">
+    <input class="input" type="text" placeholder="07 Nov 22 - 13 Nov 22">
+    <label class="form-control__title" for="">Depart- Return</label>
+  </div>
+
+  <div class="form-control">
+    <input class="input" type="text" placeholder="1 Passenger, Economy">
+    <label class="form-control__title" for="">Passenger - Class</label>
+  </div>
+
   <div class="booking-flight-form__buttons">
-    <button class="button button--secondary" type="button">Add Promo Code</button>
-    <button class="button button--primary" type="submit">Show Filghts</button>
+    <button class="button button--secondary" type="button">
+      <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+        <use href="./img/sprite.svg#add-icon"/>
+      </svg>
+      Add Promo Code
+    </button>
+    <button class="button button--primary" type="submit">
+      <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+        <use href="./img/sprite.svg#paper-plane"/>
+      </svg>
+      Show Filghts
+    </button>
   </div>
 </form>

@@ -1,0 +1,20 @@
+.icon {
+  background-repeat: no-repeat;
+  background-size: 48px 48px;
+
+  &--right {
+    background-position: right center;
+  }
+
+  &--left {
+    background-position: left center;
+  }
+
+  &--back-forward-arrows {
+    background-image: url("./../img/icons/back-forward-arrows.svg");
+  }
+
+  &--arrow-down {
+    background-image: url("./../img/icons/arrow-down.svg");
+  }
+}

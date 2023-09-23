@@ -6,10 +6,6 @@ button
 --small
 --large
 
---icon-before
---icon-after
---just-icon
-
 
 :hover
 :focus-visible
@@ -78,6 +74,7 @@ button
   }
 
   &--secondary {
+    padding: 8px 0;
     border: none;
 
     &:hover {
