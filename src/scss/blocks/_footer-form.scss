@@ -1,0 +1,37 @@
+.footer-form {
+  max-width: 595px;
+}
+
+.footer-form__title {
+  max-width: 364px;
+  margin-bottom: 24px;
+
+  font-family: var(--font-accent);
+  font-size: 44px;
+  line-height: 54px;
+  font-weight: 700;
+}
+
+.footer-form__inner-title {
+  margin-bottom: 8px;
+
+  font-family: var(--font-accent);
+  font-size: 20px;
+  font-weight: 700;
+
+  opacity: 0.8;
+}
+
+.footer-form__inner-text {
+  margin-bottom: 16px;
+
+  font-family: var(--font-main);
+  font-size: 16px;
+  font-weight: 500;
+
+  opacity: 0.7;
+}
+
+.footer-form__inner-text p:not(:last-child) {
+  margin-bottom: 4px;
+}

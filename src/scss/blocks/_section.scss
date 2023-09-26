@@ -9,6 +9,14 @@
   margin-bottom: 40px;
 }
 
+.section__intro {
+  margin-right: 40px;
+
+  p + p {
+    margin-top: 8px;
+  }
+}
+
 .section__title {
   margin-bottom: 16px;
 
