@@ -1,0 +1,142 @@
+.card-review {
+  position: relative;
+  width: 100%;
+  max-width: 425px;
+  padding: 24px;
+
+  background-color: var(--white);
+  border-radius: 20px;
+  box-shadow: 2px 4px 16px 0px rgba(17, 34, 17, 0.10);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: -26px;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(141, 211, 187, 0.4);
+    border-radius: 20px;
+  }
+}
+
+.card-review__title {
+  margin-bottom: 32px;
+
+  font-family: var(--font-accent);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.card-review__text {
+  height: 35px;
+  margin-bottom: 12px;
+
+  font-size: 14px;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* white-space: nowrap; */
+
+  opacity: 0.5;
+}
+
+.card-review__link {
+  display: block;
+  margin-bottom: 16px;
+
+  color: inherit;
+  font-family: var(--font-accent);
+  font-size: 14px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.card-review__rating {
+  height: 24px;
+  margin-bottom: 20px;
+
+  background-image: url("./../img/icons/star.svg");
+  background-repeat: no-repeat; 
+  background-position: left center;
+  background-size: 24px;
+
+  &--two {
+    background-image: 
+      url("./../img/icons/star.svg"), 
+      url("./../img/icons/star.svg");
+    background-position: 
+      left center, left 36px center;
+  }
+
+  &--three {
+    background-image: 
+      url("./../img/icons/star.svg"), 
+      url("./../img/icons/star.svg"), 
+      url("./../img/icons/star.svg");
+    background-position: 
+      left center, left 36px center, left 72px center;
+  }
+
+  &--four {
+    background-image: 
+      url("./../img/icons/star.svg"), 
+      url("./../img/icons/star.svg"), 
+      url("./../img/icons/star.svg"), 
+      url("./../img/icons/star.svg");
+    background-position: 
+      left center, left 36px center, left 72px center, left 108px center;
+  }
+
+  &--five {
+    background-image: 
+      url("./../img/icons/star.svg"), 
+      url("./../img/icons/star.svg"), 
+      url("./../img/icons/star.svg"), 
+      url("./../img/icons/star.svg"), 
+      url("./../img/icons/star.svg");
+    background-position: 
+      left center, left 36px center, left 72px center, left 108px center, left 144px center;
+  }
+}
+
+.card-review__author {
+  margin-bottom: 4px;
+
+  font-family: var(--font-accent);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.card-review__company {
+  margin-bottom: 12px;
+
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.card-review__social {
+  min-height: 24px;
+  margin-bottom: 40px;
+  padding: 4px 0 4px 32px;
+
+  background-image: url("./../img/icons/google-icon.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 24px 24px;
+
+  color: rgba(17, 34, 17, 0.4);
+  font-family: var(--font-accent);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.card-review__picture {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
