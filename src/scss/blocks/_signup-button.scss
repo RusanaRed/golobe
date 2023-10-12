@@ -1,0 +1,12 @@
+.signup-button {
+  background-color: var(--dark);
+  border: 1px solid transparent;
+
+  color: var(--white);
+  font-weight: 600;
+
+  &--white {
+    background-color: var(--white);
+    color: var(--text-color);
+  }
+}

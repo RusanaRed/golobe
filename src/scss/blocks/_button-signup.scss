@@ -1,28 +1,2 @@
-.button-signup {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  height: 48px;
-  padding: 10px 24px;
-
-  background: var(--white);
-  border: 1px solid transparent;
-  border-radius: 8px;
-  
-  color: #112211;
-  font-size: 14px;
-  font-weight: 600;
-
-  transition: background-color 0.2s ease-in;
-}
-
-.button-signup:hover {
-  background-color: var(--accent-hover);
-}
-
-.button-signup:focus {
-  background-color: var(--accent-focus);
-  border: 1px solid var(--accent);
-}
 
