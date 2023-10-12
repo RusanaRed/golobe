@@ -7,4 +7,10 @@
 
   width: 100%;
 	padding: 24px 32px;
+
+  background-color: var(--white);
+
+  &--main {
+    background-color: transparent;
+  }
 }
