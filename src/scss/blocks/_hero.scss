@@ -4,14 +4,9 @@
   width: 100%;
   max-width: 100%;
   height: 70vh;
-  margin: 0 auto 183px;
+  margin: 0 auto 76px;
 
-  background: linear-gradient(
-    rgba(0, 35, 77, 0.63), 
-    rgba(0, 35, 77, 0)
-    ),
-    url("./../img/flights-hero.jpg") no-repeat center;
-  background-size: cover;
+  background-color: var(--gray);
 
   &--main {
     /* width: 1380px; */
@@ -27,6 +22,15 @@
       url("./../img/hero-image.jpg") no-repeat center;
     background-size: cover;
     border-radius: 24px;
+  }
+
+  &--flights {
+    background: linear-gradient(
+    rgba(0, 35, 77, 0.63), 
+    rgba(0, 35, 77, 0)
+    ),
+    url("./../img/flights-hero.jpg") no-repeat center;
+    background-size: cover;
   }
 }
 

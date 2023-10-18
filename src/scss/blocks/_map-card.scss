@@ -1,0 +1,31 @@
+.map-card {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px 4px 4px;
+
+  background-color: var(--white);
+  border-radius: 4px;
+}
+
+.map-card__photo {
+  margin-right: 8px;
+  border-radius: 4px;
+}
+
+.map-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.map-card__passenger {
+  font-family: var(--font-accent);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+.map-card__pass {
+  font-size: 8px;
+  font-weight: 400;
+}
