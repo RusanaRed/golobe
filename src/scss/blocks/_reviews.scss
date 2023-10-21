@@ -1,4 +1,33 @@
 .reviews__slider {
-  display: flex;
-  gap: 50px;
+  /* overflow-x: hidden;
+  margin: -50px;
+  padding: 50px; */
+} 
+
+/* .reviews__slider::before,
+.reviews__slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: 3;
+
+  display: block;
+  width: 1000px;
+  height: 100%;
+}
+
+.reviews__slider::before {
+  left: -1020px;
+  background-image: linear-gradient(to right, #fafbfc, #fafbfc);
+  background-size: 950px 50px;
+}
+
+.reviews__slider::after {
+  right: 0;
+  background-image: linear-gradient(to left, #fafbfc, rgba(255, 255, 255, 0));
+} */
+
+.reviews__wrapper > .swiper-slide {
+  width: 100%;
+  max-width: 425px;
 }
