@@ -1,0 +1,13 @@
+.booking-hotel-form {
+  display: grid;
+  grid-template-columns: 416px 240px 240px 240px;
+  grid-template-rows: 56px 48px;
+  gap: 32px 16px;
+}
+
+.booking-hotel-form__buttons {
+  grid-column: 4/5;
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+}

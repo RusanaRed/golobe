@@ -10,11 +10,33 @@
     background-position: left center;
   }
 
+  &--rooms-guests {
+    background-image: 
+      url("./../img/icons/person-icon.svg"), 
+      url("./../img/icons/arrow-down.svg");
+    background-position: 
+      left center, 
+      right center;
+  }
+
   &--back-forward-arrows {
     background-image: url("./../img/icons/back-forward-arrows.svg");
   }
 
   &--arrow-down {
     background-image: url("./../img/icons/arrow-down.svg");
+  }
+
+  &--bed {
+    background-image: url("./../img/icons/bed-icon.svg");
+  }
+
+  &--calendar {
+    background-image: url("./../img/icons/calendar-icon.svg");
+    background-size: 48px 48px;
+  }
+
+  &--person {
+    background-image: url("./../img/icons/person-icon.svg");
   }
 }

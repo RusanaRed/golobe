@@ -32,6 +32,15 @@
     url("./../img/flights-hero.jpg") no-repeat center;
     background-size: cover;
   }
+
+  &--hotels {
+    background: linear-gradient(
+    90deg, rgba(0, 35, 77, 0.63) 11.46%, 
+    rgba(0, 35, 77, 0.00) 77.37%
+    ),
+    url("./../img/hotels-hero.jpg") no-repeat center;
+    background-size: cover;
+  }
 }
 
 .hero__slogan {

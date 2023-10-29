@@ -1,0 +1,40 @@
+.recent-searches__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recent-searches__item {
+  display: flex;
+}
+
+.recent-searches__picture {
+  margin-right: 16px;
+
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.recent-searches__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.recent-searches__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.recent-searches__city {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.recent-searches__places {
+  font-size: 16px;
+  opacity: 0.75;
+}
