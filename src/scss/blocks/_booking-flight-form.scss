@@ -3,6 +3,11 @@
   grid-template-columns: 324px 140px 324px 324px;
   grid-template-rows: 56px 48px;
   gap: 32px 24px;
+
+  &--mini {
+    grid-template-columns: 1fr 140px 1fr 1fr 56px;
+    grid-template-rows: 56px;
+  }
 }
 
 /* .booking-flight-form__label {
@@ -21,4 +26,9 @@
   display: flex;
   justify-content: flex-end;
   gap: 24px;
+}
+
+.booking-flight-form__button.button {
+  width: 56px;
+  height: 56px;
 }
