@@ -105,4 +105,25 @@
       color: #8f8c91;
     }
   }
+
+  &--dark {
+    background-color: var(--dark);
+    border: none;
+    color: var(--white);
+
+    &:hover {
+      background-color: var(--white);
+      color: var(--dark);
+    }
+
+    &:focus-visible {
+      border: 1px solid var(--white);
+      outline: 1px solid var(--dark);
+    }
+
+    &:disabled {
+      background-color: #d2d1d3;
+      color: #8f8c91;
+    }
+  }
 }
