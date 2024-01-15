@@ -1,0 +1,50 @@
+.range {
+  position: relative;
+  width: 319px;
+  height: 2px;
+  margin: 11px 12px 26px;
+
+  background-color: rgba(17, 34, 17, 0.3);
+}
+
+.range_bar {
+  position: absolute;
+  height: 2px;
+  background-color: var(--dark);
+}
+
+.range_toggle {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: var(--accent);
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--accent-hover);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--accent-focus);
+  }
+
+  &:active {
+    background-color: var(--accent-active);
+  }
+
+  &--min {
+    left: -12px;
+    top: -11px;
+  }
+
+  &--max {
+    right: -12px;
+    top: -11px;
+  }
+}
+
+.range_label {
+  font-size: 12px;
+  font-weight: 500;
+}

@@ -34,7 +34,8 @@
 
   &:focus,
   &:active {
-    border: 2px solid var(--accent);
+    border: 1px solid var(--accent);
+    outline: 1px solid var(--accent);
   }
 
   &:disabled {

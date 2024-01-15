@@ -1,0 +1,23 @@
+.control {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.control__input[type="checkbox"]:checked + .control__mark {
+  background: url("/img/icons/checkbox-checked.svg") no-repeat center;
+}
+
+.control__mark {
+  width: 24px;
+  height: 24px;
+  
+  background: url("/img/icons/checkbox.svg") no-repeat center;
+}
+
+.control__label {
+  padding-left: 8px;
+
+  font-size: 14px;
+  font-weight: 500;
+}
