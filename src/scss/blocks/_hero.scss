@@ -15,7 +15,7 @@
     margin: 30px auto 183px;
 
     background: linear-gradient(
-      180deg, 
+      0deg, 
       rgba(0, 0, 0, 0.00) 0%, 
       rgba(0, 0, 0, 0.60) 100%
       ),
@@ -26,10 +26,11 @@
 
   &--flights {
     background: linear-gradient(
-    rgba(0, 35, 77, 0.63), 
-    rgba(0, 35, 77, 0)
-    ),
-    url("./../img/flights-hero.jpg") no-repeat center;
+      90deg,
+      rgba(0, 35, 77, 0.63), 
+      rgba(0, 35, 77, 0)
+      ),
+      url("./../img/flights-hero.jpg") no-repeat center;
     background-size: cover;
   }
 
@@ -97,7 +98,7 @@
 
   background-color: var(--white);
   border-radius: 16px;
-  box-shadow: 0px 4px 16px 0px rgba(141, 211, 187, 0.15);
+  box-shadow: var(--dark-shadow);
 
   &--main {
     bottom: -183px;
