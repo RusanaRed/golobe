@@ -42,7 +42,27 @@
   margin-bottom: 24px;
 }
 
+.search-section__flights-number {
+  font-size: 14px;
+  font-weight: 600;
+
+  span {
+    color: var(--important);
+  }
+}
+
+.search-section__sort-by select {
+  font-weight: 600;
+}
+
+.search-section__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
 .search-section__button {
   display: block;
   width: 100%;
+  margin-top: 24px;
 }

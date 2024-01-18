@@ -45,6 +45,11 @@
     height: 48px;
   }
 
+  &--mini {
+    width: 40px;
+    font-size: 12px;
+  }
+
   &--primary {
     background-color: var(--accent);
     border: none;

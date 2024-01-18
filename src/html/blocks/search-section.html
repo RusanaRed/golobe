@@ -5,43 +5,44 @@
     </div>
 
     <div class="search-section__listing">
-      <div class="sorting-container">
+      <div class="search-section__sorting sorting">
+        <ul class="sorting__list">
+          <li class="sorting__item">
+            <div class="sorting__title">Cheapest</div>
+            <div class="sorting__capture">
+              <div class="sorting__price">$99</div>
+              <div class="sorting__time">2h 18m</div>
+            </div>
+          </li>
 
-        <div class="search-section__sorting">
-          <ul class="sorting__list">
-            <li class="sorting__item">
-              <div class="sorting__title">Cheapest</div>
-              <div class="sorting__capture">
-                <div class="sorting__price">$99</div>
-                <div class="sorting__time">2h 18m</div>
-              </div>
-            </li>
+          <li class="sorting__item">
+            <div class="sorting__title">Best</div>
+            <div class="sorting__capture">
+              <div class="sorting__price">$99</div>
+              <div class="sorting__time">2h 18m</div>
+            </div>
+          </li>
 
-            <li class="sorting__item">
-              <div class="sorting__title">Best</div>
-              <div class="sorting__capture">
-                <div class="sorting__price">$99</div>
-                <div class="sorting__time">2h 18m</div>
-              </div>
-            </li>
+          <li class="sorting__item">
+            <div class="sorting__title">Quickest</div>
+            <div class="sorting__capture">
+              <div class="sorting__price">$99</div>
+              <div class="sorting__time">2h 18m</div>
+            </div>
+          </li>
 
-            <li class="sorting__item">
-              <div class="sorting__title">Quickest</div>
-              <div class="sorting__capture">
-                <div class="sorting__price">$99</div>
-                <div class="sorting__time">2h 18m</div>
-              </div>
-            </li>
-
-            <button class="" type="button">Other sort</button>
-          </ul>
-        </div>
-
+          <button class="button button--large button--secondary button--with-icon-left" type="button">
+            <svg class="nav__icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <use href="./img/sprite.svg#menu-icon"/>
+            </svg>
+            Other sort
+          </button>
+        </ul>
       </div>
 
       <div class="search-section__caption">
-        <div class="flights-number">Showing 4 of <span>257 places</span></div>
-        <div class="flights-sort-by">
+        <div class="search-section__flights-number">Showing 4 of <span>257 places</span></div>
+        <div class="search-section__sort-by">
           Sort by 
           <select class="select-control" aria-label="">
             <option class="sorting-option" selected>Recommended</option>
@@ -54,25 +55,9 @@
       </div>
 
       <ul class="search-section__list">
-        <li class="flights__item flight-card">
-          <div class="flight-card__airline-logo"></div>
-
-          <div class="flight-card__details">
-            <div class="flight-card__airline-rating">
-
-            </div>
-            <div class="flight-card__price">
-
-            </div>
-            <div class="flight-card__conditions">
-
-            </div>
-            <div class="flight-card__buttons">
-              <button class="" type="button"></button>
-              <a class="" href="!#">View details</a>
-            </div>
-          </div>
-        </li>
+        @@include('cards/flight-card-1.html')
+        
+        
       </ul>
 
       <button class="search-section__button button button--dark button--large" type="button">Show more results</button>
