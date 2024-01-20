@@ -1,6 +1,7 @@
 .search-section {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 120px;
 }
 
 .search-section__filters {
@@ -65,4 +66,8 @@
   display: block;
   width: 100%;
   margin-top: 24px;
+
+  &:hover {
+    background-color: var(--accent);
+  }
 }

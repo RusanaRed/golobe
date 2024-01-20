@@ -15,20 +15,6 @@
 
 .subscribe-form__button {
   height: 56px;
-  
-  background-color: var(--dark);
-  border: none;
 
-  color: var(--white);
   font-weight: 600;
-
-  &:hover {
-    background-color: var(--white);
-    color: var(--text-color);
-  }
-
-  &:focus-visible {
-    border: 1px solid var(--white);
-    outline: 1px solid var(--dark);
-  }
 }

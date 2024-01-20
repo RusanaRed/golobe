@@ -13,7 +13,7 @@
 
   background-repeat: no-repeat;
   background-size: 160px;
-  background-position: center;
+  background-position: top center;
   
   &--emirates {
     background-image: url("./../img/logos/emirates.svg");
@@ -70,4 +70,97 @@
   }
 }
 
+.flight-card__conditions {
+  position: relative;
+  margin-bottom: 33px;
 
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -17px;
+    width: 100%;
+    height: 0.5px;
+    background-color: var(--dark);
+    opacity: 0.25;
+  }
+}
+
+.flight-card__destination-flight,
+.flight-card__return-flight {
+  position: relative;
+  display: grid;
+  grid-template-columns: 206px auto 1fr;
+  grid-template-rows: 20px 17px;
+  gap: 4px 40px;
+  align-items: center;
+
+  margin-bottom: 16px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    background: url("./../img/icons/checkbox.svg") no-repeat left center;
+    opacity: 0.25;
+  }
+}
+
+.flight-card__arrival-departure-time {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+
+  padding-left: 32px;
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.flight-card__transplants {
+  grid-column: 2 / 3;
+
+  opacity: 0.78;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.flight-card__travel-time {
+  grid-column: 3 / 4;
+
+  opacity: 0.78;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.flight-card__airline {
+  padding-left: 32px;
+
+  opacity: 0.4;
+  font-size: 14px;
+}
+
+.flight-card__flight-number {
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
+
+  opacity: 0.4;
+  font-size: 14px;
+}
+
+.flight-card__buttons {  
+  display: flex;
+}
+
+.flight-card__favorite-button {
+  width: 48px;
+  margin-right: 16px;
+  padding: 8px 0;
+
+  flex-shrink: 0;
+}
+
+.flight-card__details-button {
+  flex-grow: 1;
+}

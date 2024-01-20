@@ -8,7 +8,7 @@
 }
 
 .range_bar {
-  position: absolute;
+  position: relative;
   height: 2px;
   background-color: var(--dark);
 }
@@ -45,6 +45,18 @@
 }
 
 .range_label {
+  position: absolute;
+  top: 16px;
+
   font-size: 12px;
   font-weight: 500;
+
+  &--min {
+
+    left: -16px;
+  }
+
+  &--max {
+    right: -16px;
+  }
 }
