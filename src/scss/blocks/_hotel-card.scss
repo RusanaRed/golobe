@@ -1,0 +1,185 @@
+.hotel-card {
+  display: flex;
+  overflow: hidden;
+
+  background-color: var(--white);
+  border-radius: 12px;
+  box-shadow: var(--dark-shadow);
+}
+
+.hotel-card__hotel-picture {
+  width: 100%;
+  max-width: 300px;
+  
+}
+
+.hotel-card__content {
+  width: 100%;
+  margin-bottom: 49px;
+  padding: 24px;
+}
+
+.hotel-card__wrapper {
+  display: flex;
+  gap: 24px;
+}
+
+.hotel-card__left {
+  flex-grow: 1;
+}
+
+.hotel-card__title {
+  margin-bottom: 16px;
+
+  font-family: var(--font-accent);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.hotel-card__details {
+  display: grid;
+  grid-template-rows: 16px 16px 32px;
+  gap: 12px;
+  align-items: center;
+}
+
+.hotel-card__address {
+  position: relative;
+  padding-left: 18px;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.75;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background: url("./../../img/icons/add-icon.svg") no-repeat center;
+    background-size: 16px;
+  }
+}
+
+
+
+.hotel-card__airline-rating {
+  display: flex;
+  align-items: center;
+
+  font-size: 12px;
+}
+
+.hotel-card__airline-rating-text {
+  padding: 0 4px 0 8px;
+  font-weight: 500;
+}
+
+.hotel-card__price {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  color: rgba(#112211, 0.75);
+
+  span {
+    color: var(--important);
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+
+.hotel-card__right {
+  position: relative;
+  margin-bottom: 33px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -17px;
+    width: 100%;
+    height: 0.5px;
+    background-color: var(--dark);
+    opacity: 0.25;
+  }
+}
+
+.hotel-card__destination-flight,
+.hotel-card__return-flight {
+  position: relative;
+  display: grid;
+  grid-template-columns: 206px auto 1fr;
+  grid-template-rows: 20px 17px;
+  gap: 4px 40px;
+  align-items: center;
+
+  margin-bottom: 16px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    background: url("./../img/icons/checkbox.svg") no-repeat left center;
+    opacity: 0.25;
+  }
+}
+
+.hotel-card__arrival-departure-time {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+
+  padding-left: 32px;
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.hotel-card__transplants {
+  grid-column: 2 / 3;
+
+  opacity: 0.78;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.hotel-card__travel-time {
+  grid-column: 3 / 4;
+
+  opacity: 0.78;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.hotel-card__airline {
+  padding-left: 32px;
+
+  opacity: 0.4;
+  font-size: 14px;
+}
+
+.hotel-card__flight-number {
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
+
+  opacity: 0.4;
+  font-size: 14px;
+}
+
+.hotel-card__buttons {  
+  display: flex;
+}
+
+.hotel-card__favorite-button {
+  width: 48px;
+  margin-right: 16px;
+  padding: 8px 0;
+
+  flex-shrink: 0;
+}
+
+.hotel-card__details-button {
+  flex-grow: 1;
+}

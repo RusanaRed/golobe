@@ -1,13 +1,13 @@
 <div class="container">
-  <div class="search-section">
-    <div class="search-section__filters">
+  <div class="flight-search-section">
+    <div class="flight-search-section__filters">
       @@include('elements/flights-filters.html')
     </div>
 
-    <div class="search-section__listing">
-      <div class="search-section__sorting sorting">
+    <div class="flight-search-section__listing">
+      <div class="flight-search-section__sorting sorting">
         <ul class="sorting__list">
-          <li class="sorting__item">
+          <li class="sorting__item sorting__item--flights">
             <div class="sorting__title">Cheapest</div>
             <div class="sorting__capture">
               <div class="sorting__price">$99</div>
@@ -15,7 +15,7 @@
             </div>
           </li>
 
-          <li class="sorting__item active">
+          <li class="sorting__item sorting__item--flights active">
             <div class="sorting__title">Best</div>
             <div class="sorting__capture">
               <div class="sorting__price">$99</div>
@@ -23,7 +23,7 @@
             </div>
           </li>
 
-          <li class="sorting__item">
+          <li class="sorting__item sorting__item--flights">
             <div class="sorting__title">Quickest</div>
             <div class="sorting__capture">
               <div class="sorting__price">$99</div>
@@ -40,9 +40,12 @@
         </ul>
       </div>
 
-      <div class="search-section__caption">
-        <div class="search-section__flights-number">Showing 4 of <span>257 places</span></div>
-        <div class="search-section__sort-by">
+      <div class="flight-search-section__caption">
+        <div class="flight-search-section__flights-number">
+          Showing 4 of <span>17 flights</span>
+        </div>
+
+        <!-- <div class="flight-search-section__sort-by">
           Sort by 
           <select class="select-control" aria-label="">
             <option class="sorting-option" selected>Recommended</option>
@@ -51,17 +54,17 @@
             <option class="sorting-option">Other</option>
             <option class="sorting-option">Other 2</option>
           </select>
-        </div>
+        </div> -->
       </div>
 
-      <ul class="search-section__list">
+      <ul class="flight-search-section__list">
         @@include('cards/flight-card-1.html')
         @@include('cards/flight-card-2.html')
         @@include('cards/flight-card-3.html')
         @@include('cards/flight-card-4.html')
       </ul>
 
-      <button class="search-section__button button button--dark button--large" type="button">Show more results</button>
+      <button class="flight-search-section__button button button--dark button--large" type="button">Show more results</button>
     </div>
   </div>
 </div>

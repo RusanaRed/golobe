@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="hotel-search-section">
+    <div class="hotel-search-section__filters">
+      @@include('elements/hotels-filters.html')
+    </div>
+
+    <div class="hotel-search-section__listing">
+      <div class="hotel-search-section__sorting sorting">
+        <ul class="sorting__list">
+          <li class="sorting__item sorting__item--hotels active">
+            <div class="sorting__title">Hotels</div>
+            <div class="sorting__capture">
+              <div class="sorting__places">257 places</div>
+            </div>
+          </li>
+
+          <li class="sorting__item sorting__item--hotels">
+            <div class="sorting__title">Motels</div>
+            <div class="sorting__capture">
+              <div class="sorting__places">51 places</div>
+            </div>
+          </li>
+
+          <li class="sorting__item sorting__item--hotels">
+            <div class="sorting__title">Resorts</div>
+            <div class="sorting__capture">
+              <div class="sorting__places">72 places</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hotel-search-section__caption">
+        <div class="hotel-search-section__flights-number">Showing 4 of <span>257 places</span></div>
+        <div class="hotel-search-section__sort-by">
+          Sort by 
+          <select class="select-control" aria-label="">
+            <option class="sorting-option" selected>Recommended</option>
+            <option class="sorting-option">Cheapest</option>
+            <option class="sorting-option">Stars</option>
+            <option class="sorting-option">Rating</option>
+            <option class="sorting-option">Most expensive</option>
+          </select>
+        </div>
+      </div>
+
+      <ul class="hotel-search-section__list">
+        @@include('cards/hotel-card-1.html')
+        <!-- @@include('cards/hotel-card-2.html')
+        @@include('cards/hotel-card-3.html')
+        @@include('cards/hotel-card-4.html') -->
+      </ul>
+
+      <button class="hotel-search-section__button button button--dark button--large" type="button">Show more results</button>
+    </div>
+  </div>
+</div>

@@ -1,21 +1,21 @@
-.search-section {
+.hotel-search-section {
   display: flex;
   justify-content: space-between;
   margin-bottom: 120px;
 }
 
-.search-section__filters {
+.hotel-search-section__filters {
   width: 100%;
   max-width: 343px;
 }
 
-.search-section__listing {
+.hotel-search-section__listing {
   position: relative;
   width: 100%;
   max-width: 840px;
 }
 
-.search-section__listing::before {
+.hotel-search-section__listing::before {
   content: "";
   position: absolute;
   width: 1px;
@@ -27,7 +27,7 @@
   opacity: 0.25;
 }
 
-.search-section__sorting {
+.hotel-search-section__sorting {
   margin-bottom: 24px;
   padding: 16px 24px;
 
@@ -36,14 +36,14 @@
   box-shadow: var(--dark-shadow);
 }
 
-.search-section__caption {
+.hotel-search-section__caption {
   display: flex;
   justify-content: space-between;
   
   margin-bottom: 24px;
 }
 
-.search-section__flights-number {
+.hotel-search-section__flights-number {
   font-size: 14px;
   font-weight: 600;
 
@@ -52,17 +52,17 @@
   }
 }
 
-.search-section__sort-by select {
+.hotel-search-section__sort-by select {
   font-weight: 600;
 }
 
-.search-section__list {
+.hotel-search-section__list {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 24px;
 }
 
-.search-section__button {
+.hotel-search-section__button {
   display: block;
   width: 100%;
   margin-top: 24px;

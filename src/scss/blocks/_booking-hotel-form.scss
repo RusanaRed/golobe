@@ -3,6 +3,11 @@
   grid-template-columns: 416px 240px 240px 240px;
   grid-template-rows: 56px 48px;
   gap: 32px 16px;
+
+  &--mini {
+    grid-template-columns: auto 240px 240px 240px 56px;
+    grid-template-rows: 56px;
+  }
 }
 
 .booking-hotel-form__buttons {
@@ -10,4 +15,9 @@
   display: flex;
   justify-content: flex-end;
   gap: 24px;
+}
+
+.booking-hotel-form__button.button {
+  width: 56px;
+  height: 56px;
 }

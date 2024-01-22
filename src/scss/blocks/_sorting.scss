@@ -1,28 +1,44 @@
 .sorting__list {
   display: flex;
-  /* justify-content: start; */
   gap: 48px;
 }
 
 .sorting__item {
   position: relative;
-  min-width: 160px;
-
   cursor: pointer;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -24px;
-    width: 1px;
-    height: 48px;
-    background-color: #d7e2ee;
-    opacity: 0.5;
+  &--flights {
+    min-width: 160px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -24px;
+      width: 1px;
+      height: 48px;
+      background-color: #d7e2ee;
+      opacity: 0.5;
+    }
+  }
+
+  &--hotels {
+    min-width: 232px;
+
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -24px;
+      width: 1px;
+      height: 48px;
+      background-color: #d7e2ee;
+      opacity: 0.5;
+    }
   }
 }
 
-.sorting__item.active {
+.sorting__item--flights.active {
 
   &::before {
     content: "";
@@ -30,6 +46,20 @@
     left: -10px;
     bottom: -16px;
     width: 180px;
+    height: 4px;
+    background-color: var(--accent);
+    opacity: 1;
+  }
+}
+
+.sorting__item--hotels.active {
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    bottom: -16px;
+    width: 248px;
     height: 4px;
     background-color: var(--accent);
     opacity: 1;
