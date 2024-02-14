@@ -10,6 +10,7 @@
   background-color: transparent;
   border: 1px solid var(--accent);
   border-radius: 4px;
+  outline: 1px solid transparent;
 
   color: var(--text-color);
   font-family: var(--font-main);
@@ -18,7 +19,7 @@
   line-height: normal;
   text-align: center;
 
-  transition: border 0.3s linear, background-color 0.3s linear, color 0.3s ease-in;
+  transition: border 0.2s linear, background-color 0.3s linear, color 0.3s ease-in, outline 0.3s ease-in-out;
 
   &:hover {
     border-color: var(--accent-hover);
@@ -53,7 +54,7 @@
 
   &--primary {
     background-color: var(--accent);
-    border: none;
+    border: 1px solid transparent;
 
     &:hover {
       background-color: var(--accent-hover);
@@ -78,10 +79,18 @@
 
   &--secondary {
     padding: 8px 0;
-    border: none;
+    border: 1px solid transparent;
+    outline: none;
 
     &:hover {
       color: var(--accent-hover);
+      border: 1px solid transparent;
+      outline: none;
+    }
+
+    &:focus-visible {
+      color: var(--accent-focus);
+      border: 1px solid transparent;
       outline: none;
     }
 
@@ -107,7 +116,7 @@
 
     &:focus-visible {
       border: 1px solid var(--dark);
-      outline: 1px solid var(--accent);
+      outline: 1px solid var(--white);
     }
 
     &:disabled {
