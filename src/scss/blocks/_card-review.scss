@@ -36,13 +36,12 @@
   height: 35px;
   margin-bottom: 12px;
 
+  color: var(--text-50);
   font-size: 14px;
   font-weight: 500;
   overflow: hidden;
   text-overflow: ellipsis;
   /* white-space: nowrap; */
-
-  opacity: 0.5;
 }
 
 .card-review__link {
@@ -115,9 +114,9 @@
 .card-review__company {
   margin-bottom: 12px;
 
+  color: var(--text-50);
   font-size: 12px;
   font-weight: 500;
-  opacity: 0.5;
 }
 
 .card-review__social {
@@ -130,7 +129,7 @@
   background-position: left center;
   background-size: 24px 24px;
 
-  color: var(--text-quiet);
+  color: var(--text-40);
   font-family: var(--font-accent);
   font-size: 12px;
   font-weight: 700;

@@ -17,16 +17,15 @@
 }
 
 .footer-nav__link {
-  color: var(--text-color);
+  color: var(--text-70);
   font-family: var(--font-main);
   font-size: 14px;
   font-weight: 500;
-
-  opacity: 0.7;
 
   transition: color 0.2s linear;
 
   &:hover {
     color: var(--white);
+    opacity: 0.7;
   }
 }
