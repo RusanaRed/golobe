@@ -2,6 +2,10 @@
 	padding: 0 var(--container-padding);
 	max-width: var(--container-width);
 	margin: 0 auto;
+
+  &--reviews {
+    padding-left: calc(var(--container-padding) - 10px);
+  }
 }
 
 .container-right {
