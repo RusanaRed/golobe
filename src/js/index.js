@@ -4,13 +4,16 @@ mobileNav(); */
 
 // ---------------- Swiper -----------------
 
-import Swiper from 'swiper';
-import 'swiper/css';
+/* import Swiper from 'swiper';
+import 'swiper/css'; */
+
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
 const revSlider = document.querySelector('.reviews__slider');
 
-const reviewsSlider = new Swiper(revSlider, {
-  slidesPerView: 3,
+revSlider = new Swiper(revSlider, {
+  slidesPerView: 4,
   spaceBetween: 50,
   loop: true,
   
