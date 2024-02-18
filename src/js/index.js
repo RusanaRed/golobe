@@ -14,7 +14,7 @@ const reviewsSlider = new Swiper(revSlider, {
   spaceBetween: 50,
   loop: true,
   
-  mousewheel: true,  
+  mousewheel: true,
   /* on: {
     init: function () {
       const activeSlide = revSlider.querySelector('.swiper-slide-next');
