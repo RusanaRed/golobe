@@ -63,13 +63,15 @@
         <div class="hero__text hero__text--main">Special offers to suit your plan</div>
       </div>
       
-      <div class="hero__form hero__form--main">
-        <div class="hero__form-tabs">
-          <button class="tab tab--flight active" type="button">Flights</button>
-          <button class="tab tab--stay" type="button">Stays</button>
+      <div class="hero__form hero__form--main hero-form hero-form--main">
+        <div class="hero-form__tabs">
+          <button class="hero-form__tab hero-form__tab--flight active" type="button" data-tab="#flights">Flights</button>
+          <button class="hero-form__tab hero-form__tab--stay" type="button" data-tab="#stays">Stays</button>
         </div>
 
-        <form class="booking-flight-form form" action="get">
+        <div class="hero-form__inner">
+          <div class="hero-form__wrapper hero-form__wrapper--active" id="flights">
+            <form class="booking-flight-form form" action="get">
   <label class="form-field">
     <span class="form-field__caption">From - To</span>
     <input class="form-field__input form-field__input--icon-after icon icon--right icon--back-forward-arrows" type="text" placeholder="Lahore - Karachi">
@@ -111,6 +113,52 @@
     </a>
   </div>
 </form>
+          </div>
+          <div class="hero-form__wrapper" id="stays">
+            <form class="booking-hotel-form form" action="get">
+  <label class="form-field">
+    <span class="form-field__caption">Enter Destination</span>
+    <input class="form-field__input form-field__input--icon-before icon icon--left icon--bed" type="text" placeholder="Istanbul, Turkey">
+  </label>
+
+  <label class="form-field">
+    <span class="form-field__caption">Check In</span>
+    <input class="form-field__input form-field__input--icon-after icon icon--right icon--calendar" type="text" placeholder="Fri 12/2">
+  </label>
+
+  <label class="form-field">
+    <span class="form-field__caption">Check Out</span>
+    <input class="form-field__input form-field__input--icon-after icon icon--right icon--calendar" type="text" placeholder="Sun 12/4">
+  </label>
+
+  <label class="form-field">
+    <span class="form-field__caption">Rooms & Guests</span>
+    <input class="form-field__input form-field__input--icon-before form-field__input--icon-after icon icon--rooms-guests" type="text" placeholder="1 room, 2 guests">
+  </label>
+
+  <div class="booking-flight-form__buttons">
+    <button class="button button--large button--secondary" type="button">
+      <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+        <use href="./img/sprite.svg#add-icon"/>
+      </svg>
+      Add Promo Code
+    </button>
+    <!-- <button class="button button--large button--primary" type="submit">
+      <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+        <use href="./img/sprite.svg#building-icon"/>
+      </svg>
+      Show Places
+    </button> -->
+    <a class="button button--large button--primary" href="hotels-listing-login.html">
+      <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+        <use href="./img/sprite.svg#building-icon"/>
+      </svg>
+      Show Places
+    </a>
+  </div>
+</form>
+          </div>
+        </div>
       </div>
     </div>
   </div>

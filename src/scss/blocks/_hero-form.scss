@@ -1,0 +1,80 @@
+.hero-form {
+  width: calc(var(--container-width) - (var(--container-padding) * 2));
+  padding: 32px 24px 48px;
+
+  background-color: var(--white);
+  border-radius: 16px;
+  box-shadow: var(--dark-shadow);
+
+  &--main {
+    padding: 16px 24px 32px;
+  }
+}
+
+.hero-form__title {
+  margin-bottom: 32px;
+
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.hero-form__tabs {
+  display: flex;
+  gap: 28px 65px;
+  margin-bottom: 48px;
+  padding: 12px 0;
+}
+
+.hero-form__tab {
+  position: relative;
+  padding-left: 32px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  &--flight {
+    background: url("./../img/icons/airplane-black.svg") no-repeat left;
+    background-size: 24px 24px;
+  }
+
+  &--stay {
+    background: url("./../img/icons/bed-black.svg") no-repeat left;
+    background-size: 24px 24px;
+  }
+
+  &:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    bottom: 0;
+    left: -32px;
+  
+    width: 1px;
+    height: 48px;
+    background-color: #d7e2ee;
+  }
+}
+
+.hero-form__tab.active {
+  pointer-events: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -28px;
+    left: 0;
+    right: 0;
+  
+    width: 100%;
+    height: 5px;
+    background-color: var(--accent);
+  }
+}
+
+.hero-form__wrapper {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
