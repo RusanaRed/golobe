@@ -1,0 +1,27 @@
+<div class="hero">
+  <div class="hero__intro hero__intro--main">
+    <div class="container">
+      <div class="hero__slogan hero__slogan--main">
+        <div class="hero__subtitle hero__subtitle--main">Helping Others</div>
+        <div class="hero__title">Live & Travel</div>
+        <div class="hero__text hero__text--main">Special offers to suit your plan</div>
+      </div>
+      
+      <div class="hero__form hero__form--main hero-form hero-form--main">
+        <div class="hero-form__tabs">
+          <button class="hero-form__tab hero-form__tab--flight active" type="button" data-tab="#flights">Flights</button>
+          <button class="hero-form__tab hero-form__tab--stay" type="button" data-tab="#stays">Stays</button>
+        </div>
+
+        <div class="hero-form__inner">
+          <div class="hero-form__wrapper hero-form__wrapper--active" id="flights">
+            @@include('elements/booking-flight-form-login.html')
+          </div>
+          <div class="hero-form__wrapper" id="stays">
+            @@include('elements/booking-hotel-form-login.html')
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

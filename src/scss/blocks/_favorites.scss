@@ -1,14 +1,14 @@
 .favorites {
   position: relative;
   padding-right: 21px;
-}
 
-.favorites::after {
-  content: "|";
-  position: absolute;
-  top: 13px;
-  right: 2px;
-
-  font-size: 14px;
-  font-weight: 600;
+  &::after {
+    content: "|";
+    position: absolute;
+    top: 13px;
+    right: 2px;
+  
+    font-size: 14px;
+    font-weight: 600;
+  }
 }
