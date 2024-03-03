@@ -1,4 +1,5 @@
 .nav {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -53,7 +54,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -33px;
+  bottom: -31px;
 
   display: block;
   width: 100%;
@@ -67,4 +68,11 @@
   justify-content: center;
   align-items: center;
   gap: 32px;
+}
+
+.nav__submenu {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  z-index: 2;
 }

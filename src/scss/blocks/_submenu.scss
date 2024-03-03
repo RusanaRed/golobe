@@ -1,0 +1,94 @@
+.submenu {
+  min-width: 329px;
+  padding: 32px;
+
+  background-color: var(--white);
+  border-radius: 0 0 12px 12px;
+}
+
+.submenu__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  margin-bottom: 50px;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    right: 0;
+    background-color: rgba(17, 34, 17, 0.25);
+  }
+}
+
+.submenu__body {
+  position: relative;
+  margin-bottom: 50px;
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(17, 34, 17, 0.25);
+  }
+}
+
+.submenu__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-right: 16px;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    
+    background: url("./../img/icons/arrow-right.svg") no-repeat center;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  &:hover {
+    font-weight: 500;
+
+    &::after {
+      right: -4px;
+    }
+  }
+}
+
+.submenu__icon {
+  margin-right: 8px;
+}
+
+.submenu__title {
+  font-size: 14px;
+}
+
+.submenu__button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    font-weight: 500;
+  }
+}
