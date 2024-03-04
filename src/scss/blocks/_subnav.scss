@@ -1,9 +1,14 @@
 .subnav {
+  display: none;
   min-width: 329px;
   padding: 32px;
 
   background-color: var(--white);
   border-radius: 0 0 12px 12px;
+
+  &.open {
+    display: block;
+  }
 }
 
 .subnav__header {
@@ -86,6 +91,8 @@
 .subnav__button {
   display: flex;
   align-items: center;
+
+  color: inherit;
   cursor: pointer;
 
   &:hover {
