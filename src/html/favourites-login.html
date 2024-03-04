@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Favourites</title>
+		<link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+	</head>
+  
+	<body>
+		@@include('blocks/header-favourites-login.html')
+
+    <main>
+      <section class="section favourites">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">Favourites</h2>
+          </div>
+
+          <div class="favourites__tabs">
+            <button class="favourites__tab" type="button" data-tab="#flights">
+              <div class="favourites__tab-title">Flights</div>
+              <div class="favourites__tab-count">2 marked</div>
+            </button>
+            <button class="favourites__tab active" type="button" data-tab="#places">
+              <div class="favourites__tab-title">Places</div>
+              <div class="favourites__tab-count">3 marked</div>
+            </button>
+          </div>
+    
+            <div class="favourites__content">
+              <div class="favourites__wrapper favourites__wrapper--active" id="flights">
+                <ul class="flight-search-section__list">
+                  <!-- @@include('cards/flight-card-1.html')
+                  @@include('cards/flight-card-2.html')
+                  @@include('cards/flight-card-3.html')
+                  @@include('cards/flight-card-4.html') -->
+                </ul>
+              </div>
+              <div class="favourites__wrapper" id="places">
+                <ul class="hotel-search-section__list">
+                  <!-- @@include('cards/hotel-card-1.html')
+                  @@include('cards/hotel-card-2.html')
+                  @@include('cards/hotel-card-3.html')
+                  @@include('cards/hotel-card-4.html') -->
+                </ul>
+              </div>
+            </div>
+        </div>
+      </section>
+    </main>
+
+		@@include('blocks/footer.html')
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>

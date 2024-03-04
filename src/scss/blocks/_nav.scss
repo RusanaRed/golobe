@@ -9,18 +9,33 @@
 .nav__list {
   display: flex;
   gap: 32px;
+  min-height: 45px;
 }
 
 .nav__item {
   position: relative;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 
   color: var(--text-color);
   
   &--white {
     color: var(--white);
+  }
+
+  &--favourites {
+    position: relative;
+  
+    &::before {
+      content: "|";
+      position: absolute;
+      top: 13px;
+      right: -20px;
+    
+      font-size: 14px;
+      font-weight: 600;
+    }
   }
 
   &:hover .nav__link,
@@ -33,7 +48,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -31px;
+    bottom: -21px;
   
     display: block;
     width: 100%;
