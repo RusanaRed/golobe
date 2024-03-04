@@ -1,4 +1,4 @@
-.submenu {
+.subnav {
   min-width: 329px;
   padding: 32px;
 
@@ -6,7 +6,7 @@
   border-radius: 0 0 12px 12px;
 }
 
-.submenu__header {
+.subnav__header {
   position: relative;
   display: flex;
   align-items: center;
@@ -26,7 +26,7 @@
   }
 }
 
-.submenu__body {
+.subnav__body {
   position: relative;
   margin-bottom: 50px;
 
@@ -43,7 +43,7 @@
   }
 }
 
-.submenu__link {
+.subnav__link {
   position: relative;
   display: flex;
   align-items: center;
@@ -75,15 +75,15 @@
   }
 }
 
-.submenu__icon {
+.subnav__icon {
   margin-right: 8px;
 }
 
-.submenu__title {
+.subnav__title {
   font-size: 14px;
 }
 
-.submenu__button {
+.subnav__button {
   display: flex;
   align-items: center;
   cursor: pointer;
