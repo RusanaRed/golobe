@@ -7,21 +7,21 @@
     <div class="hotel-search-section__listing">
       <div class="hotel-search-section__sorting sorting">
         <ul class="sorting__list">
-          <li class="sorting__item sorting__item--hotels active">
+          <li class="sorting__item sorting__item--hotels active" data-tab="#hotels">
             <div class="sorting__title">Hotels</div>
             <div class="sorting__capture">
-              <div class="sorting__places">257 places</div>
+              <div class="sorting__places">157 places</div>
             </div>
           </li>
 
-          <li class="sorting__item sorting__item--hotels">
+          <li class="sorting__item sorting__item--hotels" data-tab="#motels">
             <div class="sorting__title">Motels</div>
             <div class="sorting__capture">
               <div class="sorting__places">51 places</div>
             </div>
           </li>
 
-          <li class="sorting__item sorting__item--hotels">
+          <li class="sorting__item sorting__item--hotels" data-tab="#resorts">
             <div class="sorting__title">Resorts</div>
             <div class="sorting__capture">
               <div class="sorting__places">72 places</div>
@@ -30,59 +30,128 @@
         </ul>
       </div>
 
-      <div class="hotel-search-section__caption">
-        <div class="hotel-search-section__flights-number">Showing 4 of <span>257 places</span></div>
-        <div class="hotel-search-section__sort-by">
-          Sort by 
-          <select class="select-control" aria-label="">
-            <option class="sorting-option" selected>Recommended</option>
-            <option class="sorting-option">Cheapest</option>
-            <option class="sorting-option">Stars</option>
-            <option class="sorting-option">Rating</option>
-            <option class="sorting-option">Most expensive</option>
-          </select>
+      <div class="hotel-search-section__wrapper hotel-search-section__wrapper--active" id="hotels">
+        <div class="hotel-search-section__caption">
+          <div class="hotel-search-section__flights-number">Showing 4 of <span>157 places</span></div>
+          <div class="hotel-search-section__sort-by">
+            Sort by 
+            <select class="select-control" aria-label="">
+              <option class="sorting-option" selected>Recommended</option>
+              <option class="sorting-option">Cheapest</option>
+              <option class="sorting-option">Stars</option>
+              <option class="sorting-option">Rating</option>
+              <option class="sorting-option">Most expensive</option>
+            </select>
+          </div>
         </div>
+
+        <ul class="hotel-search-section__list">
+          <li class="hotel-card">
+            <div class="hotel-card__hotel-picture">
+              <img class="hotel-card__image" src="./../img/hotels/hotel-1.jpg" alt="">
+              <a class="hotel-card__images" href="#!">9 images</a>
+            </div>
+          
+            @@include('cards/hotel-card-1.html')
+          </li>
+
+          <li class="hotel-card">
+            <div class="hotel-card__hotel-picture">
+              <img class="hotel-card__image" src="./../../img/hotels/hotel-2.jpg" alt="">
+              <a class="hotel-card__images" href="#">6 images</a>
+            </div>
+
+            @@include('cards/hotel-card-2.html')
+          </li>
+
+          <li class="hotel-card">
+            <div class="hotel-card__hotel-picture">
+              <img class="hotel-card__image" src="./../../img/hotels/hotel-3.jpg" alt="">
+              <a class="hotel-card__images" href="#">7 images</a>
+            </div>
+          
+            @@include('cards/hotel-card-3.html')
+          </li>
+
+          <li class="hotel-card">
+            <div class="hotel-card__hotel-picture">
+              <img class="hotel-card__image" src="./../../img/hotels/hotel-2.jpg" alt="">
+              <a class="hotel-card__images" href="#">5 images</a>
+            </div>
+            
+            @@include('cards/hotel-card-4.html')
+          </li>
+        </ul>
+
+        <button class="hotel-search-section__button button button--dark button--large" type="button">Show more results</button>
       </div>
 
-      <ul class="hotel-search-section__list">
-        <li class="hotel-card">
-          <div class="hotel-card__hotel-picture">
-            <img class="hotel-card__image" src="./../img/hotels/hotel-1.jpg" alt="">
-            <a class="hotel-card__images" href="#!">9 images</a>
+      <div class="hotel-search-section__wrapper" id="motels">
+        <div class="hotel-search-section__caption">
+          <div class="hotel-search-section__flights-number">Showing 4 of <span>51 places</span></div>
+          <div class="hotel-search-section__sort-by">
+            Sort by 
+            <select class="select-control" aria-label="">
+              <option class="sorting-option" selected>Recommended</option>
+              <option class="sorting-option">Cheapest</option>
+              <option class="sorting-option">Stars</option>
+              <option class="sorting-option">Rating</option>
+              <option class="sorting-option">Most expensive</option>
+            </select>
           </div>
-        
-          @@include('cards/hotel-card-1.html')
-        </li>
+        </div>
 
-        <li class="hotel-card">
-          <div class="hotel-card__hotel-picture">
-            <img class="hotel-card__image" src="./../../img/hotels/hotel-2.jpg" alt="">
-            <a class="hotel-card__images" href="#">6 images</a>
+        <ul class="hotel-search-section__list">
+          <li class="hotel-card">
+            <div class="hotel-card__hotel-picture">
+              <img class="hotel-card__image" src="./../../img/hotels/hotel-2.jpg" alt="">
+              <a class="hotel-card__images" href="#">5 images</a>
+            </div>
+            
+            @@include('cards/hotel-card-4.html')
+          </li>
+        </ul>
+
+        <button class="hotel-search-section__button button button--dark button--large" type="button">Show more results</button>
+      </div>
+
+      <div class="hotel-search-section__wrapper" id="resorts">
+        <div class="hotel-search-section__caption">
+          <div class="hotel-search-section__flights-number">Showing 4 of <span>72 places</span></div>
+          <div class="hotel-search-section__sort-by">
+            Sort by 
+            <select class="select-control" aria-label="">
+              <option class="sorting-option" selected>Recommended</option>
+              <option class="sorting-option">Cheapest</option>
+              <option class="sorting-option">Stars</option>
+              <option class="sorting-option">Rating</option>
+              <option class="sorting-option">Most expensive</option>
+            </select>
           </div>
+        </div>
 
-          @@include('cards/hotel-card-2.html')
-        </li>
+        <ul class="hotel-search-section__list">
+          <li class="hotel-card">
+            <div class="hotel-card__hotel-picture">
+              <img class="hotel-card__image" src="./../../img/hotels/hotel-2.jpg" alt="">
+              <a class="hotel-card__images" href="#">6 images</a>
+            </div>
 
-        <li class="hotel-card">
-          <div class="hotel-card__hotel-picture">
-            <img class="hotel-card__image" src="./../../img/hotels/hotel-3.jpg" alt="">
-            <a class="hotel-card__images" href="#">7 images</a>
-          </div>
-        
-          @@include('cards/hotel-card-3.html')
-        </li>
+            @@include('cards/hotel-card-2.html')
+          </li>
 
-        <li class="hotel-card">
-          <div class="hotel-card__hotel-picture">
-            <img class="hotel-card__image" src="./../../img/hotels/hotel-2.jpg" alt="">
-            <a class="hotel-card__images" href="#">5 images</a>
-          </div>
+          <li class="hotel-card">
+            <div class="hotel-card__hotel-picture">
+              <img class="hotel-card__image" src="./../../img/hotels/hotel-3.jpg" alt="">
+              <a class="hotel-card__images" href="#">7 images</a>
+            </div>
           
-          @@include('cards/hotel-card-4.html')
-        </li>
-      </ul>
+            @@include('cards/hotel-card-3.html')
+          </li>
+        </ul>
 
-      <button class="hotel-search-section__button button button--dark button--large" type="button">Show more results</button>
+        <button class="hotel-search-section__button button button--dark button--large" type="button">Show more results</button>
+      </div>
     </div>
   </div>
 </div>

@@ -36,6 +36,14 @@
   box-shadow: var(--dark-shadow);
 }
 
+.hotel-search-section__wrapper {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
 .hotel-search-section__caption {
   display: flex;
   justify-content: space-between;

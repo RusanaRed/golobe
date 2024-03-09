@@ -20,6 +20,20 @@
       background-color: #d7e2ee;
       opacity: 0.5;
     }
+
+    &.active {
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: -10px;
+        bottom: -16px;
+        width: 180px;
+        height: 4px;
+        background-color: var(--accent);
+        opacity: 1;
+      }
+    }
   }
 
   &--hotels {
@@ -35,34 +49,20 @@
       background-color: #d7e2ee;
       opacity: 0.5;
     }
-  }
-}
 
-.sorting__item--flights.active {
+    &.active {
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: -10px;
-    bottom: -16px;
-    width: 180px;
-    height: 4px;
-    background-color: var(--accent);
-    opacity: 1;
-  }
-}
-
-.sorting__item--hotels.active {
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: -10px;
-    bottom: -16px;
-    width: 248px;
-    height: 4px;
-    background-color: var(--accent);
-    opacity: 1;
+      &::before {
+        content: "";
+        position: absolute;
+        left: -10px;
+        bottom: -16px;
+        width: 248px;
+        height: 4px;
+        background-color: var(--accent);
+        opacity: 1;
+      }
+    }
   }
 }
 

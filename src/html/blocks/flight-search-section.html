@@ -7,7 +7,7 @@
     <div class="flight-search-section__listing">
       <div class="flight-search-section__sorting sorting">
         <ul class="sorting__list">
-          <li class="sorting__item sorting__item--flights">
+          <li class="sorting__item sorting__item--flights active" data-tab="#cheapest">
             <div class="sorting__title">Cheapest</div>
             <div class="sorting__capture">
               <div class="sorting__price">$99</div>
@@ -15,7 +15,7 @@
             </div>
           </li>
 
-          <li class="sorting__item sorting__item--flights active">
+          <li class="sorting__item sorting__item--flights" data-tab="#best">
             <div class="sorting__title">Best</div>
             <div class="sorting__capture">
               <div class="sorting__price">$99</div>
@@ -23,7 +23,7 @@
             </div>
           </li>
 
-          <li class="sorting__item sorting__item--flights">
+          <li class="sorting__item sorting__item--flights" data-tab="#quickest">
             <div class="sorting__title">Quickest</div>
             <div class="sorting__capture">
               <div class="sorting__price">$99</div>
@@ -44,44 +44,61 @@
         <div class="flight-search-section__flights-number">
           Showing 4 of <span>17 flights</span>
         </div>
-
-        <!-- <div class="flight-search-section__sort-by">
-          Sort by 
-          <select class="select-control" aria-label="">
-            <option class="sorting-option" selected>Recommended</option>
-            <option class="sorting-option">Cheapest</option>
-            <option class="sorting-option">Quickest</option>
-            <option class="sorting-option">Other</option>
-            <option class="sorting-option">Other 2</option>
-          </select>
-        </div> -->
       </div>
 
-      <ul class="flight-search-section__list">
-        <li class="flight-card">
-          <div class="flight-card__airline-logo flight-card__airline-logo--emirates"></div>
+      <div class="flight-search-section__wrapper flight-search-section__wrapper--active" id="cheapest">
+        <ul class="flight-search-section__list">
+          <li class="flight-card">
+            <div class="flight-card__airline-logo flight-card__airline-logo--emirates"></div>
 
-          @@include('cards/flight-card-1.html')
-        </li>
+            @@include('cards/flight-card-1.html')
+          </li>
 
-        <li class="flight-card">
-          <div class="flight-card__airline-logo flight-card__airline-logo--flydubai"></div>
+          <li class="flight-card">
+            <div class="flight-card__airline-logo flight-card__airline-logo--flydubai"></div>
 
-          @@include('cards/flight-card-2.html')
-        </li>
+            @@include('cards/flight-card-2.html')
+          </li>
 
-        <li class="flight-card">
-          <div class="flight-card__airline-logo flight-card__airline-logo--qatar"></div>
+          <li class="flight-card">
+            <div class="flight-card__airline-logo flight-card__airline-logo--qatar"></div>
 
-          @@include('cards/flight-card-3.html')
-        </li>
+            @@include('cards/flight-card-3.html')
+          </li>
 
-        <li class="flight-card">
-          <div class="flight-card__airline-logo flight-card__airline-logo--etihad"></div>
+          <li class="flight-card">
+            <div class="flight-card__airline-logo flight-card__airline-logo--etihad"></div>
 
-          @@include('cards/flight-card-4.html')
-        </li>
-      </ul>
+            @@include('cards/flight-card-4.html')
+          </li>
+        </ul>
+      </div>
+
+      <div class="flight-search-section__wrapper" id="best">
+        <ul class="flight-search-section__list">
+          <li class="flight-card">
+            <div class="flight-card__airline-logo flight-card__airline-logo--flydubai"></div>
+
+            @@include('cards/flight-card-2.html')
+          </li>
+
+          <li class="flight-card">
+            <div class="flight-card__airline-logo flight-card__airline-logo--qatar"></div>
+
+            @@include('cards/flight-card-3.html')
+          </li>
+        </ul>
+      </div>
+
+      <div class="flight-search-section__wrapper" id="quickest">
+        <ul class="flight-search-section__list">
+          <li class="flight-card">
+            <div class="flight-card__airline-logo flight-card__airline-logo--etihad"></div>
+
+            @@include('cards/flight-card-4.html')
+          </li>
+        </ul>
+      </div>
 
       <button class="flight-search-section__button button button--dark button--large" type="button">Show more results</button>
     </div>
