@@ -30,6 +30,10 @@
   &--qatar {
     background-image: url("./../img/logos/qatar.svg");
   }
+
+  &--favourites {
+    min-width: 360px;
+  }
 }
 
 .flight-card__details {

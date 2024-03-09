@@ -22,32 +22,58 @@
           </div>
 
           <div class="favourites__tabs">
-            <button class="favourites__tab" type="button" data-tab="#flights">
+            <button class="favourites__tab" type="button">
               <div class="favourites__tab-title">Flights</div>
               <div class="favourites__tab-count">2 marked</div>
             </button>
-            <button class="favourites__tab active" type="button" data-tab="#places">
+            <button class="favourites__tab active" type="button">
               <div class="favourites__tab-title">Places</div>
               <div class="favourites__tab-count">3 marked</div>
             </button>
           </div>
     
             <div class="favourites__content">
-              <div class="favourites__wrapper favourites__wrapper--active" id="flights">
-                <ul class="flight-search-section__list">
-                  <!-- @@include('cards/flight-card-1.html')
-                  @@include('cards/flight-card-2.html')
-                  @@include('cards/flight-card-3.html')
-                  @@include('cards/flight-card-4.html') -->
-                </ul>
+              <div class="favourites__wrapper favourites__wrapper--active">
+                <li class="flight-card">
+                  <div class="flight-card__airline-logo flight-card__airline-logo--flydubai flight-card__airline-logo--favourites"></div>
+        
+                  @@include('blocks/cards/flight-card-2.html')
+                </li>
+
+                <li class="flight-card">
+                  <div class="flight-card__airline-logo flight-card__airline-logo--etihad flight-card__airline-logo--favourites"></div>
+        
+                  @@include('blocks/cards/flight-card-4.html')
+                </li>
               </div>
-              <div class="favourites__wrapper" id="places">
-                <ul class="hotel-search-section__list">
-                  <!-- @@include('cards/hotel-card-1.html')
-                  @@include('cards/hotel-card-2.html')
-                  @@include('cards/hotel-card-3.html')
-                  @@include('cards/hotel-card-4.html') -->
-                </ul>
+
+              <div class="favourites__wrapper">
+                <li class="hotel-card">
+                  <div class="hotel-card__hotel-picture hotel-card__hotel-picture--favourites">
+                    <img class="hotel-card__image" src="./../img/hotels/hotel-1-big.jpg" alt="">
+                    <a class="hotel-card__images" href="#!">9 images</a>
+                  </div>
+                
+                  @@include('blocks/cards/hotel-card-1.html')
+                </li>
+
+                <li class="hotel-card">
+                  <div class="hotel-card__hotel-picture hotel-card__hotel-picture--favourites">
+                    <img class="hotel-card__image" src="./../../img/hotels/hotel-2-big.jpg" alt="">
+                    <a class="hotel-card__images" href="#">6 images</a>
+                  </div>
+        
+                  @@include('blocks/cards/hotel-card-2.html')
+                </li>
+        
+                <li class="hotel-card">
+                  <div class="hotel-card__hotel-picture hotel-card__hotel-picture--favourites">
+                    <img class="hotel-card__image" src="./../../img/hotels/hotel-3-big.jpg" alt="">
+                    <a class="hotel-card__images" href="#">7 images</a>
+                  </div>
+                
+                  @@include('blocks/cards/hotel-card-3.html')
+                </li>
               </div>
             </div>
         </div>

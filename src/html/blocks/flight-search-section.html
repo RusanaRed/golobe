@@ -58,10 +58,29 @@
       </div>
 
       <ul class="flight-search-section__list">
-        @@include('cards/flight-card-1.html')
-        @@include('cards/flight-card-2.html')
-        @@include('cards/flight-card-3.html')
-        @@include('cards/flight-card-4.html')
+        <li class="flight-card">
+          <div class="flight-card__airline-logo flight-card__airline-logo--emirates"></div>
+
+          @@include('cards/flight-card-1.html')
+        </li>
+
+        <li class="flight-card">
+          <div class="flight-card__airline-logo flight-card__airline-logo--flydubai"></div>
+
+          @@include('cards/flight-card-2.html')
+        </li>
+
+        <li class="flight-card">
+          <div class="flight-card__airline-logo flight-card__airline-logo--qatar"></div>
+
+          @@include('cards/flight-card-3.html')
+        </li>
+
+        <li class="flight-card">
+          <div class="flight-card__airline-logo flight-card__airline-logo--etihad"></div>
+
+          @@include('cards/flight-card-4.html')
+        </li>
       </ul>
 
       <button class="flight-search-section__button button button--dark button--large" type="button">Show more results</button>

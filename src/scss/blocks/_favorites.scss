@@ -54,3 +54,19 @@
   color: var(--text-40);
   font-size: 14px;
 }
+
+.favourites__content {
+  margin-top: 40px;
+}
+
+.favourites__wrapper {
+  display: none;
+  width: 100%;
+
+
+  &--active {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
