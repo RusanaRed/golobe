@@ -22,18 +22,18 @@
           </div>
 
           <div class="favourites__tabs">
-            <button class="favourites__tab" type="button">
+            <button class="favourites__tab" type="button" data-tab="#fav-flights">
               <div class="favourites__tab-title">Flights</div>
               <div class="favourites__tab-count">2 marked</div>
             </button>
-            <button class="favourites__tab active" type="button">
+            <button class="favourites__tab active" type="button" data-tab="#fav-places">
               <div class="favourites__tab-title">Places</div>
               <div class="favourites__tab-count">3 marked</div>
             </button>
           </div>
     
             <div class="favourites__content">
-              <div class="favourites__wrapper favourites__wrapper--active">
+              <div class="favourites__wrapper favourites__wrapper--active" id="fav-flights">
                 <li class="flight-card">
                   <div class="flight-card__airline-logo flight-card__airline-logo--flydubai flight-card__airline-logo--favourites"></div>
         
@@ -47,7 +47,7 @@
                 </li>
               </div>
 
-              <div class="favourites__wrapper">
+              <div class="favourites__wrapper" id="fav-places">
                 <li class="hotel-card">
                   <div class="hotel-card__hotel-picture hotel-card__hotel-picture--favourites">
                     <img class="hotel-card__image" src="./../img/hotels/hotel-1-big.jpg" alt="">

@@ -1,5 +1,7 @@
 .favourites__tabs {
   display: flex;
+  gap: 48px;
+
   margin-bottom: 40px;
   padding: 17.5px 24px;
 
@@ -15,12 +17,11 @@
   text-align: left;
 
   &:not(:first-child) {
-    padding-left: 48px;
     
     &::before {
       content: "";
       position: absolute;
-      left: 24px;
+      left: -24px;
       bottom: 0;
     
       display: block;
@@ -33,11 +34,11 @@
   &.active::after {
     content: "";
     position: absolute;
-    left: 40px;
+    left: -9px;
     bottom: -18px;
   
     display: block;
-    width: calc(100% - 32px);
+    width: calc(100% + 9px);
     height: 5px;
   
     background-color: var(--accent);
@@ -62,7 +63,6 @@
 .favourites__wrapper {
   display: none;
   width: 100%;
-
 
   &--active {
     display: flex;
