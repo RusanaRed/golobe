@@ -1,31 +1,35 @@
 <header class="header">
-    <div class="container">
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item active">
-              <svg class="nav__icon nav__icon--black" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <use href="./img/sprite.svg#airplane"/>
-              </svg>
-              <a class="nav__link">Find Flight</a>
-            </li>
-
-            <li class="nav__item">
-              <svg class="nav__icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <use href="./img/sprite.svg#bed"/>
-              </svg>
-              <a class="nav__link" href="hotels-search.html">Find Stays</a>
-            </li>
-          </ul>
-          
-          <a class="logo" href="index.html">
-            <img loading="lazy" src="./img/icons/logo-black.svg" width="111" height="36" alt="Golobe agency logo">
+  <div class="container">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item active">
+          <a class="nav__link link">
+            <svg class="nav__icon nav__icon--black" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <use href="./img/sprite.svg#airplane"/>
+            </svg>
+            Find Flight
           </a>
+        </li>
 
-          <div class="nav__buttons">
-            <a class="login-button button button--secondary button--large" href="flights-listing-login.html">Login</a>
-            <a class="signup-button button button--primary button--large" href="#!">Sign up</a>
-          </div>
-        </nav>
-    </div>
+        <li class="nav__item">
+          <a class="nav__link link" href="hotels-search.html">
+            <svg class="nav__icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <use href="./img/sprite.svg#bed"/>
+            </svg>
+            Find Stays
+          </a>
+        </li>
+      </ul>
+      
+      <a class="logo" href="index.html">
+        <img loading="lazy" src="./img/icons/logo-black.svg" width="111" height="36" alt="Golobe agency logo">
+      </a>
+
+      <div class="nav__buttons">
+        <a class="login-button button button--ghost button--large" href="flights-listing-login.html">Login</a>
+        <a class="signup-button button button--primary button--large" href="#!">Sign up</a>
+      </div>
+    </nav>
+  </div>
 </header>
-@@include('mobile-nav.html')
+<!-- @@include('mobile-nav.html') -->

@@ -1,10 +1,4 @@
-.login-button {
-  font-weight: 600;
-
-  &--white {
-    color: var(--white);
-  }
-
+.logo {
   &:focus-visible {
     outline: 1px solid var(--accent);
     outline-offset: 3px;

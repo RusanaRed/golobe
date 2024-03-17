@@ -27,19 +27,15 @@
 
 .hero-form__tab {
   position: relative;
-  padding-left: 32px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 
   font-size: 16px;
   font-weight: 600;
 
-  &--flight {
-    background: url("./../img/icons/airplane-black.svg") no-repeat left;
-    background-size: 24px 24px;
-  }
-
-  &--stay {
-    background: url("./../img/icons/bed-black.svg") no-repeat left;
-    background-size: 24px 24px;
+  &:focus-visible {
+    color: var(--accent-focus);
   }
 
   &:not(:first-child)::before {

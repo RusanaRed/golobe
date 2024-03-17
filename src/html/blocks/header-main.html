@@ -1,31 +1,35 @@
 <header class="header header--main">
-    <div class="container">
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item nav__item--white">
-              <svg class="nav__icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <use href="./img/sprite.svg#airplane"/>
-              </svg>
-              <a class="nav__link nav__link--white" href="flights-search.html">Find Flight</a>
-            </li>
-
-            <li class="nav__item nav__item--white">
-              <svg class="nav__icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <use href="./img/sprite.svg#bed"/>
-              </svg>
-              <a class="nav__link nav__link--white" href="hotels-search.html">Find Stays</a>
-            </li>
-          </ul>
-          
-          <a class="logo" href="index.html">
-            <img loading="lazy" src="./img/icons/logo-white.svg" width="111" height="36" alt="Golobe agency logo">
+  <div class="container">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link nav__link--white link" href="flights-search.html">
+            <svg class="nav__icon nav__icon--black" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <use href="./img/sprite.svg#airplane"/>
+            </svg>
+            Find Flight
           </a>
+        </li>
+        
+        <li class="nav__item">
+          <a class="nav__link nav__link--white link" href="hotels-search.html">
+            <svg class="nav__icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <use href="./img/sprite.svg#bed"/>
+            </svg>
+            Find Stays
+          </a>
+        </li>
+      </ul>
+      
+      <a class="logo" href="index.html">
+        <img loading="lazy" src="./img/icons/logo-white.svg" width="111" height="36" alt="Golobe agency logo">
+      </a>
 
-          <div class="nav__buttons">
-            <a class="login-button login-button--white button button--secondary button--large" href="index-login.html">Login</a>
-            <a class="signup-button signup-button--white button button--primary button--large" href="#!">Sign up</a>
-          </div>
-        </nav>
-    </div>
+      <div class="nav__buttons">
+        <a class="login-button login-button--white button button--ghost button--large" href="index-login.html">Login</a>
+        <a class="signup-button signup-button--white button button--primary button--large" href="#!">Sign up</a>
+      </div>
+    </nav>
+  </div>
 </header>
-@@include('mobile-nav.html')
+<!-- @@include('mobile-nav.html') -->

@@ -45,14 +45,14 @@
 }
 
 .card-review__link {
-  display: block;
+  display: flex;
+  justify-content: end;
   margin-bottom: 16px;
 
   color: inherit;
   font-family: var(--font-accent);
   font-size: 14px;
   font-weight: 700;
-  text-align: right;
 }
 
 .card-review__rating {

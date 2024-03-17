@@ -4,13 +4,27 @@
   align-items: center;
 }
 
-.recent-searches__item {
-  
-}
 .recent-searches__link {
   display: flex;
 
   color: var(--text-color);
+
+  transition: color 0.2s ease-in-out;
+
+  &:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 8px;
+    border-radius: 4px;
+    color: var(--accent-hover);
+  }
+
+  &:hover {
+    color: var(--accent-hover);
+  }
+
+  &:active {
+    color: var(--accent-active);
+  }
 }
 
 .recent-searches__picture {

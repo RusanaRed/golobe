@@ -1,6 +1,7 @@
 .account__avatar {
   width: 45px;
   height: 45px;
+  margin-right: 4px;
   overflow: hidden;
 
   border-radius: 45px;
@@ -8,6 +9,7 @@
   &--big {
     width: 64px;
     height: 64px;
+    margin-right: 0;
   }
 }
 

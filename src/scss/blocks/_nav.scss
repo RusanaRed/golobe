@@ -8,44 +8,18 @@
 
 .nav__list {
   display: flex;
+  align-items: center;
   gap: 32px;
   min-height: 45px;
 }
 
 .nav__item {
   position: relative;
-  display: flex;
-  /* justify-content: center; */
-  align-items: center;
-
   color: var(--text-color);
-  
-  &--white {
-    color: var(--white);
-  }
-
-  &--favourites {
-    position: relative;
-  
-    &::before {
-      content: "|";
-      position: absolute;
-      top: 13px;
-      right: -20px;
-    
-      font-size: 14px;
-      font-weight: 600;
-    }
-  }
 
   &--account {
     height: 48px;
     padding-left: 21px;
-  }
-
-  &:hover .nav__link,
-  &:hover .nav__icon {
-    color: var(--accent);
   }
 
   &.active::after {
@@ -53,7 +27,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -23px;
+    bottom: -33px;
   
     display: block;
     width: 100%;
@@ -61,30 +35,38 @@
   
     background-color: var(--accent);
   }
-
-  &.active:hover .nav__link,
-  &.active:hover .nav__icon {
-    color: var(--text-color);
-  }
 }
 
 .nav__icon {
+  margin-right: 4px;
   cursor: pointer;
-
-  transition: color 0.2s ease-in-out;
 }
 
 .nav__link {
-  padding-left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   color: var(--text-color);
   font-size: 14px;
   font-weight: 600;
 
-  transition: color 0.2s ease-in-out;
-
   &--white {
     color: var(--white);
+  }
+
+  &--favourites {
+    position: relative;
+
+    &::before {
+      content: "|";
+      position: absolute;
+      top: 4px;
+      right: -20px;
+    
+      font-size: 14px;
+      font-weight: 600;
+    }
   }
 }
 

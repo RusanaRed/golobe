@@ -13,44 +13,40 @@
   
 	<body>
 		<header class="header header--main">
-    <div class="container">
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item nav__item--white">
-              <svg class="nav__icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <use href="./img/sprite.svg#airplane"/>
-              </svg>
-              <a class="nav__link nav__link--white" href="flights-search.html">Find Flight</a>
-            </li>
-
-            <li class="nav__item nav__item--white">
-              <svg class="nav__icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <use href="./img/sprite.svg#bed"/>
-              </svg>
-              <a class="nav__link nav__link--white" href="hotels-search.html">Find Stays</a>
-            </li>
-          </ul>
-          
-          <a class="logo" href="index.html">
-            <img loading="lazy" src="./img/icons/logo-white.svg" width="111" height="36" alt="Golobe agency logo">
+  <div class="container">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link nav__link--white link" href="flights-search.html">
+            <svg class="nav__icon nav__icon--black" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <use href="./img/sprite.svg#airplane"/>
+            </svg>
+            Find Flight
           </a>
+        </li>
+        
+        <li class="nav__item">
+          <a class="nav__link nav__link--white link" href="hotels-search.html">
+            <svg class="nav__icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <use href="./img/sprite.svg#bed"/>
+            </svg>
+            Find Stays
+          </a>
+        </li>
+      </ul>
+      
+      <a class="logo" href="index.html">
+        <img loading="lazy" src="./img/icons/logo-white.svg" width="111" height="36" alt="Golobe agency logo">
+      </a>
 
-          <div class="nav__buttons">
-            <a class="login-button login-button--white button button--secondary button--large" href="index-login.html">Login</a>
-            <a class="signup-button signup-button--white button button--primary button--large" href="#!">Sign up</a>
-          </div>
-        </nav>
-    </div>
+      <div class="nav__buttons">
+        <a class="login-button login-button--white button button--ghost button--large" href="index-login.html">Login</a>
+        <a class="signup-button signup-button--white button button--primary button--large" href="#!">Sign up</a>
+      </div>
+    </nav>
+  </div>
 </header>
-<div class="mobile-nav">
-	<ul class="mobile-nav__list">
-		<li><a href="#" class="active">Home</a></li>
-		<li><a href="#!">Services</a></li>
-		<li><a href="#!">About</a></li>
-		<li><a href="#!">Projects</a></li>
-		<li><a href="#!">Contact</a></li>
-	</ul>
-</div>
+
 
 
     <main>
@@ -65,8 +61,18 @@
       
       <div class="hero__form hero__form--main hero-form hero-form--main">
         <div class="hero-form__tabs">
-          <button class="hero-form__tab hero-form__tab--flight active" type="button" data-tab="#flights">Flights</button>
-          <button class="hero-form__tab hero-form__tab--stay" type="button" data-tab="#stays">Stays</button>
+          <button class="hero-form__tab hero-form__tab--flight active" type="button" data-tab="#flights">
+            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <use href="./img/sprite.svg#airplane"/>
+            </svg>
+            Flights
+          </button>
+          <button class="hero-form__tab hero-form__tab--stay" type="button" data-tab="#stays">
+            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <use href="./img/sprite.svg#bed"/>
+            </svg>
+            Stays
+          </button>
         </div>
 
         <div class="hero-form__inner">
@@ -93,7 +99,7 @@
   </label>
 
   <div class="booking-flight-form__buttons">
-    <button class="button button--large button--secondary" type="button">
+    <button class="button button--large button--ghost" type="button">
       <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
         <use href="./img/sprite.svg#add-icon"/>
       </svg>
@@ -137,7 +143,7 @@
   </label>
 
   <div class="booking-flight-form__buttons">
-    <button class="button button--large button--secondary" type="button">
+    <button class="button button--large button--ghost" type="button">
       <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
         <use href="./img/sprite.svg#add-icon"/>
       </svg>
@@ -170,7 +176,7 @@
         <h2 class="section__title">Plan your perfect trip</h2>
         <p class="section__description">Search Flights &amp; Places Hire to our most popular destinations</p>
       </div>
-      <a class="section__link button" href="#!">See more places</a>
+      <a class="section__link button button--secondary" href="#!">See more places</a>
     </div>
 
     <ul class="popular-destinations__list">
@@ -179,9 +185,9 @@
         <div class="popular-destinations__info">
           <h3 class="popular-destinations__title">Istanbul, Turkey</h3>
           <div class="popular-destinations__links">
-            <a class="popular-destinations__link" href="#!">Flights</a>
-            <a class="popular-destinations__link" href="#!">Hotels</a>
-            <a class="popular-destinations__link" href="#!">Resorts</a>
+            <a class="popular-destinations__link link" href="#!">Flights</a>
+            <a class="popular-destinations__link link" href="#!">Hotels</a>
+            <a class="popular-destinations__link link" href="#!">Resorts</a>
           </div>
         </div>
       </li>
@@ -191,9 +197,9 @@
         <div class="popular-destinations__info">
           <h3 class="popular-destinations__title">Sydney, Australia</h3>
           <div class="popular-destinations__links">
-            <a class="popular-destinations__link" href="#!">Flights</a>
-            <a class="popular-destinations__link" href="#!">Hotels</a>
-            <a class="popular-destinations__link" href="#!">Resorts</a>
+            <a class="popular-destinations__link link" href="#!">Flights</a>
+            <a class="popular-destinations__link link" href="#!">Hotels</a>
+            <a class="popular-destinations__link link" href="#!">Resorts</a>
           </div>
         </div>
       </li>
@@ -203,9 +209,9 @@
         <div class="popular-destinations__info">
           <h3 class="popular-destinations__title">Baku, Azerbaijan</h3>
           <div class="popular-destinations__links">
-            <a class="popular-destinations__link" href="#!">Flights</a>
-            <a class="popular-destinations__link" href="#!">Hotels</a>
-            <a class="popular-destinations__link" href="#!">Resorts</a>
+            <a class="popular-destinations__link link" href="#!">Flights</a>
+            <a class="popular-destinations__link link" href="#!">Hotels</a>
+            <a class="popular-destinations__link link" href="#!">Resorts</a>
           </div>
         </div>
       </li>
@@ -215,9 +221,9 @@
         <div class="popular-destinations__info">
           <h3 class="popular-destinations__title">Mal&eacute;, Maldives</h3>
           <div class="popular-destinations__links">
-            <a class="popular-destinations__link" href="#!">Flights</a>
-            <a class="popular-destinations__link" href="#!">Hotels</a>
-            <a class="popular-destinations__link" href="#!">Resorts</a>
+            <a class="popular-destinations__link link" href="#!">Flights</a>
+            <a class="popular-destinations__link link" href="#!">Hotels</a>
+            <a class="popular-destinations__link link" href="#!">Resorts</a>
           </div>
         </div>
       </li>
@@ -227,9 +233,9 @@
         <div class="popular-destinations__info">
           <h3 class="popular-destinations__title">Paris, France</h3>
           <div class="popular-destinations__links">
-            <a class="popular-destinations__link" href="#!">Flights</a>
-            <a class="popular-destinations__link" href="#!">Hotels</a>
-            <a class="popular-destinations__link" href="#!">Resorts</a>
+            <a class="popular-destinations__link link" href="#!">Flights</a>
+            <a class="popular-destinations__link link" href="#!">Hotels</a>
+            <a class="popular-destinations__link link" href="#!">Resorts</a>
           </div>
         </div>
       </li>
@@ -239,9 +245,9 @@
         <div class="popular-destinations__info">
           <h3 class="popular-destinations__title">New York, US</h3>
           <div class="popular-destinations__links">
-            <a class="popular-destinations__link" href="#!">Flights</a>
-            <a class="popular-destinations__link" href="#!">Hotels</a>
-            <a class="popular-destinations__link" href="#!">Resorts</a>
+            <a class="popular-destinations__link link" href="#!">Flights</a>
+            <a class="popular-destinations__link link" href="#!">Hotels</a>
+            <a class="popular-destinations__link link" href="#!">Resorts</a>
           </div>
         </div>
       </li>
@@ -251,9 +257,9 @@
         <div class="popular-destinations__info">
           <h3 class="popular-destinations__title">London, UK</h3>
           <div class="popular-destinations__links">
-            <a class="popular-destinations__link" href="#!">Flights</a>
-            <a class="popular-destinations__link" href="#!">Hotels</a>
-            <a class="popular-destinations__link" href="#!">Resorts</a>
+            <a class="popular-destinations__link link" href="#!">Flights</a>
+            <a class="popular-destinations__link link" href="#!">Hotels</a>
+            <a class="popular-destinations__link link" href="#!">Resorts</a>
           </div>
         </div>
       </li>
@@ -263,9 +269,9 @@
         <div class="popular-destinations__info">
           <h3 class="popular-destinations__title">Tokyo, Japan</h3>
           <div class="popular-destinations__links">
-            <a class="popular-destinations__link" href="#!">Flights</a>
-            <a class="popular-destinations__link" href="#!">Hotels</a>
-            <a class="popular-destinations__link" href="#!">Resorts</a>
+            <a class="popular-destinations__link link" href="#!">Flights</a>
+            <a class="popular-destinations__link link" href="#!">Hotels</a>
+            <a class="popular-destinations__link link" href="#!">Resorts</a>
           </div>
         </div>
       </li>
@@ -275,15 +281,16 @@
         <div class="popular-destinations__info">
           <h3 class="popular-destinations__title">Dubai, UAE</h3>
           <div class="popular-destinations__links">
-            <a class="popular-destinations__link" href="#!">Flights</a>
-            <a class="popular-destinations__link" href="#!">Hotels</a>
-            <a class="popular-destinations__link" href="#!">Resorts</a>
+            <a class="popular-destinations__link link" href="#!">Flights</a>
+            <a class="popular-destinations__link link" href="#!">Hotels</a>
+            <a class="popular-destinations__link link" href="#!">Resorts</a>
           </div>
         </div>
       </li>
     </ul>
   </div>
 </section>
+
       <div class="select-section">
   <div class="container">
     <ul class="select-section__list">
@@ -326,7 +333,7 @@
         <h2 class="section__title">Reviews</h2>
         <p class="section__description">What people says about Golobe facilities</p>
       </div>
-      <a class="section__link button" href="#!">See all</a>
+      <a class="section__link button button--secondary" href="#!">See all</a>
     </div>
   </div>
 
@@ -336,7 +343,7 @@
         <div class="swiper-slide"><li class="reviews__card card-review">
   <h3 class="card-review__title">“A real sense of community, nurtured”</h3>
   <p class="card-review__text">Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.</p>
-  <a class="card-review__link" href="#!">View more</a>
+  <a class="card-review__link link" href="#!">View more</a>
   <div class="card-review__rating card-review__rating--five"></div>
   <div class="card-review__author">Olga</div>
   <div class="card-review__company">Weave Studios – Kai Tak</div>
@@ -344,11 +351,12 @@
   <div class="card-review__picture">
     <img class="card-review__img" src="./img/reviews/reviews-1.jpg" alt="">
   </div>
-</li></div>
+</li>
+</div>
         <div class="swiper-slide"><li class="reviews__card card-review">
   <h3 class="card-review__title">“The facilities are superb. Clean, slick, bright.”</h3>
   <p class="card-review__text">“A real sense of community, nurtured” Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.</p>
-  <a class="card-review__link" href="#!">View more</a>
+  <a class="card-review__link link" href="#!">View more</a>
   <div class="card-review__rating card-review__rating--five"></div>
   <div class="card-review__author">Thomas</div>
   <div class="card-review__company">Weave Studios – Olympic</div>
@@ -356,11 +364,12 @@
   <div class="card-review__picture">
     <img src="./img/reviews/reviews-2.jpg" alt="">
   </div>
-</li></div>
+</li>
+</div>
         <div class="swiper-slide"><li class="reviews__card card-review">
   <h3 class="card-review__title">“A real sense of community, nurtured”</h3>
   <p class="card-review__text">Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.</p>
-  <a class="card-review__link" href="#!">View more</a>
+  <a class="card-review__link link" href="#!">View more</a>
   <div class="card-review__rating card-review__rating--five"></div>
   <div class="card-review__author">Eliot</div>
   <div class="card-review__company">Weave Studios – Kai Tak</div>
@@ -368,11 +377,12 @@
   <div class="card-review__picture">
     <img src="./img/reviews/reviews-3.jpg" alt="">
   </div>
-</li></div>
+</li>
+</div>
         <div class="swiper-slide"><li class="reviews__card card-review">
   <h3 class="card-review__title">“The facilities are superb. Clean, slick, bright.”</h3>
   <p class="card-review__text">“A real sense of community, nurtured” Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.</p>
-  <a class="card-review__link" href="#!">View more</a>
+  <a class="card-review__link link" href="#!">View more</a>
   <div class="card-review__rating card-review__rating--five"></div>
   <div class="card-review__author">Thomas</div>
   <div class="card-review__company">Weave Studios – Olympic</div>
@@ -380,11 +390,12 @@
   <div class="card-review__picture">
     <img src="./img/reviews/reviews-2.jpg" alt="">
   </div>
-</li></div>
+</li>
+</div>
         <div class="swiper-slide"><li class="reviews__card card-review">
   <h3 class="card-review__title">“The facilities are superb. Clean, slick, bright.”</h3>
   <p class="card-review__text">“A real sense of community, nurtured” Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.</p>
-  <a class="card-review__link" href="#!">View more</a>
+  <a class="card-review__link link" href="#!">View more</a>
   <div class="card-review__rating card-review__rating--five"></div>
   <div class="card-review__author">Thomas</div>
   <div class="card-review__company">Weave Studios – Olympic</div>
@@ -392,11 +403,12 @@
   <div class="card-review__picture">
     <img src="./img/reviews/reviews-2.jpg" alt="">
   </div>
-</li></div>
+</li>
+</div>
         <div class="swiper-slide"><li class="reviews__card card-review">
   <h3 class="card-review__title">“The facilities are superb. Clean, slick, bright.”</h3>
   <p class="card-review__text">“A real sense of community, nurtured” Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.</p>
-  <a class="card-review__link" href="#!">View more</a>
+  <a class="card-review__link link" href="#!">View more</a>
   <div class="card-review__rating card-review__rating--five"></div>
   <div class="card-review__author">Thomas</div>
   <div class="card-review__company">Weave Studios – Olympic</div>
@@ -404,11 +416,12 @@
   <div class="card-review__picture">
     <img src="./img/reviews/reviews-2.jpg" alt="">
   </div>
-</li></div>
+</li>
+</div>
         <div class="swiper-slide"><li class="reviews__card card-review">
   <h3 class="card-review__title">“The facilities are superb. Clean, slick, bright.”</h3>
   <p class="card-review__text">“A real sense of community, nurtured” Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.</p>
-  <a class="card-review__link" href="#!">View more</a>
+  <a class="card-review__link link" href="#!">View more</a>
   <div class="card-review__rating card-review__rating--five"></div>
   <div class="card-review__author">Thomas</div>
   <div class="card-review__company">Weave Studios – Olympic</div>
@@ -416,7 +429,8 @@
   <div class="card-review__picture">
     <img src="./img/reviews/reviews-2.jpg" alt="">
   </div>
-</li></div>
+</li>
+</div>
       </div>
     </div>
   </div>
@@ -442,35 +456,35 @@
 
     <div class="footer__content">
       <div class="footer__social">
-        <a class="logo" href="index.html">
+        <div class="logo">
           <img loading="lazy" src="./img/icons/logo-big.svg" width="120" height="40" alt="Golobe agency logo">
-        </a>
+        </div>
 
         <ul class="footer__social-list">
           <li class="footer__social-item">
-            <a class="footer__social-link" href="#">
-              <svg width="20" height="21" viewBox="0 0 20 21" aria-hidden="true" focusable="false">
+            <a class="footer__social-link" href="#!">
+              <svg class="footer__social-icon" width="20" height="21" viewBox="0 0 20 21" aria-hidden="true" focusable="false">
                 <use href="./img/sprite.svg#facebook-icon"/>
               </svg>
             </a>
           </li>
           <li class="footer__social-item">
-            <a class="footer__social-link" href="#">
-              <svg width="20" height="21" viewBox="0 0 20 21" aria-hidden="true" focusable="false">
+            <a class="footer__social-link" href="#!">
+              <svg class="footer__social-icon" width="20" height="21" viewBox="0 0 20 21" aria-hidden="true" focusable="false">
                 <use href="./img/sprite.svg#twitter-icon"/>
               </svg>
             </a>
           </li>
           <li class="footer__social-item">
-            <a class="footer__social-link" href="#">
-              <svg width="20" height="21" viewBox="0 0 20 21" aria-hidden="true" focusable="false">
+            <a class="footer__social-link" href="#!">
+              <svg class="footer__social-icon" width="20" height="21" viewBox="0 0 20 21" aria-hidden="true" focusable="false">
                 <use href="./img/sprite.svg#youtube-icon"/>
               </svg>
             </a>
           </li>
           <li class="footer__social-item">
-            <a class="footer__social-link" href="#">
-              <svg width="20" height="21" viewBox="0 0 20 21" aria-hidden="true" focusable="false">
+            <a class="footer__social-link" href="#!">
+              <svg class="footer__social-icon" width="20" height="21" viewBox="0 0 20 21" aria-hidden="true" focusable="false">
                 <use href="./img/sprite.svg#instagram-icon"/>
               </svg>
             </a>
@@ -486,7 +500,7 @@
               <a class="footer-nav__link" href="#">Canada</a>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link" href="#">Alaksa</a>
+              <a class="footer-nav__link" href="#">Alaska</a>
             </li>
             <li class="footer-nav__item">
               <a class="footer-nav__link" href="#">France</a>
