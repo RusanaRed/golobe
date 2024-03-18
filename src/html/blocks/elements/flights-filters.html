@@ -1,147 +1,158 @@
-<form class="flights-filters" action="/" method="get">
-  <div class="flights-filters__title">Filters</div>
+<form class="filters" action="/" method="get" id="flights-filters-form">
+  <div class="filters__title">Filters</div>
   
-  <fieldset class="flights-filters__group">
-    <div class="flights-filters__filter-title">
-      <legend class="flights-filters__filter-name">Price</legend>
-      <button class="flights-filters__collapse-button" type="button"></button>
+  <fieldset class="filters__group">
+    <div class="filters__filter-header">
+      <legend class="filters__filter-name">Price</legend>
+      <button class="filters__collapse-button" type="button"></button>
     </div>
-    <div class="range">
-      <div class="range_bar" style="left: 0; width: 319px;">
-        <button class="range_toggle range_toggle--min" type="button"></button>
-        <span class="range_label range_label--min">$50</span>
-        <button class="range_toggle range_toggle--max" type="button"></button>
-        <span class="range_label range_label--max">$1200</span>
+
+    <div class="filters__filter-content">
+      <div class="range">
+        <div class="range_bar" style="left: 0; width: 319px;">
+          <button class="range_toggle range_toggle--min" type="button"></button>
+          <span class="range_label range_label--min">$50</span>
+          <button class="range_toggle range_toggle--max" type="button"></button>
+          <span class="range_label range_label--max">$1200</span>
+        </div>
       </div>
     </div>
   </fieldset>
 
-  <fieldset class="flights-filters__group">
-    <div class="flights-filters__filter-title">
-      <legend class="flights-filters__filter-name">Departure Time</legend>
-      <button class="flights-filters__collapse-button" type="button"></button>
+  <fieldset class="filters__group">
+    <div class="filters__filter-header">
+      <legend class="filters__filter-name">Departure Time</legend>
+      <button class="filters__collapse-button" type="button"></button>
     </div>
 
-    <div class="range">
-      <div class="range_bar" style="left: 0; width: 319px;">
-        <button class="range_toggle range_toggle--min" type="button"></button>
-        <button class="range_toggle range_toggle--max" type="button"></button>
-        <span class="range_label range_label--min">12:01Am</span>
-        <span class="range_label range_label--max">11:56Pm</span>
+    <div class="filters__filter-content">
+      <div class="range">
+        <div class="range_bar" style="left: 0; width: 319px;">
+          <button class="range_toggle range_toggle--min" type="button"></button>
+          <button class="range_toggle range_toggle--max" type="button"></button>
+          <span class="range_label range_label--min">12:01Am</span>
+          <span class="range_label range_label--max">11:56Pm</span>
+        </div>
       </div>
     </div>
   </fieldset>
 
-  <fieldset class="flights-filters__group">
-    <div class="flights-filters__filter-title">
-      <legend class="flights-filters__filter-name">Rating</legend>
-      <button class="flights-filters__collapse-button" type="button"></button>
+  <fieldset class="filters__group">
+    <div class="filters__filter-header">
+      <legend class="filters__filter-name">Rating</legend>
+      <button class="filters__collapse-button" type="button"></button>
     </div>
 
-    <ul class="flights-filters__radio-list">
-      <li class="flights-filters__radio-item">
-        <button class="button button--secondary button--small button--mini">0+</button>
-      </li>
+    <div class="filters__filter-content">
+      <ul class="filters__radio-list">
+        <li class="filters__radio-item">
+          <button class="button button--secondary button--small button--mini">0+</button>
+        </li>
 
-      <li class="flights-filters__radio-item">
-        <button class="button button--secondary button--small button--mini">1+</button>
-      </li>
+        <li class="filters__radio-item">
+          <button class="button button--secondary button--small button--mini">1+</button>
+        </li>
 
-      <li class="flights-filters__radio-item">
-        <button class="button button--secondary button--small button--mini">2+</button>
-      </li>
+        <li class="filters__radio-item">
+          <button class="button button--secondary button--small button--mini">2+</button>
+        </li>
 
-      <li class="flights-filters__radio-item">
-        <button class="button button--secondary button--small button--mini">3+</button>
-      </li>
+        <li class="filters__radio-item">
+          <button class="button button--secondary button--small button--mini">3+</button>
+        </li>
 
-      <li class="flights-filters__radio-item">
-        <button class="button button--secondary button--small button--mini">4+</button>
-      </li>
-    </ul>
+        <li class="filters__radio-item">
+          <button class="button button--secondary button--small button--mini">4+</button>
+        </li>
+      </ul>
+    </div>
   </fieldset>
 
-  <fieldset class="flights-filters__group">
-    <div class="flights-filters__filter-title">
-      <legend class="flights-filters__filter-name">Airlines</legend>
-      <button class="flights-filters__collapse-button" type="button"></button>
+  <fieldset class="filters__group">
+    <div class="filters__filter-header">
+      <legend class="filters__filter-name">Airlines</legend>
+      <button class="filters__collapse-button" type="button"></button>
     </div>
 
-    <ul class="flights-filters__list">
-      <li class="flights-filters__item">
-        <label class="control">
-          <input class="visually-hidden control__input" type="checkbox" name="emirated">
-          <span class="control__mark"></span>
-          <span class="control__label">Emirated</span>
-        </label>
-      </li>
+    <div class="filters__filter-content">
+      <ul class="filters__list">
+        <li class="filters__item">
+          <label class="control">
+            <input class="visually-hidden control__input" type="checkbox" name="emirated">
+            <span class="control__mark"></span>
+            <span class="control__label">Emirated</span>
+          </label>
+        </li>
 
-      <li class="flights-filters__item">
-        <label class="control">
-          <input class="visually-hidden control__input" type="checkbox" name="flydubai">
-          <span class="control__mark"></span>
-          <span class="control__label">Fly Dubai</span>
-        </label>
-      </li>
+        <li class="filters__item">
+          <label class="control">
+            <input class="visually-hidden control__input" type="checkbox" name="flydubai">
+            <span class="control__mark"></span>
+            <span class="control__label">Fly Dubai</span>
+          </label>
+        </li>
 
-      <li class="flights-filters__item">
-        <label class="control">
-          <input class="visually-hidden control__input" type="checkbox" name="qatar">
-          <span class="control__mark"></span>
-          <span class="control__label">Qatar</span>
-        </label>
-      </li>
+        <li class="filters__item">
+          <label class="control">
+            <input class="visually-hidden control__input" type="checkbox" name="qatar">
+            <span class="control__mark"></span>
+            <span class="control__label">Qatar</span>
+          </label>
+        </li>
 
-      <li class="flights-filters__item">
-        <label class="control">
-          <input class="visually-hidden control__input" type="checkbox" name="etihad">
-          <span class="control__mark"></span>
-          <span class="control__label">Etihad</span>
-        </label>
-      </li>
+        <li class="filters__item">
+          <label class="control">
+            <input class="visually-hidden control__input" type="checkbox" name="etihad">
+            <span class="control__mark"></span>
+            <span class="control__label">Etihad</span>
+          </label>
+        </li>
 
-      <button class="flights-filters__more-button">+24 more</button>
-    </ul>
+        <button class="filters__more-button">+24 more</button>
+      </ul>
+    </div>
   </fieldset>
 
-  <fieldset class="flights-filters__group">
-    <div class="flights-filters__filter-title">
-      <legend class="flights-filters__filter-name">Trips</legend>
-      <button class="flights-filters__collapse-button" type="button"></button>
+  <fieldset class="filters__group">
+    <div class="filters__filter-header">
+      <legend class="filters__filter-name">Trips</legend>
+      <button class="filters__collapse-button" type="button"></button>
     </div>
 
-    <ul class="flights-filters__list">
-      <li class="flights-filters__item">
-        <label class="control">
-          <input class="visually-hidden control__input" type="checkbox" name="round-trip">
-          <span class="control__mark"></span>
-          <span class="control__label">Round trip</span>
-        </label>
-      </li>
+    <div class="filters__filter-content">
+      <ul class="filters__list">
+        <li class="filters__item">
+          <label class="control">
+            <input class="visually-hidden control__input" type="checkbox" name="round-trip">
+            <span class="control__mark"></span>
+            <span class="control__label">Round trip</span>
+          </label>
+        </li>
 
-      <li class="flights-filters__item">
-        <label class="control">
-          <input class="visually-hidden control__input" type="checkbox" name="on-way">
-          <span class="control__mark"></span>
-          <span class="control__label">On Way</span>
-        </label>
-      </li>
+        <li class="filters__item">
+          <label class="control">
+            <input class="visually-hidden control__input" type="checkbox" name="on-way">
+            <span class="control__mark"></span>
+            <span class="control__label">On Way</span>
+          </label>
+        </li>
 
-      <li class="flights-filters__item">
-        <label class="control">
-          <input class="visually-hidden control__input" type="checkbox" name="multi-city">
-          <span class="control__mark"></span>
-          <span class="control__label">Multi-City</span>
-        </label>
-      </li>
+        <li class="filters__item">
+          <label class="control">
+            <input class="visually-hidden control__input" type="checkbox" name="multi-city">
+            <span class="control__mark"></span>
+            <span class="control__label">Multi-City</span>
+          </label>
+        </li>
 
-      <li class="flights-filters__item">
-        <label class="control">
-          <input class="visually-hidden control__input" type="checkbox" name="flexible-dates">
-          <span class="control__mark"></span>
-          <span class="control__label">My Dates Are Flexible</span>
-        </label>
-      </li>
-    </ul>
+        <li class="filters__item">
+          <label class="control">
+            <input class="visually-hidden control__input" type="checkbox" name="flexible-dates">
+            <span class="control__mark"></span>
+            <span class="control__label">My Dates Are Flexible</span>
+          </label>
+        </li>
+      </ul>
+    </div>
   </fieldset>
 </form>
