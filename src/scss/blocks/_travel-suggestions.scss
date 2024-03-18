@@ -33,6 +33,12 @@
   &--columbia {
     background: url("./../img/travel-suggestions/direction-4.jpg") no-repeat center;
   }
+
+  &:hover .travel-suggestions__button {
+    background-color: var(--accent-hover);
+    outline: 1px solid var(--accent);
+    outline-offset: 2px;
+  }
 }
 
 .travel-suggestions__description {

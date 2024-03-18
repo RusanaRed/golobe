@@ -44,6 +44,7 @@
     &:hover {
       background-color: var(--dark);
       color: var(--white);
+      transition: background-color 0.5s linear, color 0.5s ease-in;
     }
 
     &:active {
@@ -70,6 +71,7 @@
     &:hover {
       background-color: var(--white);
       color: var(--dark);
+      /* border: 2px solid var(--accent); */
     }
 
     &:active {
@@ -99,7 +101,7 @@
 
     &:active {
       background-color: var(--accent-active);
-      border: 1px solid transparent;
+      border: 2px solid transparent;
     }
 
     &:disabled {

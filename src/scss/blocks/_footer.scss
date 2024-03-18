@@ -49,7 +49,8 @@
   transition: color 0.2s linear;
 
   &:focus-visible {
-    outline: none;
+    outline: 1px solid var(--white);
+    outline-offset: 3px;
     color: var(--white);
   }
 

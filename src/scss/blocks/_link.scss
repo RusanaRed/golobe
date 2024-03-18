@@ -10,7 +10,7 @@
     color: var(--accent-hover);
   }
 
-  &:hover {
+  &[href]:hover {
     color: var(--accent-hover);
   }
 

@@ -163,6 +163,11 @@
   padding: 8px 0;
 
   flex-shrink: 0;
+
+  &:hover > svg {
+    color: var(--accent);
+    transition: color 0.3s ease-in-out;
+  }
 }
 
 .flight-card__details-button {
