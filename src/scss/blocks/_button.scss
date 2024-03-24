@@ -32,6 +32,10 @@
     font-size: 12px;
   }
 
+  &--semibold {
+    font-weight: 600;
+  }
+
   &--white {
     background-color: var(--white);
     border: 2px solid transparent;
@@ -44,6 +48,7 @@
     &:hover {
       background-color: var(--dark);
       color: var(--white);
+
       transition: background-color 0.5s linear, color 0.5s ease-in;
     }
 
@@ -71,12 +76,11 @@
     &:hover {
       background-color: var(--white);
       color: var(--dark);
-      /* border: 2px solid var(--accent); */
+      border: 2px solid var(--accent);
     }
 
     &:active {
-      border: 2px solid var(--dark);
-      outline: 1px solid var(--white);
+      background-color: var(--accent);
     }
 
     &:disabled {

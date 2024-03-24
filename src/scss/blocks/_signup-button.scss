@@ -1,11 +1,18 @@
 .signup-button {
-  background-color: var(--dark);
-
-  color: var(--white);
-  font-weight: 600;
 
   &--white {
     background-color: var(--white);
     color: var(--text-color);
+
+    &:hover {
+      background-color: transparent;
+      border: 2px solid var(--accent);
+      color: var(--accent);
+    }
+
+    &:active {
+      background-color: var(--accent);
+      color: var(--white);
+    }
   }
 }

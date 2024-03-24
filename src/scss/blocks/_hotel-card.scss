@@ -249,7 +249,12 @@
   flex-shrink: 0;
 
   &:hover > svg {
-    color: var(--accent);
+    color: var(--accent-hover);
+    transition: color 0.3s ease-in-out;
+  }
+
+  &:active > svg {
+    color: var(--accent-active);
     transition: color 0.3s ease-in-out;
   }
 }
