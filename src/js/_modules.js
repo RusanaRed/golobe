@@ -1,3 +1,4 @@
+import './modules/selects';
 import './modules/hero-form-tabs';
 import './modules/flights-sorting-tabs';
 import './modules/hotels-sorting-tabs';

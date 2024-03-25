@@ -60,8 +60,9 @@
   }
 }
 
-.hotel-search-section__sort-by select {
-  font-weight: 600;
+.hotel-search-section__sort-by {
+  display: flex;
+  gap: 4px;
 }
 
 .hotel-search-section__list {
