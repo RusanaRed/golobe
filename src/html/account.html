@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Account</title>
+		<link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+	</head>
+  
+	<body>
+		@@include('blocks/header-account-login.html')
+
+    <main>
+      <section class="section account">
+        <div class="container">
+          <div class="section__header account__header">
+            <!-- <img class="account__img" src="./../img/account-bg.png" alt=""> -->
+            <!-- <button class="account__upload-cover button button--large button--primary">
+              <svg class="account__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                <use href="./img/sprite.svg#upload-icon"/>
+              </svg>
+            </button> -->
+
+            <div class="account__avatar">
+              <img class="account__img" src="./../img/avatar.jpg" alt="">
+
+              <button class="account__edit">
+                <svg class="account__icon" width="24" height="25" viewBox="0 0 24 25" aria-hidden="true" focusable="false">
+                  <use href="./img/sprite.svg#pen-icon"/>
+                </svg>
+              </button>
+            </div>
+
+            <h2 class="account__name">John Doe.</h2>
+            <p class="account__mail">john.doe@gmail.com</p>
+          </div>
+
+          <div class="tabs">
+            <button class="tab account__tab active" type="button" data-tab="#acc-info">
+              <div class="tab__title">Account</div>
+            </button>
+            <button class="tab account__tab" type="button" data-tab="#acc-history">
+              <div class="tab__title">History</div>
+            </button>
+            <button class="tab account__tab" type="button" data-tab="#acc-payment">
+              <div class="tab__title">Payment methods</div>
+            </button>
+          </div>
+    
+            <div class="tab__content">
+              <div class="tab__wrapper tab__wrapper--active account__tab-wrapper" id="acc-info">
+                <h2 class="section__title">Account</h2>
+
+                <ul class="account__info">
+                  <li class="account__info-item">
+                    <div class="info-item__title">Name</div>
+                    <div class="info-item__content">John Doe</div>
+                    <button class="info-item__button button button--large button--secondary">
+                      <svg class="nav__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                        <use href="./img/sprite.svg#edit-icon"/>
+                      </svg>
+                      Change
+                    </button>
+                  </li>
+                  
+                </ul>
+              </div>
+
+              <div class="tab__wrapper account__tab-wrapper" id="acc-history">
+                
+              </div>
+
+              <div class="tab__wrapper account__tab-wrapper" id="acc-payment">
+                
+              </div>
+            </div>
+        </div>
+      </section>
+    </main>
+
+		@@include('blocks/footer.html')
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>
