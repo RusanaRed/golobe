@@ -15,24 +15,29 @@
 		@@include('blocks/header-account-login.html')
 
     <main>
-      <section class="section account">
+      <section class="section section--account">
         <div class="container">
-          <div class="section__header account__header">
-            <!-- <img class="account__img" src="./../img/account-bg.png" alt=""> -->
-            <!-- <button class="account__upload-cover button button--large button--primary">
-              <svg class="account__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-                <use href="./img/sprite.svg#upload-icon"/>
-              </svg>
-            </button> -->
+          <div class="section__header section__header--account account__header">          
+            <img class="account__background" src="./../img/account-bg.png" alt="">
+
+            <div class="account__upload-cover">
+              <button class="button button--large button--primary">Upload new cover
+                <svg class="account__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                  <use href="./img/sprite.svg#upload-icon"/>
+                </svg>
+              </button>
+            </div>
 
             <div class="account__avatar">
               <img class="account__img" src="./../img/avatar.jpg" alt="">
 
-              <button class="account__edit">
-                <svg class="account__icon" width="24" height="25" viewBox="0 0 24 25" aria-hidden="true" focusable="false">
-                  <use href="./img/sprite.svg#pen-icon"/>
-                </svg>
-              </button>
+              <div class="account__edit">
+                <button class="account__edit-button">
+                  <svg class="account__icon account__icon--big" width="24" height="25" viewBox="0 0 24 25" aria-hidden="true" focusable="false">
+                    <use href="./img/sprite.svg#pen-icon"/>
+                  </svg>
+                </button>
+              </div>
             </div>
 
             <h2 class="account__name">John Doe.</h2>
@@ -60,7 +65,7 @@
                   <div class="info-item__title">Name</div>
                   <div class="info-item__content">John Doe</div>
                   <button class="info-item__button button button--large button--secondary">
-                    <svg class="nav__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                    <svg class="account__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
                       <use href="./img/sprite.svg#edit-icon"/>
                     </svg>
                     Change
