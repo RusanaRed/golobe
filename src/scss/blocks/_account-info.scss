@@ -1,0 +1,44 @@
+.account-info {
+  display: grid;
+  row-gap: 32px;
+
+  padding: 32px 24px;
+  background-color: var(--white);
+  border-radius: 16px;
+  box-shadow: var(--dark-shadow);
+}
+
+.account-info__item {
+  display: grid;
+  grid-template-columns: auto 215px 140px;
+  align-items: end;
+  row-gap: 8px;
+}
+
+.account-info__title {
+  grid-column: 1/2;
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 8px;
+}
+
+.account-info__name {
+  grid-row: 1/2;
+  font-size: 16px;
+  color: var(--text-75);
+}
+
+.account-info__content {
+  grid-row: 2/3;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.account-info__extra-button {
+  grid-column: 2/3;
+  margin: 0 8px 0 16px;
+}
+
+.account-info__button {
+  grid-column: 3/4;
+}

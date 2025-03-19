@@ -67,18 +67,18 @@
   font-size: 16px;
   font-weight: 500;
 
-  &--with-note {
-    margin-bottom: 8px;
+ &--with-note {
+  margin-bottom: 8px;
+ }
+
+  &--account {
+    font-weight: 600;
   }
 }
 
 .tab__note {
   color: var(--text-40);
   font-size: 14px;
-}
-
-.tab__content {
-  margin-top: 40px;
 }
 
 .tab__wrapper {
@@ -88,6 +88,5 @@
   &--active {
     display: flex;
     flex-direction: column;
-    gap: 24px;
   }
 }
