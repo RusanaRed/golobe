@@ -1,0 +1,91 @@
+.account-payment {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: 24px;
+
+  padding: 24px;
+  background-color: var(--white);
+  border-radius: 24px;
+  box-shadow: var(--dark-shadow);
+}
+
+.account-payment__item {
+  position: relative;
+  width: 378px;
+  height: 212px;
+
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: var(--accent);
+  border-radius: 16px;
+}
+
+.account-payment__card-number {
+  padding-right: 16px;
+  font-weight: 600;
+}
+
+.account-payment__hidden {
+  margin-bottom: -10px;
+  font-size: 24px;
+}
+
+.account-payment__last-numbers {
+  font-size: 32px;
+}
+
+.account-payment__card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.account-payment__card-validation {
+  margin-bottom: 11px;
+  padding-right: 68px;
+}
+
+.account-payment__validation-title {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.account-payment__valid-date {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.account-payment__payment-system {
+  position: absolute;
+  bottom: 28px;
+  right: 16px;
+}
+
+.account-payment__button {
+  position: relative;
+  width: 378px;
+  height: 212px;
+
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 16px;
+}
+
+.account-payment__background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.account-payment__button-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
