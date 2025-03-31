@@ -38,14 +38,13 @@
   width: 24px;
   height: 24px;
 
-  background-image: url("./../img/icons/arrow-up.svg");
+  background-image: url("./../img/icons/chevron-up-icon.svg");
   background-repeat: no-repeat;
   background-size: 24px 24px;
   background-position: center;
 
   &.collapse {
-    background-image: url("./../img/icons/arrow-down.svg");
-    background-size: 48px 48px;
+    background-image: url("./../img/icons/chevron-down-icon.svg");
   }
 }
 

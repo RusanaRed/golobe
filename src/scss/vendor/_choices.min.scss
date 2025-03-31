@@ -87,15 +87,15 @@
   right: 0;
   top: 50%;
   pointer-events: none;
-  background-image: url('./../img/icons/arrow-down.svg');
+  background-image: url('./../img/icons/chevron-down-icon.svg');
   background-position: center;
-  background-size: 48px 48px;
+  background-size: 24px 24px;
   background-repeat: no-repeat;
   transform: translateY(-50%);
 }
 
 .choices[data-type*=select-one].is-open::after {
-  background-image: url('./../img/icons/arrow-up.svg');
+  background-image: url('./../img/icons/chevron-up-icon.svg');
   background-size: 24px 24px;
 }
 

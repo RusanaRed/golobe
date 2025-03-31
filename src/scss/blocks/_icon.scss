@@ -1,30 +1,30 @@
 .icon {
   background-repeat: no-repeat;
-  background-size: 48px 48px;
+  background-size: 24px 24px;
 
   &--right {
-    background-position: right center;
+    background-position: right 12px center;
   }
 
   &--left {
-    background-position: left center;
+    background-position: left 12px center;
   }
 
   &--rooms-guests {
     background-image: 
-      url("./../img/icons/person-icon.svg"), 
-      url("./../img/icons/arrow-down.svg");
+      url("./../img/icons/user-icon.svg"), 
+      url("./../img/icons/chevron-down-icon.svg");
     background-position: 
-      left center, 
-      right center;
+      left 12px center, 
+      right 12px center;
   }
 
-  &--back-forward-arrows {
-    background-image: url("./../img/icons/back-forward-arrows.svg");
+  &--swap-horizontal {
+    background-image: url("./../img/icons/swap-horizontal-icon.svg");
   }
 
-  &--arrow-down {
-    background-image: url("./../img/icons/arrow-down.svg");
+  &--chevron-down {
+    background-image: url("./../img/icons/chevron-down-icon.svg");
   }
 
   &--bed {
@@ -35,7 +35,11 @@
     background-image: url("./../img/icons/calendar-icon.svg");
   }
 
-  &--person {
-    background-image: url("./../img/icons/person-icon.svg");
+  /* &--user {
+    background-image: url("./../img/icons/user-icon.svg");
+  } */
+
+  &--eye-off {
+    background-image: url("./../img/icons/eye-off-icon.svg");
   }
 }
