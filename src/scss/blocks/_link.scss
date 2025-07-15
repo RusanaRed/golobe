@@ -14,7 +14,11 @@
     color: var(--accent-hover);
   }
 
-  &:active {
+  &[href]:active {
     color: var(--accent-active);
   }
+}
+
+button.link:hover {
+  color: var(--accent-hover);
 }

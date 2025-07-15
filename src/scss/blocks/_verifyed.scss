@@ -1,16 +1,21 @@
 .verifyed {
-  position: relative;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
 }
 
 .verifyed::before {
   content: "";
   position: absolute;
-  bottom: 2px;
-  left: 54px;
-  z-index: 1;
+  bottom: 3px;
+  right: 10px;
+  z-index: 2;
 
-  width: 10px;
-  height: 10px;
+  width: 9px;
+  height: 9px;
   background-color: var(--dark);
   border-radius: 50%;
 }
@@ -18,12 +23,12 @@
 .verifyed::after {
   content: "";
   position: absolute;
-  bottom: 0;
-  left: 52px;
-  z-index: 2;
+  bottom: 1px;
+  right: 8px;
+  z-index: 3;
 
-  width: 14px;
-  height: 14px;
+  width: 11px;
+  height: 11px;
 
   background-image: url("./../img/icons/verifyed-icon.svg");
   background-repeat: no-repeat;

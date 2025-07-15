@@ -1,10 +1,5 @@
 .user-account__avatar {
-  width: 45px;
-  height: 45px;
-  margin-right: 4px;
-  overflow: hidden;
-
-  border-radius: 45px;
+  position: relative; 
 
   &--big {
     width: 64px;
@@ -13,11 +8,19 @@
   }
 }
 
+.user-account__picture {
+  width: 45px;
+  height: 45px;
+  
+  margin-right: 6px;
+}
+
 .user-account__img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 45px;
 }
 
 .user-account__name {
