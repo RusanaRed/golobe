@@ -60,12 +60,20 @@
   }
 }
 
+.promo-tour__pictures {
+  grid-column: 6 span;
+  grid-row: 2 span;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  display: grid;
+}
+
 .promo-tour__button {
   margin-top: auto;
 }
 
 .promo-tour__picture {
-  grid-column: 3 span;
+  
 
   overflow: hidden;
 
