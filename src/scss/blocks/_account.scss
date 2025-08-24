@@ -31,18 +31,18 @@
 
 .account__avatar {
   position: relative;
-  /* width: 160px;
-  height: 160px; */
+  width: 160px;
+  height: 160px;
   z-index: 1;
-
+  
   margin-bottom: 24px;
+  border-radius: 50%;
+  box-shadow: var(--dark-shadow);
 }
 
 .account__img {
-  width: 160px;
-  height: 160px;
   overflow: hidden;
-
+  object-fit: cover;
   border: solid 4px var(--important);
   border-radius: 50%;
 }

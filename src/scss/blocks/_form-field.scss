@@ -51,7 +51,29 @@
     padding-right: 48px;
   }
 
+  /* &--password {
+    position: relative;
+  } */
+
   /* &:disabled + .form-field__caption {
     color: rgba(28, 27, 31, 0.12);
   } */
+}
+
+.form-field__hide-button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 56px;
+  height: 56px;
+  z-index: 2;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px 24px;
+  background-image: url("./../img/icons/eye-off-icon.svg");
+
+  &--off {
+    background-image: url("./../img/icons/eye-on-icon.svg");
+  }
 }
