@@ -65,11 +65,10 @@
   gap: 4px;
 }
 
-.hotel-search-section__list {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
+/* .hotel-search-section__list {
+  display: grid;
+  row-gap: 24px;
+} */
 
 .hotel-search-section__button {
   display: block;

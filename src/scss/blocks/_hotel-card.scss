@@ -1,19 +1,28 @@
 .hotel-card {
-  display: flex;
+  display: grid;
+  grid-template-columns: 300px calc(840px - 300px);
+  grid-template-rows: 299px;
+  
   overflow: hidden;
 
   background-color: var(--white);
   border-radius: 12px;
   box-shadow: var(--dark-shadow);
+
+  &--favourite {
+    grid-template-columns: 440px calc(1232px - 440px);
+    grid-template-rows: 274px;
+  }
 }
 
 .hotel-card__hotel-picture {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
   position: relative;
   width: 100%;
-  max-width: 300px;
 
   &--favourites {
-    max-width: 440px;
+    width: 440px;
 
     &>.hotel-card__images {
       top: 16px;
@@ -47,6 +56,10 @@
 }
 
 .hotel-card__content {
+  grid-row: 1 / 2;
+  grid-column: 2 / -1;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   padding: 24px;
 }
