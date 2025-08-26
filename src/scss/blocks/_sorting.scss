@@ -1,5 +1,7 @@
 .sorting__list {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 48px;
 }
 
@@ -27,7 +29,7 @@
         content: "";
         position: absolute;
         left: -10px;
-        bottom: -16px;
+        bottom: -18px;
         width: 180px;
         height: 4px;
         background-color: var(--accent);
@@ -64,6 +66,11 @@
       }
     }
   }
+}
+
+.sorting__other-button {
+  width: 160px;
+  justify-content: start;
 }
 
 .sorting__title {

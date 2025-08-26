@@ -26,6 +26,7 @@
               <div class="tab__title tab__title--with-note">Flights</div>
               <div class="tab__note">2 marked</div>
             </button>
+
             <button class="tab tab--with-note favourites__tab" type="button" data-tab="#fav-places">
               <div class="tab__title tab__title--with-note">Places</div>
               <div class="tab__note">3 marked</div>
@@ -33,22 +34,19 @@
           </div>
     
             <div class="tab__content">
-              <div class="tab__wrapper tab__wrapper--active favourites__tab-wrapper" id="fav-flights">
-                
-                <li class="flight-card">
-                  <div class="flight-card__airline-logo flight-card__airline-logo--flydubai flight-card__airline-logo--favourites"></div>
-        
-                  @@include('blocks/cards/flight-card-2.html')
-                </li>
+              <div class="tab__wrapper tab__wrapper--active favourites__list-wrapper" id="fav-flights">
+                <ul class="flights-list">
+                  <li class="flight-card flight-card--favourite">
+                    @@include('blocks/cards/flight-card-2.html')
+                  </li>
 
-                <li class="flight-card">
-                  <div class="flight-card__airline-logo flight-card__airline-logo--etihad flight-card__airline-logo--favourites"></div>
-        
-                  @@include('blocks/cards/flight-card-4.html')
-                </li>
+                  <li class="flight-card flight-card--favourite">
+                    @@include('blocks/cards/flight-card-4.html')
+                  </li>
+                </ul>
               </div>
 
-              <div class="tab__wrapper favourites__tab-wrapper" id="fav-places">
+              <div class="tab__wrapper favourites__list-wrapper" id="fav-places">
                 <ul class="hotels-list">
                   <li class="hotel-card hotel-card--favourite">
                     @@include('blocks/cards/hotel-card-1.html')

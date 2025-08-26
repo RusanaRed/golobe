@@ -31,7 +31,7 @@
             </div>
           </li>
 
-          <button class="button button--large button--ghost button--with-icon-left" type="button">
+          <button class="sorting__other-button button button--large button--ghost button--with-icon-left" type="button">
             <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
               <use href="./img/sprite.svg#menu-icon"/>
             </svg>
@@ -47,55 +47,41 @@
       </div>
 
       <div class="flight-search-section__wrapper flight-search-section__wrapper--active" id="cheapest">
-        <ul class="flight-search-section__list">
+        <ul class="flight-search-section__list flights-list">
           <li class="flight-card">
-            <div class="flight-card__airline-logo flight-card__airline-logo--emirates"></div>
-
             @@include('cards/flight-card-1.html')
           </li>
 
           <li class="flight-card">
-            <div class="flight-card__airline-logo flight-card__airline-logo--flydubai"></div>
-
             @@include('cards/flight-card-2.html')
           </li>
 
           <li class="flight-card">
-            <div class="flight-card__airline-logo flight-card__airline-logo--qatar"></div>
-
             @@include('cards/flight-card-3.html')
           </li>
 
           <li class="flight-card">
-            <div class="flight-card__airline-logo flight-card__airline-logo--etihad"></div>
-
             @@include('cards/flight-card-4.html')
           </li>
         </ul>
       </div>
 
       <div class="flight-search-section__wrapper" id="best">
-        <ul class="flight-search-section__list">
+        <ul class="flight-search-section__list flights-list">
           <li class="flight-card">
-            <div class="flight-card__airline-logo flight-card__airline-logo--flydubai"></div>
-
             @@include('cards/flight-card-2.html')
           </li>
 
           <li class="flight-card">
-            <div class="flight-card__airline-logo flight-card__airline-logo--qatar"></div>
-
             @@include('cards/flight-card-3.html')
           </li>
         </ul>
       </div>
 
       <div class="flight-search-section__wrapper" id="quickest">
-        <ul class="flight-search-section__list">
+        <ul class="flight-search-section__list flights-list">
           <li class="flight-card">
-            <div class="flight-card__airline-logo flight-card__airline-logo--etihad"></div>
-
-            @@include('cards/flight-card-4.html')
+             @@include('cards/flight-card-4.html')
           </li>
         </ul>
       </div>

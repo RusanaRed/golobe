@@ -1,5 +1,5 @@
 const tabsFavourites = document.querySelectorAll('.favourites__tab');
-const listsFavourites = document.querySelectorAll('.favourites__tab-wrapper');
+const listsFavourites = document.querySelectorAll('.favourites__list-wrapper');
 
 tabsFavourites.forEach(onTabClickFavourites);
 

@@ -52,22 +52,12 @@
   }
 }
 
-/* .flight-search-section__sort-by select {
-  font-weight: 600;
-} */
-
 .flight-search-section__wrapper {
   display: none;
 
   &--active {
     display: block;
   }
-}
-
-.flight-search-section__list {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
 }
 
 .flight-search-section__button {

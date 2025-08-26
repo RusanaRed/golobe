@@ -1,43 +1,28 @@
 .flight-card {
-  display: flex;
-
+  position: relative;
   padding: 24px 16px;
+
+  display: grid;
+  grid-template-columns: 160px 648px;
+  grid-template-rows: auto;
 
   background-color: var(--white);
   border-radius: 12px;
   box-shadow: var(--dark-shadow);
+
+  &--favourite {
+    grid-template-columns: 320px calc(1232px - 336px);
+  }
 }
 
 .flight-card__airline-logo {
-  min-width: 160px;
-
-  background-repeat: no-repeat;
-  background-size: 160px;
-  background-position: top center;
-  
-  &--emirates {
-    background-image: url("./../img/logos/emirates.svg");
-  }
-
-  &--etihad {
-    background-image: url("./../img/logos/etihad.svg");
-  }
-
-  &--flydubai {
-    background-image: url("./../img/logos/flydubai.svg");
-  }
-
-  &--qatar {
-    background-image: url("./../img/logos/qatar.svg");
-  }
-
-  &--favourites {
-    min-width: 360px;
-  }
+  grid-column: 1 / 2;
+  display: block;
+  margin: 0 auto;
 }
 
 .flight-card__details {
-  width: 100%;
+  grid-column: 2 / -2;
   padding: 0 24px;
 }
 
