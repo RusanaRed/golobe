@@ -2,22 +2,48 @@
   position: relative;
   display: flex;
   align-items: center;
+  font-size: 14px;
+  font-weight: 500;
 }
 
-.control__input[type="checkbox"]:checked + .control__mark {
+.control__input[type="checkbox"]:checked + .control__mark--checkbox {
   background: url("/img/icons/checkbox-checked.svg") no-repeat center;
+}
+
+.control__input[type="radio"]:checked + .control__mark--rating-radio {
+  border: 2px solid var(--accent);
 }
 
 .control__mark {
   width: 24px;
   height: 24px;
   
-  background: url("/img/icons/checkbox.svg") no-repeat center;
+  &--checkbox { 
+    background: url("/img/icons/checkbox.svg") no-repeat center;
+  }
+
+  &--rating-radio { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 32px;
+    border:  1px solid var(--accent);
+    border-radius: 4px;
+    outline: 1px solid transparent;
+    font-size: 12px;
+
+    transition: border 0.2s linear, outline 0.3s ease-in-out;
+
+    &:hover {
+      border: 1px solid var(--accent-hover);
+      outline: 1px var(--accent-hover) solid;
+    }
+  }
 }
 
 .control__label {
   padding-left: 8px;
-
   font-size: 14px;
-  font-weight: 500;
 }
