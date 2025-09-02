@@ -1,22 +1,22 @@
 <form class="booking-hotel-form booking-hotel-form--mini form" action="https://echo.htmlacademy.ru/" method="GET">
   <label class="form-field">
     <span class="form-field__caption">Enter Destination</span>
-    <input class="form-field__input form-field__input--icon-before icon icon--left icon--bed" type="text" value="Istanbul, Turkey" placeholder="Istanbul, Turkey">
+    <input class="form-field__input form-field__input--icon-before icon icon--left icon--bed" type="text" value="Istanbul, Turkey" placeholder="Istanbul, Turkey" name="destination">
   </label>
 
   <label class="form-field">
     <span class="form-field__caption">Check In</span>
-    <input class="form-field__input form-field__input--icon-after hotel-datepicker icon icon--right icon--calendar" type="text" value="Return" placeholder="Fri 12/2" id="hotel-datepicker">
+    <input class="form-field__input form-field__input--icon-after hotel-datepicker icon icon--right icon--calendar" type="text" value="Return" placeholder="Fri 12/2" id="hotel-datepicker" name="check-in">
   </label>
 
   <label class="form-field">
     <span class="form-field__caption">Check Out</span>
-    <input class="form-field__input form-field__input--icon-after icon icon--right icon--calendar" type="text" value="Sun 12/4" placeholder="Sun 12/4" id="checkout">
+    <input class="form-field__input form-field__input--icon-after icon icon--right icon--calendar" type="text" value="Sun 12/4" placeholder="Sun 12/4" id="checkout" name="check-out">
   </label>
 
   <label class="form-field">
     <span class="form-field__caption">Rooms & Guests</span>
-    <input class="form-field__input form-field__input--icon-before form-field__input--icon-after icon icon--rooms-guests" type="text" value="1 room, 2 guests" placeholder="1 room, 2 guests">
+    <input class="form-field__input form-field__input--icon-before form-field__input--icon-after icon icon--rooms-guests" type="text" value="1 room, 2 guests" placeholder="1 room, 2 guests" name="guests">
   </label>
 
   <button class="booking-hotel-form__button button button--large button--primary" type="submit">
