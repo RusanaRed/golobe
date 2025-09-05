@@ -1,4 +1,4 @@
-const sortingTabs = document.querySelectorAll('.sorting__item--flights');
+const sortingTabs = document.querySelectorAll('.sorting__tab--flights');
 const sortingLists = document.querySelectorAll('.flight-search-section__wrapper');
 
 sortingTabs.forEach(onTabClick);

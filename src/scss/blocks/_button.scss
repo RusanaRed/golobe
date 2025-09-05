@@ -17,7 +17,7 @@
   line-height: normal;
   text-align: center;
 
-  transition: border 0.2s linear, background-color 0.3s linear, color 0.3s ease-in, outline 0.3s ease-in-out;
+  transition: border 0.2s linear, background-color 0.3s linear, color 0.2s ease-in, outline 0.3s ease-in-out;
 
   &--small {
     height: 32px;
@@ -144,7 +144,7 @@
 
     &:focus-visible {
       outline: 1px solid var(--accent);
-      outline-offset: 1px;
+      outline-offset: 2px;
       color: var(--accent-focus);
     }
 

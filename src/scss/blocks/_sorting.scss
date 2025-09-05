@@ -1,105 +1,31 @@
-.sorting__list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 48px;
+.sorting__tabs {
+  margin-bottom: 24px;
 }
 
-.sorting__item {
-  position: relative;
-  cursor: pointer;
-
+.sorting__tab {
   &--flights {
     min-width: 160px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: -24px;
-      width: 1px;
-      height: 48px;
-      background-color: #d7e2ee;
-      opacity: 0.5;
-    }
-
-    &.active {
-
-      &::before {
-        content: "";
-        position: absolute;
-        left: -10px;
-        bottom: -18px;
-        width: 180px;
-        height: 4px;
-        background-color: var(--accent);
-        opacity: 1;
-      }
-    }
   }
 
   &--hotels {
     min-width: 232px;
-
-    &:not(:last-child)::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: -24px;
-      width: 1px;
-      height: 48px;
-      background-color: #d7e2ee;
-      opacity: 0.5;
-    }
-
-    &.active {
-
-      &::before {
-        content: "";
-        position: absolute;
-        left: -10px;
-        bottom: -16px;
-        width: 248px;
-        height: 4px;
-        background-color: var(--accent);
-        opacity: 1;
-      }
-    }
   }
 }
 
 .sorting__other-button {
   width: 160px;
   justify-content: start;
-}
-
-.sorting__title {
-  margin-bottom: 8px;
-
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.sorting__capture {
-  display: flex;
-
-  color: var(--text-40);
-  font-size: 14px;
-}
-
-.sorting__time {
   position: relative;
-  padding-left: 10px;
-
+    
   &::before {
     content: "";
     position: absolute;
-    bottom: 3px;
-    left: 4px;
-    width: 2px;
-    height: 2px;
-    background-color: var(--dark);
-    border-radius: 50%;
-    opacity: 0.6;
+    left: -24px;
+    bottom: 0;
+  
+    display: block;
+    width: 1px;
+    height: 48px;
+    background-color: #d7e2ee;
   }
 }

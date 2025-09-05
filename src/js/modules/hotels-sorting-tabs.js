@@ -1,4 +1,4 @@
-const sortingTabs = document.querySelectorAll('.sorting__item--hotels');
+const sortingTabs = document.querySelectorAll('.sorting__tab--hotels');
 const sortingLists = document.querySelectorAll('.hotel-search-section__wrapper');
 
 sortingTabs.forEach(onTabClick);
