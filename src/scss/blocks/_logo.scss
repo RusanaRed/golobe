@@ -1,4 +1,12 @@
 .logo {
+  &--header {
+    width: 111px;
+  }
+
+  &--footer {
+    width: 120px;
+  }
+
   &:focus-visible {
     outline: 1px solid var(--accent);
     outline-offset: 3px;
