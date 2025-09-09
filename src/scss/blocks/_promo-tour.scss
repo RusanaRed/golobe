@@ -63,9 +63,11 @@
 .promo-tour__pictures {
   grid-column: 6 span;
   grid-row: 2 span;
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  display: grid;
+  row-gap: 24px;
+  column-gap: 20px;
 }
 
 .promo-tour__button {
@@ -73,10 +75,7 @@
 }
 
 .promo-tour__picture {
-  
-
   overflow: hidden;
-
   border: 2px solid var(--accent);
   border-radius: 12px;
 }

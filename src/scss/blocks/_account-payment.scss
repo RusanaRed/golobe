@@ -44,6 +44,22 @@
   align-items: start;
 }
 
+.account-payment__delete-button {
+  display: flex;
+  transition: color 0.2s linear;
+
+  &:hover {
+    color: var(--white);
+  }
+
+  &:focus-visible {
+    outline: 1px solid var(--white);
+    outline-offset: 1px;
+    border-radius: 4px;
+    color: var(--white);
+  }
+}
+
 .account-payment__card-validation {
   margin-bottom: 11px;
   padding-right: 68px;
@@ -74,6 +90,12 @@
   font-size: 12px;
   font-weight: 500;
   border-radius: 16px;
+
+  &:focus-visible {
+    border: 2px solid var(--accent);
+    background-image: none;
+    outline: 1px solid var(--accent);
+  }
 }
 
 .account-payment__button-icon {

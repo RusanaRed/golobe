@@ -69,6 +69,10 @@
   height: 44px;
   padding: 10px;
   border-radius: 50%;
+
+  &:focus-visible {
+    outline: 2px solid var(--grey);
+  }
 }
 
 .account__name {
@@ -84,5 +88,5 @@
 }
 
 .account__tabs {
-  padding: 16px 24px;
+  margin-bottom: 40px;
 }
