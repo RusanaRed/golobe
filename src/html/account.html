@@ -1,14 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    @@include('blocks/head.html')
 		<title>Account</title>
-		<link rel="stylesheet" href="./css/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 	</head>
   
 	<body>
@@ -44,14 +38,14 @@
             <p class="account__mail">john.doe@gmail.com</p>
           </div>
 
-          <div class="tabs">
-            <button class="tab account__tab active" type="button" data-tab="#acc-info">
+          <div class="account__tabs tabs">
+            <button class="tab tab--three account__tab active" type="button" data-tab="#acc-info">
               <div class="tab__title tab__title--account">Account</div>
             </button>
-            <button class="tab account__tab" type="button" data-tab="#acc-history">
+            <button class="tab tab--three account__tab" type="button" data-tab="#acc-history">
               <div class="tab__title tab__title--account">History</div>
             </button>
-            <button class="tab account__tab" type="button" data-tab="#acc-payment">
+            <button class="tab tab--three account__tab" type="button" data-tab="#acc-payment">
               <div class="tab__title tab__title--account">Payment methods</div>
             </button>
           </div>
