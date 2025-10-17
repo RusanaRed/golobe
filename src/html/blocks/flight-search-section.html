@@ -1,13 +1,13 @@
 <div class="container">
   <div class="flight-search-section">
     <div class="flight-search-section__filters">
-      @@include('elements/flights-filters.html')
+      @@include('elements/filters/flights-filters.html')
     </div>
 
     <div class="flight-search-section__listing">
       <div class="sorting">
-        <div class="sorting__tabs tabs">
-          <button class="sorting__tab sorting__tab--flights tab tab--four tab--with-note active" type="button" data-tab="#cheapest">
+        <div class="sorting__tabs tabs tabs--four">
+          <button class="sorting__tab sorting__tab--flights tab tab--with-note active" type="button" data-tab="#cheapest">
             <div class="tab__title tab__title--with-note">Cheapest</div>
             <div class="tab__note">
               <div class="tab__caption">$99</div>
@@ -15,7 +15,7 @@
             </div>
           </button>
 
-          <button class="sorting__tab sorting__tab--flights tab tab--four tab--with-note" type="button" data-tab="#best">
+          <button class="sorting__tab sorting__tab--flights tab tab--with-note" type="button" data-tab="#best">
             <div class="tab__title tab__title--with-note">Best</div>
             <div class="tab__note">
               <div class="tab__caption">$99</div>
@@ -23,7 +23,7 @@
             </div>
           </button>
 
-          <button class="sorting__tab sorting__tab--flights tab tab--four tab--with-note" type="button" data-tab="#quickest">
+          <button class="sorting__tab sorting__tab--flights tab tab--with-note" type="button" data-tab="#quickest">
             <div class="tab__title tab__title--with-note">Quickest</div>
             <div class="tab__note">
               <div class="tab__caption">$99</div>
