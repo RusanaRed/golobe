@@ -21,9 +21,11 @@
         </li>
       </ul>
       
-      <a class="logo logo--header" href="index-login.html">
-        <img loading="lazy" src="./img/icons/logo-white.svg" width="111" height="36" alt="Golobe agency logo">
-      </a>
+      <div class="nav__item nav__item--logo">
+        <a class="logo logo--header" href="index-login.html">
+          <img loading="lazy" src="./img/icons/logo-white.svg" width="111" height="36" alt="Golobe agency logo">
+        </a>
+      </div>
 
       <div class="nav__list nav__list--user">
         <div class="nav__item nav__item--favourites nav__item--favourites-white">
@@ -48,7 +50,21 @@
         </div>
 
         <div class="nav__subnav subnav subnav--index">
-          <!-- @@include('elements/header-links/account-subnav.html') -->
+          @@include('elements/user-subnav-links/user-subnav-header.html')
+          
+          <div class="subnav__body">
+            @@include('elements/user-subnav-links/account.html')
+            @@include('elements/user-subnav-links/payments.html')
+            @@include('elements/user-subnav-links/settings.html')
+          </div>
+
+          <div class="subnav__footer">
+            @@include('elements/user-subnav-links/support.html')
+
+            <a class="subnav__button link" href="index.html">
+              @@include('elements/user-subnav-links/logout.html')
+            </a>
+          </div>
         </div>
       </div>
     </nav>
