@@ -9,8 +9,6 @@
   background-color: var(--grey);
 
   &--main {
-    /* width: 1380px; */
-    /* height: 600px; */
     width: calc(100vw - 60px);
     margin: 30px auto 183px;
 
@@ -52,7 +50,6 @@
 
   &--main {
     margin: 0 auto;
-
     text-align: center;
   }
 }
