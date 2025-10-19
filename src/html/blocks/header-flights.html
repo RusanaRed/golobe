@@ -11,23 +11,15 @@
               </a>
             </li>
 
-            <li class="nav__item">
-              <a class="nav__link link" href="hotels-search.html">
-                <svg class="nav__icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                  <use href="./img/sprite.svg#bed"/>
-                </svg>
-                Find Stays
-              </a>
-            </li>
+            @@include('elements/header-links/find-stays.html')
           </ul>
           
-          <a class="logo logo--header" href="index.html">
-            <img loading="lazy" src="./img/icons/logo-black.svg" width="111" height="36" alt="Golobe agency logo">
-          </a>
-
+          @@include('elements/header-links/header-logo.html')
+          
           <div class="nav__buttons">
-            <a class="login-button button button--ghost button--semibold button--large" href="flights-search-login.html">Login</a>
-            <a class="signup-button button button--dark button--semibold button--large" href="#!">Sign up</a>
+            <a class="login-button button button--ghost button--large" href="flights-search-login.html">Login</a>
+            
+            @@include('elements/header-links/signup-button.html')
           </div>
         </nav>
     </div>

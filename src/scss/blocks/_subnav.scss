@@ -83,6 +83,14 @@
       right: -4px;
     }
   }
+
+  &.active {
+    font-weight: 500;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .subnav__icon {
