@@ -6,38 +6,7 @@
 
     <div class="flight-search-section__listing">
       <div class="sorting">
-        <div class="sorting__tabs tabs tabs--four">
-          <button class="sorting__tab sorting__tab--flights tab tab--with-note active" type="button" data-tab="#cheapest">
-            <div class="tab__title tab__title--with-note">Cheapest</div>
-            <div class="tab__note">
-              <div class="tab__caption">$99</div>
-              <div class="tab__caption">2h 18m</div>
-            </div>
-          </button>
-
-          <button class="sorting__tab sorting__tab--flights tab tab--with-note" type="button" data-tab="#best">
-            <div class="tab__title tab__title--with-note">Best</div>
-            <div class="tab__note">
-              <div class="tab__caption">$99</div>
-              <div class="tab__caption">2h 18m</div>
-            </div>
-          </button>
-
-          <button class="sorting__tab sorting__tab--flights tab tab--with-note" type="button" data-tab="#quickest">
-            <div class="tab__title tab__title--with-note">Quickest</div>
-            <div class="tab__note">
-              <div class="tab__caption">$99</div>
-              <div class="tab__caption">2h 18m</div>
-            </div>
-          </button>
-
-          <button class="sorting__other-button button button--large button--ghost button--with-icon-left" type="button">
-            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <use href="./img/sprite.svg#menu-icon"/>
-            </svg>
-            Other sort
-          </button>
-        </div>
+        @@include('sorting-flights.html')
       </div>
 
       <div class="flight-search-section__caption">
@@ -47,33 +16,33 @@
       </div>
 
       <div class="flight-search-section__wrapper flight-search-section__wrapper--active" id="cheapest">
-        <ul class="flight-search-section__list flights-list">
+        <ul class="flights-list">
           <li class="flight-card">
-            @@include('cards/flight-card-1.html')
+            @@include('cards/flights/flight-card-1.html')
           </li>
 
           <li class="flight-card">
-            @@include('cards/flight-card-2.html')
+            @@include('cards/flights/flight-card-2.html')
           </li>
 
           <li class="flight-card">
-            @@include('cards/flight-card-3.html')
+            @@include('cards/flights/flight-card-3.html')
           </li>
 
           <li class="flight-card">
-            @@include('cards/flight-card-4.html')
+            @@include('cards/flights/flight-card-4.html')
           </li>
         </ul>
       </div>
 
       <div class="flight-search-section__wrapper" id="best">
-        <ul class="flight-search-section__list flights-list">
+        <ul class="flights-list">
           <li class="flight-card">
-            @@include('cards/flight-card-2.html')
+            @@include('cards/flights/flight-card-2.html')
           </li>
 
           <li class="flight-card">
-            @@include('cards/flight-card-3.html')
+            @@include('cards/flights/flight-card-3.html')
           </li>
         </ul>
       </div>
@@ -81,7 +50,7 @@
       <div class="flight-search-section__wrapper" id="quickest">
         <ul class="flight-search-section__list flights-list">
           <li class="flight-card">
-             @@include('cards/flight-card-4.html')
+             @@include('cards/flights/flight-card-4.html')
           </li>
         </ul>
       </div>

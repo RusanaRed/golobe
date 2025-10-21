@@ -6,62 +6,31 @@
 
     <div class="hotel-search-section__listing">
       <div class="sorting">
-        <div class="sorting__tabs tabs tabs--three">
-          <button class="sorting__tab sorting__tab--hotels tab tab--with-note active" type="button" data-tab="#hotels">
-            <div class="tab__title tab__title--with-note">Hotels</div>
-            <div class="tab__note">
-              <div class="tab__caption">157 places</div>
-            </div>
-          </button>
-
-          <button class="sorting__tab sorting__tab--hotels tab tab--with-note" type="button" data-tab="#motels">
-            <div class="tab__title tab__title--with-note">Motels</div>
-            <div class="tab__note">
-              <div class="tab__caption">51 places</div>
-            </div>
-          </button>
-
-          <button class="sorting__tab sorting__tab--hotels tab tab--with-note" type="button" data-tab="#resorts">
-            <div class="tab__title tab__title--with-note">Resorts</div>
-            <div class="tab__note">
-              <div class="tab__caption">72 places</div>
-            </div>
-          </button>
-        </div>
+        @@include('sorting-hotels.html')
       </div>
 
       <div class="hotel-search-section__wrapper hotel-search-section__wrapper--active" id="hotels">
         <div class="hotel-search-section__caption">
           <div class="hotel-search-section__flights-number">Showing 4 of <span>157 places</span></div>
-          <div class="hotel-search-section__sort-by">
-            Sort by 
-            <div class="select-ghost">
-              <select class="form-field__select" aria-label="">
-                <option selected>Recommended</option>
-                <option>Cheapest</option>
-                <option>Stars</option>
-                <option>Rating</option>
-                <option>Most expensive</option>
-              </select>
-            </div>
-          </div>
+
+          @@include('hotel-search-sort-by.html')
         </div>
 
         <ul class="hotel-search-section__list hotels-list">
           <li class="hotel-card">
-            @@include('cards/hotel-card-1.html')
+            @@include('cards/hotels/hotel-card-1.html')
           </li>
 
           <li class="hotel-card">
-            @@include('cards/hotel-card-2.html')
+            @@include('cards/hotels/hotel-card-2.html')
           </li>
 
           <li class="hotel-card">
-            @@include('cards/hotel-card-3.html')
+            @@include('cards/hotels/hotel-card-3.html')
           </li>
 
           <li class="hotel-card">
-            @@include('cards/hotel-card-4.html')
+            @@include('cards/hotels/hotel-card-4.html')
           </li>
         </ul>
 
@@ -71,23 +40,13 @@
       <div class="hotel-search-section__wrapper" id="motels">
         <div class="hotel-search-section__caption">
           <div class="hotel-search-section__flights-number">Showing 4 of <span>51 places</span></div>
-          <div class="hotel-search-section__sort-by">
-            Sort by 
-            <div class="select-ghost">
-              <select class="form-field__select" aria-label="">
-                <option selected>Recommended</option>
-                <option>Cheapest</option>
-                <option>Stars</option>
-                <option>Rating</option>
-                <option>Most expensive</option>
-              </select>
-            </div>
-          </div>
+
+          @@include('hotel-search-sort-by.html')
         </div>
 
         <ul class="hotel-search-section__list hotels-list">
           <li class="hotel-card">
-            @@include('cards/hotel-card-4.html')
+            @@include('cards/hotels/hotel-card-4.html')
           </li>
         </ul>
 
@@ -97,27 +56,17 @@
       <div class="hotel-search-section__wrapper" id="resorts">
         <div class="hotel-search-section__caption">
           <div class="hotel-search-section__flights-number">Showing 4 of <span>72 places</span></div>
-          <div class="hotel-search-section__sort-by">
-            Sort by 
-            <div class="select-ghost">
-              <select class="form-field__select" aria-label="">
-                <option selected>Recommended</option>
-                <option>Cheapest</option>
-                <option>Stars</option>
-                <option>Rating</option>
-                <option>Most expensive</option>
-              </select>
-            </div>
-          </div>
+          
+          @@include('hotel-search-sort-by.html')
         </div>
 
         <ul class="hotel-search-section__list hotels-list">
           <li class="hotel-card">
-            @@include('cards/hotel-card-2.html')
+            @@include('cards/hotels/hotel-card-2.html')
           </li>
 
           <li class="hotel-card">
-            @@include('cards/hotel-card-3.html')
+            @@include('cards/hotels/hotel-card-3.html')
           </li>
         </ul>
 
