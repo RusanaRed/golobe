@@ -3,7 +3,7 @@
   font-weight: 600;
 }
 
-.filters__group {
+.filters__filter {
   position: relative;
   padding-top: 32px;
 
@@ -22,52 +22,4 @@
     background-color: var(--dark);
     opacity: 0.25;
   }
-}
-
-.filters__filter-header {
-  display: flex;
-  justify-content: space-between;
-}
-
-.filters__filter-name {
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.filters__collapse-button {
-  width: 24px;
-  height: 24px;
-
-  background-image: url("./../img/icons/chevron-up-icon.svg");
-  background-repeat: no-repeat;
-  background-size: 24px 24px;
-  background-position: center;
-
-  &.collapse {
-    background-image: url("./../img/icons/chevron-down-icon.svg");
-  }
-}
-
-.filters__filter-content {
-  display: block;
-  margin-top: 16px;
-
-  &.close {
-    display: none;
-  }
-}
-
-.filters__item:not(:last-child) {
-  margin-bottom: 8px;
-}
-
-.filters__more-button {
-  color: var(--important);
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.filters__radio-list {
-  display: flex;
-  gap: 16px;
 }

@@ -1,0 +1,47 @@
+.filter__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter__name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.filter__collapse-button {
+  width: 24px;
+  height: 24px;
+
+  background-image: url("./../img/icons/chevron-up-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: center;
+
+  &.collapse {
+    background-image: url("./../img/icons/chevron-down-icon.svg");
+  }
+}
+
+.filter__content {
+  display: block;
+  margin-top: 16px;
+
+  &.close {
+    display: none;
+  }
+}
+
+.filter__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.filter__more-button {
+  color: var(--important);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.filter__radio-list {
+  display: flex;
+  gap: 16px;
+}

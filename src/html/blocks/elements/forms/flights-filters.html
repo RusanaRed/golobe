@@ -1,13 +1,13 @@
 <form class="filters" action="https://echo.htmlacademy.ru/" method="get" id="flights-filters-form">
   <div class="filters__title">Filters</div>
   
-  <fieldset class="filters__group">
-    <div class="filters__filter-header">
-      <legend class="filters__filter-name">Price</legend>
-      <button class="filters__collapse-button" type="button"></button>
+  <fieldset class="filters__filter filter">
+    <div class="filter__header">
+      <legend class="filter__name">Price</legend>
+      <button class="filter__collapse-button" type="button"></button>
     </div>
 
-    <div class="filters__filter-content">
+    <div class="filter__content">
       <div class="range">
         <div class="range_bar" style="left: 0; width: 319px;">
           <button class="range_toggle range_toggle--min" type="button"></button>
@@ -19,13 +19,13 @@
     </div>
   </fieldset>
 
-  <fieldset class="filters__group">
-    <div class="filters__filter-header">
-      <legend class="filters__filter-name">Departure Time</legend>
-      <button class="filters__collapse-button" type="button"></button>
+  <fieldset class="filters__filter filter">
+    <div class="filter__header">
+      <legend class="filter__name">Departure Time</legend>
+      <button class="filter__collapse-button" type="button"></button>
     </div>
 
-    <div class="filters__filter-content">
+    <div class="filter__content">
       <div class="range">
         <div class="range_bar" style="left: 0; width: 319px;">
           <button class="range_toggle range_toggle--min" type="button"></button>
@@ -37,43 +37,43 @@
     </div>
   </fieldset>
 
-  <fieldset class="filters__group">
-    <div class="filters__filter-header">
-      <legend class="filters__filter-name">Rating</legend>
-      <button class="filters__collapse-button" type="button"></button>
+  <fieldset class="filters__filter filter">
+    <div class="filter__header">
+      <legend class="filter__name">Rating</legend>
+      <button class="filter__collapse-button" type="button"></button>
     </div>
 
-    <div class="filters__filter-content">
-      <ul class="filters__radio-list">
-        <li class="filters__radio-item">
+    <div class="filter__content">
+      <ul class="filter__radio-list">
+        <li class="filter__radio-item">
           <label class="control">
             <input class="visually-hidden control__input" type="radio" name="rating">
             <span class="control__mark control__mark--rating-radio">0+</span>
           </label>
         </li>
 
-        <li class="filters__radio-item">
+        <li class="filter__radio-item">
           <label class="control">
             <input class="visually-hidden control__input control__input" type="radio" name="rating">
             <span class="control__mark control__mark--rating-radio">1+</span>
           </label>
         </li>
 
-        <li class="filters__radio-item">
+        <li class="filter__radio-item">
           <label class="control">
             <input class="visually-hidden control__input control__input" type="radio" name="rating">
             <span class="control__mark control__mark--rating-radio">2+</span>
           </label>
         </li>
 
-        <li class="filters__radio-item">
+        <li class="filter__radio-item">
           <label class="control">
             <input class="visually-hidden control__input control__input" type="radio" name="rating">
             <span class="control__mark control__mark--rating-radio">3+</span>
           </label>
         </li>
 
-        <li class="filters__radio-item">
+        <li class="filter__radio-item">
           <label class="control">
             <input class="visually-hidden control__input control__input" type="radio" name="rating">
             <span class="control__mark control__mark--rating-radio">4+</span>
@@ -83,15 +83,15 @@
     </div>
   </fieldset>
 
-  <fieldset class="filters__group">
-    <div class="filters__filter-header">
-      <legend class="filters__filter-name">Airlines</legend>
-      <button class="filters__collapse-button" type="button"></button>
+  <fieldset class="filters__filter filter">
+    <div class="filter__header">
+      <legend class="filter__name">Airlines</legend>
+      <button class="filter__collapse-button" type="button"></button>
     </div>
 
-    <div class="filters__filter-content">
-      <ul class="filters__list">
-        <li class="filters__item">
+    <div class="filter__content">
+      <ul class="filter__list">
+        <li class="filter__item">
           <label class="control">
             <input class="visually-hidden control__input" type="checkbox" name="emirated">
             <span class="control__mark control__mark--checkbox"></span>
@@ -99,7 +99,7 @@
           </label>
         </li>
 
-        <li class="filters__item">
+        <li class="filter__item">
           <label class="control">
             <input class="visually-hidden control__input" type="checkbox" name="flydubai">
             <span class="control__mark control__mark--checkbox"></span>
@@ -107,7 +107,7 @@
           </label>
         </li>
 
-        <li class="filters__item">
+        <li class="filter__item">
           <label class="control">
             <input class="visually-hidden control__input" type="checkbox" name="qatar">
             <span class="control__mark control__mark--checkbox"></span>
@@ -115,7 +115,7 @@
           </label>
         </li>
 
-        <li class="filters__item">
+        <li class="filter__item">
           <label class="control">
             <input class="visually-hidden control__input" type="checkbox" name="etihad">
             <span class="control__mark control__mark--checkbox"></span>
@@ -123,20 +123,20 @@
           </label>
         </li>
 
-        <button class="filters__more-button" type="button">+24 more</button>
+        <button class="filter__more-button" type="button">+24 more</button>
       </ul>
     </div>
   </fieldset>
 
-  <fieldset class="filters__group">
-    <div class="filters__filter-header">
-      <legend class="filters__filter-name">Trips</legend>
-      <button class="filters__collapse-button" type="button"></button>
+  <fieldset class="filters__filter filter">
+    <div class="filter__header">
+      <legend class="filter__name">Trips</legend>
+      <button class="filter__collapse-button" type="button"></button>
     </div>
 
-    <div class="filters__filter-content">
-      <ul class="filters__list">
-        <li class="filters__item">
+    <div class="filter__content">
+      <ul class="filter__list">
+        <li class="filter__item">
           <label class="control">
             <input class="visually-hidden control__input" type="checkbox" name="round-trip">
             <span class="control__mark control__mark--checkbox"></span>
@@ -144,7 +144,7 @@
           </label>
         </li>
 
-        <li class="filters__item">
+        <li class="filter__item">
           <label class="control">
             <input class="visually-hidden control__input" type="checkbox" name="on-way">
             <span class="control__mark control__mark--checkbox"></span>
@@ -152,7 +152,7 @@
           </label>
         </li>
 
-        <li class="filters__item">
+        <li class="filter__item">
           <label class="control">
             <input class="visually-hidden control__input" type="checkbox" name="multi-city">
             <span class="control__mark control__mark--checkbox"></span>
@@ -160,7 +160,7 @@
           </label>
         </li>
 
-        <li class="filters__item">
+        <li class="filter__item">
           <label class="control">
             <input class="visually-hidden control__input" type="checkbox" name="flexible-dates">
             <span class="control__mark control__mark--checkbox"></span>
