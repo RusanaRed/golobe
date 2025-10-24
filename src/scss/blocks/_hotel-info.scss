@@ -1,0 +1,129 @@
+.hotel-info__details {
+  flex-grow: 1;
+}
+
+.hotel-info__title {
+  margin-bottom: 16px;
+
+  font-family: var(--font-accent);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.hotel-info__wrapper {
+  display: grid;
+  grid-template-rows: 16px 16px 32px;
+  gap: 12px;
+  align-items: center;
+}
+
+.hotel-info__address {
+  position: relative;
+  grid-row: 1 / 2;
+  padding-left: 18px;
+  color: var(--text-75);
+  font-size: 12px;
+  font-weight: 500;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background: url("./../img/icons/location-icon.svg") no-repeat center;
+    background-size: 16px;
+  }
+}
+
+.hotel-info__services {
+  grid-row: 2 / 3;
+  display: flex;
+  gap: 32px;
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.hotel-info__stars {
+  position: relative;
+  display: flex;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 0;
+    height: 16px;
+    background-image: url("./../../img/icons/star-16-icon.svg");
+    background-repeat: repeat;
+    background-position: left;
+    background-size: 16px 16px;
+  }
+
+  &--one {
+    padding-left: 20px;
+
+    &::before {
+      width: 16px;
+    }
+  }
+
+  &--two {
+    padding-left: 36px;
+
+    &::before {
+      width: 32px;
+    }
+  }
+
+  &--three {
+    padding-left: 52px;
+
+    &::before {
+      width: 48px;
+    }
+  }
+
+  &--four {
+    padding-left: 68px;
+
+    &::before {
+      width: 64px;
+    }
+  }
+
+  &--five {
+    padding-left: 84px;
+
+    &::before {
+      width: 80px;
+    }
+  }
+}
+
+.hotel-info__aminities {
+  position: relative;
+  padding-left: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background: url("./../../img/icons/cafe-icon.svg") no-repeat center;
+    background-size: 16px 16px;
+  }
+  
+  span {
+    font-weight: 700;
+  }
+}
+
+.hotel-info__rating {
+  grid-row: 3 / 4;
+}

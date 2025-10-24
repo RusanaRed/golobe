@@ -34,31 +34,6 @@
   margin-bottom: 16px;
 }
 
-.flight-card__airline-rating {
-  display: flex;
-  align-items: center;
-
-  font-size: 12px;
-}
-
-.flight-card__airline-rating-text {
-  padding: 0 4px 0 8px;
-  font-weight: 500;
-}
-
-.flight-card__price {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  color: var(--text-75);
-
-  span {
-    color: var(--important);
-    font-size: 24px;
-    font-weight: 700;
-  }
-}
-
 .flight-card__conditions {
   position: relative;
   margin-bottom: 33px;
@@ -155,6 +130,6 @@
   }
 }
 
-.flight-card__details-button {
+.flight-card__button {
   flex-grow: 1;
 }

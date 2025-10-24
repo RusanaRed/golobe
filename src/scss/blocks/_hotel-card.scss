@@ -12,23 +12,19 @@
   &--favourite {
     grid-template-columns: 440px calc(1232px - 440px);
     grid-template-rows: 274px;
-  }
-}
 
-.hotel-card__hotel-picture {
-  grid-row: 1 / 2;
-  grid-column: 1 / 2;
-  position: relative;
-  width: 100%;
-
-  &--favourites {
-    width: 440px;
-
-    &>.hotel-card__images {
+    & .hotel-card__images-count {
       top: 16px;
       right: 16px;
     }
   }
+}
+
+.hotel-card__photo {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  position: relative;
+  width: 100%;
 }
 
 .hotel-card__image {
@@ -38,7 +34,7 @@
   object-fit: cover;
 }
 
-.hotel-card__images {
+.hotel-card__images-count {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -70,7 +66,7 @@
   padding: 24px;
 }
 
-.hotel-card__wrapper {
+.hotel-card__info {
   position: relative;
   display: flex;
   gap: 24px;
@@ -85,174 +81,6 @@
     background-color: var(--dark);
     opacity: 0.25;
   }
-}
-
-.hotel-card__left {
-  flex-grow: 1;
-}
-
-.hotel-card__title {
-  margin-bottom: 16px;
-
-  font-family: var(--font-accent);
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.hotel-card__details {
-  display: grid;
-  grid-template-rows: 16px 16px 32px;
-  gap: 12px;
-  align-items: center;
-}
-
-.hotel-card__address {
-  position: relative;
-  grid-row: 1 / 2;
-  padding-left: 18px;
-  color: var(--text-75);
-  font-size: 12px;
-  font-weight: 500;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 16px;
-    height: 16px;
-    background: url("./../img/icons/location-icon.svg") no-repeat center;
-    background-size: 16px;
-  }
-}
-
-.hotel-card__services {
-  grid-row: 2 / 3;
-  display: flex;
-  gap: 32px;
-
-  font-size: 12px;
-  font-weight: 500;
-}
-
-.hotel-card__stars {
-  position: relative;
-  display: flex;
-
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 1px;
-    left: 0;
-    width: 0;
-    height: 16px;
-    background-image: url("./../../img/icons/star-16-icon.svg");
-    background-repeat: repeat;
-    background-position: left;
-    background-size: 16px 16px;
-  }
-
-  &--one {
-    padding-left: 20px;
-
-    &::before {
-      width: 16px;
-    }
-  }
-
-  &--two {
-    padding-left: 36px;
-
-    &::before {
-      width: 32px;
-    }
-  }
-
-  &--three {
-    padding-left: 52px;
-
-    &::before {
-      width: 48px;
-    }
-  }
-
-  &--four {
-    padding-left: 68px;
-
-    &::before {
-      width: 64px;
-    }
-  }
-
-  &--five {
-    padding-left: 84px;
-
-    &::before {
-      width: 80px;
-    }
-  }
-}
-
-.hotel-card__aminities {
-  position: relative;
-  padding-left: 20px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 16px;
-    height: 16px;
-    background: url("./../../img/icons/cafe-icon.svg") no-repeat center;
-    background-size: 16px 16px;
-  }
-  
-  span {
-    font-weight: 700;
-  }
-}
-
-.hotel-card__hotel-rating {
-  grid-row: 3 / 4;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.hotel-card__hotel-rating-text {
-  font-size: 12px;
-  font-weight: 500;
-
-  span {
-    font-weight: 700;
-  }
-}
-
-.hotel-card__right {
-  position: relative;
-  flex-shrink: 0;
-}
-
-.hotel-card__price-starting,
-.hotel-card__price-tax {
-  color: var(--text-75);
-  font-size: 12px;
-  font-weight: 500;
-}
-
-.hotel-card__price-price {
-  color: var(--important);
-  font-size: 14px;
-  font-weight: 700;
-
-  span {
-    font-size: 24px;
-  }
-}
-
-.hotel-card__price-tax {
-  text-align: right;
 }
 
 .hotel-card__buttons { 
@@ -277,6 +105,6 @@
   }
 }
 
-.hotel-card__details-button {
+.hotel-card__button {
   flex-grow: 1;
 }
