@@ -1,0 +1,27 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.social__link {
+  color: var(--text-color);
+
+  transition: color 0.2s linear;
+
+  &:focus-visible {
+    outline: 1px solid var(--white);
+    outline-offset: 3px;
+    color: var(--white);
+  }
+
+  &:hover {
+    color: var(--white);
+  }
+}
+
+.social__icon {
+  display: block;
+}

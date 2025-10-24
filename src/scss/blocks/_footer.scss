@@ -35,34 +35,6 @@
   gap: 24px;
 }
 
-.footer__social-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
-}
-
-.footer__social-link {
-  color: var(--text-color);
-
-  transition: color 0.2s linear;
-
-  &:focus-visible {
-    outline: 1px solid var(--white);
-    outline-offset: 3px;
-    color: var(--white);
-  }
-
-  &:hover {
-    color: var(--white);
-  }
-}
-
-.footer__social-icon {
-  display: block;
-}
-
 .footer__nav {
   display: flex;
   gap: 24px;
