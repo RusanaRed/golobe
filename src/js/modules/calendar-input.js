@@ -1,6 +1,5 @@
 import { easepick, RangePlugin, LockPlugin, DateTime } from '@easepick/bundle';
 
-/* const DateTime = easepick.DateTime; */
 const bookedDates = [
   '2024-04-02',
   ['2024-04-06', '2024-04-11'],
@@ -19,10 +18,6 @@ const bookedDates = [
 
   return new DateTime(d, 'YYYY-MM-DD');
 });
-
-/* document.querySelector('.hotel-datepicker')
-document.getElementById('checkin'), */
-/* elementEnd: "#checkout", */
 
 const hotelDatepickers = document.querySelectorAll('.hotel-datepicker');
 

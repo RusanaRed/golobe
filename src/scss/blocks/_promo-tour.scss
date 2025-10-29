@@ -60,6 +60,10 @@
   }
 }
 
+.promo-tour__button {
+  margin-top: auto;
+}
+
 .promo-tour__pictures {
   grid-column: 6 span;
   grid-row: 2 span;
@@ -68,10 +72,6 @@
   grid-template-rows: repeat(2, 1fr);
   row-gap: 24px;
   column-gap: 20px;
-}
-
-.promo-tour__button {
-  margin-top: auto;
 }
 
 .promo-tour__picture {
