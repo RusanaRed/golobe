@@ -1,4 +1,4 @@
-.tabs {
+.tabs__amount {
   display: flex;
   height: 80px;
   gap: 48px;
@@ -20,4 +20,65 @@
   &--four > .tab {
     width: 25%;
   }
+}
+
+.tabs__other-button {
+  width: 160px;
+  justify-content: start;
+  position: relative;
+    
+  &::before {
+    content: "";
+    position: absolute;
+    left: -24px;
+    bottom: 0;
+  
+    display: block;
+    width: 1px;
+    height: 48px;
+    background-color: #d7e2ee;
+  }
+}
+
+.tabs__wrapper {
+  display: none;
+  width: 100%;
+
+  &--active {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.tabs__more-button {
+  display: block;
+  width: 100%;
+  margin-top: 24px;
+
+  background-color: var(--dark);
+  color: var(--white);
+
+  &:hover {
+    background-color: var(--accent);
+  }
+}
+
+.tabs__addition-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.tabs__caption {
+  font-size: 14px;
+  font-weight: 600;
+
+  span {
+    color: var(--important);
+  }
+}
+
+.tabs__sort-by {
+  display: flex;
+  gap: 4px;
 }

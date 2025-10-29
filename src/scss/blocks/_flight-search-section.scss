@@ -9,54 +9,24 @@
   max-width: 343px;
 }
 
-.flight-search-section__listing {
+.flight-search-section__content {
   position: relative;
   width: 100%;
   max-width: 840px;
-}
 
-.flight-search-section__listing::before {
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: calc(100% - 72px);
-  top: 0;
-  left: -16px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: calc(100% - 72px);
+    top: 0;
+    left: -16px;
 
-  background-color: var(--dark);
-  opacity: 0.25;
-}
-
-.flight-search-section__caption {
-  display: flex;
-  justify-content: space-between;
-  
-  margin-bottom: 24px;
-}
-
-.flight-search-section__flights-number {
-  font-size: 14px;
-  font-weight: 600;
-
-  span {
-    color: var(--important);
+    background-color: var(--dark);
+    opacity: 0.25;
   }
 }
 
-.flight-search-section__wrapper {
-  display: none;
-
-  &--active {
-    display: block;
-  }
-}
-
-.flight-search-section__button {
-  display: block;
-  width: 100%;
-  margin-top: 24px;
-
-  &:hover {
-    background-color: var(--accent);
-  }
+.flight-search-section__sorting-tabs {
+  margin-bottom: 32px;
 }

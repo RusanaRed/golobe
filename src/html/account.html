@@ -38,159 +38,161 @@
             <p class="account__mail">john.doe@gmail.com</p>
           </div>
 
-          <div class="account__tabs tabs tabs--three">
-            <button class="account__tab tab active" type="button" data-tab="#acc-info">
-              <div class="tab__title tab__title--account">Account</div>
-            </button>
-            <button class="account__tab tab" type="button" data-tab="#acc-history">
-              <div class="tab__title tab__title--account">History</div>
-            </button>
-            <button class="account__tab tab" type="button" data-tab="#acc-payment">
-              <div class="tab__title tab__title--account">Payment methods</div>
-            </button>
-          </div>
-    
-          <div class="tab__content">
-            <div class="tab__wrapper tab__wrapper--active account__tab-wrapper" id="acc-info">
-              <h2 class="section__title">Account</h2>
-
-              <ul class="account__info account-info">
-                <li class="account-info__item">
-                  <div class="account-info__title">
-                    <div class="account-info__name">Name</div>
-                    <div class="account-info__content">John Doe</div>
-                  </div>
-
-                  <button class="account-info__button button button--large button--secondary">
-                    <svg class="account__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-                      <use href="./img/sprite.svg#edit-icon"/>
-                    </svg>
-                    Change
-                  </button>
-                </li>
-
-                <li class="account-info__item">
-                  <div class="account-info__title">
-                    <div class="account-info__name">Email</div>
-                    <div class="account-info__content">john.doe@gmail.com</div>
-                  </div>
-
-                  <button class="account-info__extra-button button button--large button--secondary">
-                    <svg class="account__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-                      <use href="./img/sprite.svg#add-circle-icon"/>
-                    </svg>
-                    Add another email
-                  </button>
-
-                  <button class="account-info__button button button--large button--secondary">
-                    <svg class="account__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-                      <use href="./img/sprite.svg#edit-icon"/>
-                    </svg>
-                    Change
-                  </button>
-                </li>
-
-                <li class="account-info__item">
-                  <div class="account-info__title">
-                    <div class="account-info__name">Password</div>
-                    <div class="account-info__content">************</div>
-                  </div>
-
-                  <button class="account-info__button button button--large button--secondary">
-                    <svg class="account__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-                      <use href="./img/sprite.svg#edit-icon"/>
-                    </svg>
-                    Change
-                  </button>
-                </li>
-
-                <li class="account-info__item">
-                  <div class="account-info__title">
-                    <div class="account-info__name">Phone number</div>
-                    <div class="account-info__content">+1 000-000-0000</div>
-                  </div>
-
-                  <button class="account-info__button button button--large button--secondary">
-                    <svg class="account__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-                      <use href="./img/sprite.svg#edit-icon"/>
-                    </svg>
-                    Change
-                  </button>
-                </li>
-
-                <li class="account-info__item">
-                  <div class="account-info__title">
-                    <div class="account-info__name">Address</div>
-                    <div class="account-info__content">St 32 main downtown, Los Angeles, California, USA</div>
-                  </div>
-
-                  <button class="account-info__button button button--large button--secondary">
-                    <svg class="account__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-                      <use href="./img/sprite.svg#edit-icon"/>
-                    </svg>
-                    Change
-                  </button>
-                </li>
-
-                <li class="account-info__item">
-                  <div class="account-info__title">
-                    <div class="account-info__name">Date of birth</div>
-                    <div class="account-info__content">01-01-1992</div>
-                  </div>
-
-                  <button class="account-info__button button button--large button--secondary">
-                    <svg class="account__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-                      <use href="./img/sprite.svg#edit-icon"/>
-                    </svg>
-                    Change
-                  </button>
-                </li>
-              </ul>
+          <div class="tabs">
+            <div class="account__tabs tabs__amount tabs__amount--three">
+              <button class="tabs__tab tab active" type="button" data-tab="#acc-info">
+                <div class="tab__title">Account</div>
+              </button>
+              <button class="tabs__tab tab" type="button" data-tab="#acc-history">
+                <div class="tab__title">History</div>
+              </button>
+              <button class="tabs__tab tab" type="button" data-tab="#acc-payment">
+                <div class="tab__title">Payment methods</div>
+              </button>
             </div>
+      
+            <div class="tabs__content">
+              <div class="tabs__wrapper tabs__wrapper--active" id="acc-info">
+                <h2 class="section__title">Account</h2>
 
-            <div class="tab__wrapper account__tab-wrapper" id="acc-history">
-              
-            </div>
-
-            <div class="tab__wrapper account__tab-wrapper" id="acc-payment">
-              <h2 class="section__title">Payment methods</h2>
-
-              <ul class="account__payment account-payment">
-                <li class="account-payment__item">
-                  <div class="account-payment__card-top">
-                    <div class="account-payment__card-number">
-                      <div class="account-payment__hidden">**** **** ****</div>
-                      <div class="account-payment__last-numbers">4321</div>
+                <ul class="account__info account-info">
+                  <li class="account-info__item">
+                    <div class="account-info__title">
+                      <div class="account-info__name">Name</div>
+                      <div class="account-info__content">John Doe</div>
                     </div>
 
-                    <button class="account-payment__delete-button"> 
-                      <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                        <use href="./img/sprite.svg#bin-icon"/>
-                      </svg>               
+                    <button class="account-info__button button button--large button--secondary">
+                      <svg class="account__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                        <use href="./img/sprite.svg#edit-icon"/>
+                      </svg>
+                      Change
                     </button>
-                  </div>
-                  
-                  <div class="account-payment__card-validation">
-                    <div class="account-payment__validation-title">Valid Thru</div>
-                    <div class="account-payment__valid-date">02/27</div>
-                  </div>
+                  </li>
 
-                  <div class="account-payment__payment-system"> 
-                    <svg width="52" height="33" viewBox="0 0 52 33" aria-hidden="true" focusable="false">
-                      <use href="./img/sprite.svg#visa-icon"/>
-                    </svg>               
-                  </div>
-                </li>
+                  <li class="account-info__item">
+                    <div class="account-info__title">
+                      <div class="account-info__name">Email</div>
+                      <div class="account-info__content">john.doe@gmail.com</div>
+                    </div>
 
-                <button class="account-payment__button">
-                  <div class="account-payment__button-icon">
-                    <svg width="64" height="65" viewBox="0 0 64 65" fill="transparent" aria-hidden="true" focusable="false">
-                      <use href="./img/sprite.svg#add-big-circle-icon"/>
-                    </svg>
-                    Add a new card
-                  </div>
-                </button>
-              </ul>
+                    <button class="account-info__extra-button button button--large button--secondary">
+                      <svg class="account__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                        <use href="./img/sprite.svg#add-circle-icon"/>
+                      </svg>
+                      Add another email
+                    </button>
+
+                    <button class="account-info__button button button--large button--secondary">
+                      <svg class="account__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                        <use href="./img/sprite.svg#edit-icon"/>
+                      </svg>
+                      Change
+                    </button>
+                  </li>
+
+                  <li class="account-info__item">
+                    <div class="account-info__title">
+                      <div class="account-info__name">Password</div>
+                      <div class="account-info__content">************</div>
+                    </div>
+
+                    <button class="account-info__button button button--large button--secondary">
+                      <svg class="account__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                        <use href="./img/sprite.svg#edit-icon"/>
+                      </svg>
+                      Change
+                    </button>
+                  </li>
+
+                  <li class="account-info__item">
+                    <div class="account-info__title">
+                      <div class="account-info__name">Phone number</div>
+                      <div class="account-info__content">+1 000-000-0000</div>
+                    </div>
+
+                    <button class="account-info__button button button--large button--secondary">
+                      <svg class="account__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                        <use href="./img/sprite.svg#edit-icon"/>
+                      </svg>
+                      Change
+                    </button>
+                  </li>
+
+                  <li class="account-info__item">
+                    <div class="account-info__title">
+                      <div class="account-info__name">Address</div>
+                      <div class="account-info__content">St 32 main downtown, Los Angeles, California, USA</div>
+                    </div>
+
+                    <button class="account-info__button button button--large button--secondary">
+                      <svg class="account__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                        <use href="./img/sprite.svg#edit-icon"/>
+                      </svg>
+                      Change
+                    </button>
+                  </li>
+
+                  <li class="account-info__item">
+                    <div class="account-info__title">
+                      <div class="account-info__name">Date of birth</div>
+                      <div class="account-info__content">01-01-1992</div>
+                    </div>
+
+                    <button class="account-info__button button button--large button--secondary">
+                      <svg class="account__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                        <use href="./img/sprite.svg#edit-icon"/>
+                      </svg>
+                      Change
+                    </button>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tabs__wrapper" id="acc-history">
+                
+              </div>
+
+              <div class="tabs__wrapper" id="acc-payment">
+                <h2 class="section__title">Payment methods</h2>
+
+                <ul class="account__payment account-payment">
+                  <li class="account-payment__item">
+                    <div class="account-payment__card-top">
+                      <div class="account-payment__card-number">
+                        <div class="account-payment__hidden">**** **** ****</div>
+                        <div class="account-payment__last-numbers">4321</div>
+                      </div>
+
+                      <button class="account-payment__delete-button"> 
+                        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                          <use href="./img/sprite.svg#bin-icon"/>
+                        </svg>               
+                      </button>
+                    </div>
+                    
+                    <div class="account-payment__card-validation">
+                      <div class="account-payment__validation-title">Valid Thru</div>
+                      <div class="account-payment__valid-date">02/27</div>
+                    </div>
+
+                    <div class="account-payment__payment-system"> 
+                      <svg width="52" height="33" viewBox="0 0 52 33" aria-hidden="true" focusable="false">
+                        <use href="./img/sprite.svg#visa-icon"/>
+                      </svg>               
+                    </div>
+                  </li>
+
+                  <button class="account-payment__button">
+                    <div class="account-payment__button-icon">
+                      <svg width="64" height="65" viewBox="0 0 64 65" fill="transparent" aria-hidden="true" focusable="false">
+                        <use href="./img/sprite.svg#add-big-circle-icon"/>
+                      </svg>
+                      Add a new card
+                    </div>
+                  </button>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

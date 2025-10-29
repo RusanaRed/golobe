@@ -4,19 +4,21 @@
       @@include('elements/forms/hotels-filters.html')
     </div>
 
-    <div class="hotel-search-section__listing">
-      <div class="sorting">
-        @@include('sorting-hotels.html')
+    <div class="hotel-search-section____content tabs">
+      <div class="hotel-search-section__sorting-tabs">
+        @@include('tabs-hotels.html')
       </div>
 
-      <div class="hotel-search-section__wrapper hotel-search-section__wrapper--active" id="hotels">
-        <div class="hotel-search-section__caption">
-          <div class="hotel-search-section__flights-number">Showing 4 of <span>157 places</span></div>
+      <div class="tabs__wrapper tabs__wrapper--active" id="hotels">
+        <div class="tabs__addition-info">
+          <div class="tabs__caption">
+            Showing 4 of <span>157 places</span>
+          </div>
 
           @@include('hotel-search-sort-by.html')
         </div>
-
-        <ul class="hotel-search-section__list hotels-list">
+      
+        <ul class="hotels-list">
           <li class="hotel-card">
             @@include('cards/hotels/hotel-card-1.html')
           </li>
@@ -33,34 +35,30 @@
             @@include('cards/hotels/hotel-card-4.html')
           </li>
         </ul>
-
-        <button class="hotel-search-section__button button button--dark button--large" type="button">Show more results</button>
       </div>
 
-      <div class="hotel-search-section__wrapper" id="motels">
-        <div class="hotel-search-section__caption">
-          <div class="hotel-search-section__flights-number">Showing 4 of <span>51 places</span></div>
+      <div class="tabs__wrapper" id="motels">
+        <div class="tabs__addition-info">
+          <div class="tabs__caption">Showing 1 of <span>11 places</span></div>
 
           @@include('hotel-search-sort-by.html')
         </div>
 
-        <ul class="hotel-search-section__list hotels-list">
+        <ul class="hotels-list">
           <li class="hotel-card">
             @@include('cards/hotels/hotel-card-4.html')
           </li>
         </ul>
-
-        <button class="hotel-search-section__button button button--dark button--large" type="button">Show more results</button>
       </div>
 
-      <div class="hotel-search-section__wrapper" id="resorts">
-        <div class="hotel-search-section__caption">
-          <div class="hotel-search-section__flights-number">Showing 4 of <span>72 places</span></div>
+      <div class="tabs__wrapper" id="resorts">
+        <div class="tabs__addition-info">
+          <div class="tabs__caption">Showing 2 of <span>12 places</span></div>
           
           @@include('hotel-search-sort-by.html')
         </div>
 
-        <ul class="hotel-search-section__list hotels-list">
+        <ul class="hotels-list">
           <li class="hotel-card">
             @@include('cards/hotels/hotel-card-2.html')
           </li>
@@ -69,9 +67,9 @@
             @@include('cards/hotels/hotel-card-3.html')
           </li>
         </ul>
-
-        <button class="hotel-search-section__button button button--dark button--semibold button--large" type="button">Show more results</button>
       </div>
+
+      <button class="tabs__more-button button button--dark button--semibold button--large" type="button">Show more results</button>
     </div>
   </div>
 </div>

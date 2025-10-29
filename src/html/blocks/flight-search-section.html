@@ -4,18 +4,20 @@
       @@include('elements/forms/flights-filters.html')
     </div>
 
-    <div class="flight-search-section__listing">
-      <div class="sorting">
-        @@include('sorting-flights.html')
+    <div class="flight-search-section__content tabs">
+      <div class="flight-search-section__sorting-tabs">
+        @@include('tabs-flights.html')    
       </div>
 
-      <div class="flight-search-section__caption">
-        <div class="flight-search-section__flights-number">
-          Showing 4 of <span>17 flights</span>
+      <div class="tabs__wrapper tabs__wrapper--active" id="cheapest">
+        <div class="tabs__addition-info">
+          <div class="tabs__caption">
+            Showing 4 of <span>81 flights</span>
+          </div>
+
+          @@include('flight-search-sort-by.html')
         </div>
-      </div>
 
-      <div class="flight-search-section__wrapper flight-search-section__wrapper--active" id="cheapest">
         <ul class="flights-list">
           <li class="flight-card">
             @@include('cards/flights/flight-card-1.html')
@@ -35,7 +37,15 @@
         </ul>
       </div>
 
-      <div class="flight-search-section__wrapper" id="best">
+      <div class="tabs__wrapper" id="best">
+        <div class="tabs__addition-info">
+          <div class="tabs__caption">
+            Showing 2 of <span>5 flights</span>
+          </div>
+
+          @@include('flight-search-sort-by.html')
+        </div>
+
         <ul class="flights-list">
           <li class="flight-card">
             @@include('cards/flights/flight-card-2.html')
@@ -47,15 +57,23 @@
         </ul>
       </div>
 
-      <div class="flight-search-section__wrapper" id="quickest">
-        <ul class="flight-search-section__list flights-list">
+      <div class="tabs__wrapper" id="quickest">
+        <div class="tabs__addition-info">
+          <div class="tabs__caption">
+            Showing 1 of <span>15 flights</span>
+          </div>
+
+          @@include('flight-search-sort-by.html')
+        </div>
+
+        <ul class="flights-list">
           <li class="flight-card">
              @@include('cards/flights/flight-card-4.html')
           </li>
         </ul>
       </div>
 
-      <button class="flight-search-section__button button button--dark button--semibold button--large" type="button">Show more results</button>
+      <button class="tabs__more-button button button--dark button--semibold button--large" type="button">Show more results</button>
     </div>
   </div>
 </div>

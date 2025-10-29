@@ -54,17 +54,9 @@
     left: 0;
     right: 0;
   
-    width: 100%;
+    width: 110%;
     height: 5px;
     background-color: var(--accent);
-  }
-}
-
-.hero-form__wrapper {
-  display: none;
-
-  &--active {
-    display: block;
   }
 }
 

@@ -15,47 +15,49 @@
             <h2 class="section__title">Favourites</h2>
           </div>
 
-          <div class="favourites__tabs tabs tabs--two">
-            <button class="favourites__tab tab tab--with-note active" type="button" data-tab="#fav-flights">
-              <div class="tab__title tab__title--with-note">Flights</div>
-              <div class="tab__note">2 marked</div>
-            </button>
+          <div class="favourites__content tabs">
+            <div class="favourites__tabs">
+              <div class="tabs__amount tabs__amount--two">
+                <button class="tabs__tab tab tab--with-note active" type="button" data-tab="#fav-flights">
+                  <div class="tab__title tab__title--with-note">Flights</div>
+                  <div class="tab__note">2 marked</div>
+                </button>
 
-            <button class="favourites__tab tab tab--with-note" type="button" data-tab="#fav-places">
-              <div class="tab__title tab__title--with-note">Places</div>
-              <div class="tab__note">3 marked</div>
-            </button>
-          </div>
-    
-            <div class="tab__content">
-              <div class="tab__wrapper tab__wrapper--active favourites__list-wrapper" id="fav-flights">
-                <ul class="flights-list">
-                  <li class="flight-card flight-card--favourite">
-                    @@include('blocks/cards/flights/flight-card-2.html')
-                  </li>
-
-                  <li class="flight-card flight-card--favourite">
-                    @@include('blocks/cards/flights/flight-card-4.html')
-                  </li>
-                </ul>
-              </div>
-
-              <div class="tab__wrapper favourites__list-wrapper" id="fav-places">
-                <ul class="hotels-list">
-                  <li class="hotel-card hotel-card--favourite">
-                    @@include('blocks/cards/hotels/hotel-card-1.html')
-                  </li>
-
-                  <li class="hotel-card hotel-card--favourite">
-                    @@include('blocks/cards/hotels/hotel-card-2.html')
-                  </li>
-          
-                  <li class="hotel-card hotel-card--favourite">
-                    @@include('blocks/cards/hotels/hotel-card-3.html')
-                  </li>
-                </ul>
+                <button class="tabs__tab tab tab--with-note" type="button" data-tab="#fav-places">
+                  <div class="tab__title tab__title--with-note">Places</div>
+                  <div class="tab__note">3 marked</div>
+                </button>
               </div>
             </div>
+
+            <div class="tabs__wrapper tabs__wrapper--active" id="fav-flights">
+              <ul class="flights-list">
+                <li class="flight-card flight-card--favourite">
+                  @@include('blocks/cards/flights/flight-card-2.html')
+                </li>
+
+                <li class="flight-card flight-card--favourite">
+                  @@include('blocks/cards/flights/flight-card-4.html')
+                </li>
+              </ul>
+            </div>
+
+            <div class="tabs__wrapper" id="fav-places">
+              <ul class="hotels-list">
+                <li class="hotel-card hotel-card--favourite">
+                  @@include('blocks/cards/hotels/hotel-card-1.html')
+                </li>
+
+                <li class="hotel-card hotel-card--favourite">
+                  @@include('blocks/cards/hotels/hotel-card-2.html')
+                </li>
+        
+                <li class="hotel-card hotel-card--favourite">
+                  @@include('blocks/cards/hotels/hotel-card-3.html')
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     </main>

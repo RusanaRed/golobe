@@ -7,28 +7,14 @@
         <div class="hero__text hero__text--main">Special offers to suit your plan</div>
       </div>
       
-      <div class="hero__form hero__form--main hero-form hero-form--main">
-        <div class="hero-form__tabs">
-          <button class="hero-form__tab hero-form__tab--flight active" type="button" data-tab="#flights">
-            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <use href="./img/sprite.svg#airplane"/>
-            </svg>
-            Flights
-          </button>
-          
-          <button class="hero-form__tab hero-form__tab--stay" type="button" data-tab="#stays">
-            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <use href="./img/sprite.svg#bed"/>
-            </svg>
-            Stays
-          </button>
-        </div>
+      <div class="hero__form hero__form--main hero-form hero-form--main tabs">
+        @@include('tabs-hero-main.html')
 
         <div class="hero-form__inner">
-          <div class="hero-form__wrapper hero-form__wrapper--active" id="flights">
+          <div class="tabs__wrapper tabs__wrapper--active" id="flights">
             @@include('elements/forms/booking-flight-form-login.html')
           </div>
-          <div class="hero-form__wrapper" id="stays">
+          <div class="tabs__wrapper" id="stays">
             @@include('elements/forms/booking-hotel-form-login.html')
           </div>
         </div>
