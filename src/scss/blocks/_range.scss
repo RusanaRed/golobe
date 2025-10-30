@@ -7,13 +7,13 @@
   background-color: rgba(17, 34, 17, 0.3);
 }
 
-.range_bar {
+.range__bar {
   position: relative;
   height: 2px;
   background-color: var(--dark);
 }
 
-.range_toggle {
+.range__toggle {
   position: absolute;
   width: 24px;
   height: 24px;
@@ -44,7 +44,7 @@
   }
 }
 
-.range_label {
+.range__label {
   position: absolute;
   top: 16px;
 
