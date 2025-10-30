@@ -1,5 +1,5 @@
 "scripts": {
-	"build": "gulp build"
+    "deploy": "gulp build && gh-pages -d build"
 },
 {
 	"devDependencies": {
