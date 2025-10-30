@@ -1,3 +1,6 @@
+"scripts": {
+    "deploy": "gulp build && gh-pages -d build"
+},
 {
 	"devDependencies": {
 		"@babel/core": "^7.22.5",
