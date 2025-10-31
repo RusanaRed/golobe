@@ -54,7 +54,7 @@ const plumberNotify = (title) => {
 
 gulp.task('html:docs', function () {
 	return gulp
-		.src(['./src/html/**/*.html', '!./src/html/blocks/*.html'])
+		.src(['./src/html/**/*.html', '!./src/html/blocks/**/*.html'])
 		.pipe(changed('./docs/'))
 		.pipe(plumber(plumberNotify('HTML')))
 		.pipe(fileInclude(fileIncludeSetting))
@@ -85,7 +85,7 @@ gulp.task('images:docs', function () {
 		.pipe(changed('./docs/img/'))
 		.pipe(webp())
 		.pipe(gulp.dest('./docs/img/'))
-		.pipe(gulp.src('./src/img/**/*'))
+		.pipe(gulp.src('./src/img/**/**/*'))
 		.pipe(changed('./docs/img/'))
 		.pipe(imagemin({ verbose: true }))
 		.pipe(gulp.dest('./docs/img/'));
@@ -93,7 +93,7 @@ gulp.task('images:docs', function () {
 
 gulp.task('fonts:docs', function () {
 	return gulp
-		.src('./src/fonts/**/*')
+		.src('./src/fonts/**/**/*')
 		.pipe(changed('./docs/fonts/'))
 		.pipe(gulp.dest('./docs/fonts/'));
 });
