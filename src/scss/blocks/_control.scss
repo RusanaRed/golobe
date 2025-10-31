@@ -7,7 +7,7 @@
 }
 
 .control__input[type="checkbox"]:checked + .control__mark--checkbox {
-  background: url("/img/icons/checkbox-checked.svg") no-repeat center;
+  background: url("./../img/icons/checkbox-checked.svg") no-repeat center;
 }
 
 .control__input[type="radio"]:checked + .control__mark--rating-radio {
@@ -19,7 +19,7 @@
   height: 24px;
   
   &--checkbox { 
-    background: url("/img/icons/checkbox.svg") no-repeat center;
+    background: url("./../img/icons/checkbox.svg") no-repeat center;
   }
 
   &--rating-radio { 
