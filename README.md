@@ -18,6 +18,6 @@ Finished pages:
 * Account page
 
 ## Start
-Run the npm install command to install dependencies, then run the gulp command to compile the project and start the web server. 
+Run the npm install command to install dependencies, then run the "gulp docs" command to compile the project and start the web server. 
 
-On the Git pages via the link: 
+On the Git pages via the link: https://rusanared.github.io/golobe/
